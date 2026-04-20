@@ -4,34 +4,59 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+
+// Pages
 import Home from "./pages/Home";
+import Auth from "./pages/Auth";
+import Browse from "./pages/Browse";
+import SpeedChat from "./pages/SpeedChat";
+import Matches from "./pages/Matches";
+import Messages from "./pages/Messages";
+import Notifications from "./pages/Notifications";
+import ProfileCreate from "./pages/ProfileCreate";
+import ProfileEdit from "./pages/ProfileEdit";
+import ProfileView from "./pages/ProfileView";
+import Pricing from "./pages/Pricing";
+import WhatIsMisyar from "./pages/WhatIsMisyar";
+import HowItWorks from "./pages/HowItWorks";
+import WhyMisyarWorks from "./pages/WhyMisyarWorks";
+import FAQ from "./pages/FAQ";
+import Safety from "./pages/Safety";
+import AdminImport from "./pages/AdminImport";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path="/" component={Home} />
+      <Route path="/auth" component={Auth} />
+      <Route path="/browse" component={Browse} />
+      <Route path="/speed-chat" component={SpeedChat} />
+      <Route path="/matches" component={Matches} />
+      <Route path="/messages" component={Messages} />
+      <Route path="/messages/:matchId" component={Messages} />
+      <Route path="/notifications" component={Notifications} />
+      <Route path="/profile/create" component={ProfileCreate} />
+      <Route path="/profile/edit" component={ProfileEdit} />
+      <Route path="/profile/:userId" component={ProfileView} />
+      <Route path="/pricing" component={Pricing} />
+      <Route path="/what-is-misyar" component={WhatIsMisyar} />
+      <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/why-misyar-works" component={WhyMisyarWorks} />
+      <Route path="/faq" component={FAQ} />
+      <Route path="/safety" component={Safety} />
+      <Route path="/admin/import" component={AdminImport} />
+      <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
+          <Toaster richColors position="top-right" />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
