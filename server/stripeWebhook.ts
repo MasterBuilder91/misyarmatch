@@ -55,17 +55,17 @@ export function registerStripeWebhook(app: Express) {
             if (userId) {
               const db = await getDb();
               if (db) {
-                // Set premium for 30 days
-                const premiumUntil = new Date();
-                premiumUntil.setDate(premiumUntil.getDate() + 30);
+                const tier = session.metadata?.tier === "vip" ? "vip" : "premium";
+                const expiresAt = new Date();
+                expiresAt.setDate(expiresAt.getDate() + 30);
                 await db
                   .update(profiles)
                   .set({
-                    subscriptionTier: "premium",
-                    premiumExpiresAt: premiumUntil,
+                    subscriptionTier: tier,
+                    premiumExpiresAt: expiresAt,
                   })
                   .where(eq(profiles.userId, userId));
-                console.log(`[Stripe Webhook] Upgraded user ${userId} to premium until ${premiumUntil.toISOString()}`);
+                console.log(`[Stripe Webhook] Upgraded user ${userId} to ${tier} until ${expiresAt.toISOString()}`);
               }
             }
             break;

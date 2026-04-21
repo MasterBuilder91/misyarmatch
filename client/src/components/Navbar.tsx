@@ -1,7 +1,9 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { getLoginUrl } from "@/const";
 import { trpc } from "@/lib/trpc";
-import { Bell, Heart, Menu, MessageCircle, Search, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/LanguageToggle";
+import { Bell, Heart, Menu, MessageCircle, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "./ui/button";
@@ -10,6 +12,7 @@ export function Navbar() {
   const { user, isAuthenticated, loading, logout } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
+  const { t, isRTL } = useLanguage();
 
   const { data: unreadData } = trpc.notifications.unreadCount.useQuery(undefined, {
     enabled: isAuthenticated && !loading,
@@ -29,21 +32,22 @@ export function Navbar() {
   }, [location]);
 
   const navLinks = [
-    { href: "/browse", label: "Browse" },
-    { href: "/speed-chat", label: "Speed Chat" },
-    { href: "/what-is-misyar", label: "What Is Misyar?" },
-    { href: "/pricing", label: "Pricing" },
+    { href: "/browse", label: t("nav.browse") },
+    { href: "/speed-chat", label: t("nav.speedChat") },
+    { href: "/what-is-misyar", label: t("nav.whatIsMisyar") },
+    { href: "/pricing", label: t("nav.pricing") },
   ];
 
   const authLinks = isAuthenticated
     ? [
-        { href: "/matches", label: "Matches", icon: Heart },
-        { href: "/messages", label: "Messages", icon: MessageCircle },
+        { href: "/matches", label: t("nav.matches"), icon: Heart },
+        { href: "/messages", label: t("nav.messages"), icon: MessageCircle },
+        { href: "/who-liked-me", label: "Who Liked Me", icon: Heart },
       ]
     : [];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-rose-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-rose-100 shadow-sm" dir={isRTL ? "rtl" : "ltr"}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -89,6 +93,9 @@ export function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center gap-2">
+            {/* Language Toggle */}
+            <LanguageToggle />
+
             {isAuthenticated ? (
               <>
                 {/* Notifications */}
@@ -124,7 +131,7 @@ export function Navbar() {
                   onClick={() => { logout(); }}
                   className="hidden md:flex text-gray-500 hover:text-rose-700"
                 >
-                  Sign out
+                  {t("nav.signOut")}
                 </Button>
               </>
             ) : (
@@ -133,7 +140,7 @@ export function Navbar() {
                 size="sm"
                 className="gradient-rose text-white border-0 shadow-rose hover:opacity-90"
               >
-                <a href={getLoginUrl()}>Join Free</a>
+                <a href={getLoginUrl()}>{t("nav.signIn")}</a>
               </Button>
             )}
 
@@ -183,12 +190,12 @@ export function Navbar() {
                 onClick={() => { logout(); }}
                 className="block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium text-gray-500 hover:text-rose-700 hover:bg-rose-50"
               >
-                Sign out
+                {t("nav.signOut")}
               </button>
             ) : (
               <div className="px-4 pt-2">
                 <Button asChild className="w-full gradient-rose text-white border-0">
-                  <a href={getLoginUrl()}>Join Free</a>
+                  <a href={getLoginUrl()}>{t("nav.signIn")}</a>
                 </Button>
               </div>
             )}

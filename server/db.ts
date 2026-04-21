@@ -129,7 +129,11 @@ export async function listProfiles(filters: {
   const db = await getDb();
   if (!db) return [];
 
-  const conditions = [eq(profiles.isProfileVisible, true)];
+  const conditions = [
+    eq(profiles.isProfileVisible, true),
+    eq(profiles.hideFromSearch, false),
+    eq(profiles.invisibleMode, false),
+  ];
 
   if (filters.gender) conditions.push(eq(profiles.gender, filters.gender));
   if (filters.location) conditions.push(eq(profiles.location, filters.location));
@@ -456,4 +460,28 @@ export async function upgradeToPremium(userId: number, months = 1) {
     .update(profiles)
     .set({ subscriptionTier: "premium", premiumExpiresAt: expiresAt })
     .where(eq(profiles.userId, userId));
+}
+
+export async function upgradeToVip(userId: number, months = 1) {
+  const db = await getDb();
+  if (!db) return;
+  const expiresAt = new Date();
+  expiresAt.setMonth(expiresAt.getMonth() + months);
+  await db
+    .update(profiles)
+    .set({ subscriptionTier: "vip", premiumExpiresAt: expiresAt })
+    .where(eq(profiles.userId, userId));
+}
+
+export async function getWhoLikedMe(userId: number, limit = 20) {
+  const db = await getDb();
+  if (!db) return [];
+  const results = await db
+    .select({ interest: interests, profile: profiles })
+    .from(interests)
+    .innerJoin(profiles, eq(interests.fromUserId, profiles.userId))
+    .where(eq(interests.toUserId, userId))
+    .orderBy(desc(interests.createdAt))
+    .limit(limit);
+  return results;
 }

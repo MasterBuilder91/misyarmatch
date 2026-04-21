@@ -86,3 +86,44 @@
 - [x] TypeScript compiles with zero errors
 - [x] Dev server running and healthy
 - [x] Checkpoint saved
+
+## Phase 11: Site Improvements (Paste Instructions)
+
+### Privacy Features
+- [ ] Invisible Mode toggle (browse without appearing in Who Viewed Me)
+- [ ] Hide from Search option (profile only visible to liked/matched users)
+- [ ] Self-destructing messages (1h / 24h / 7d timer)
+- [ ] End-to-end encryption trust badge on chat windows
+- [ ] Homepage "Your Privacy is Sacred" section with 5 bullet points
+- [ ] Confirm display name / alias enforced (no real name required)
+
+### Geo-Based Pricing & VIP Tier
+- [ ] IP geolocation via ip-api.com to detect user country
+- [ ] Localized pricing display: SAR, AED, KWD, QAR, BHD, EGP, USD
+- [ ] VIP tier: $29.99/month (priority placement, see who liked you, unlimited likes, VIP badge)
+- [ ] Update Stripe products.ts with Premium + VIP tiers
+- [ ] Update Pricing page with geo-detected local currency and two-tier cards
+- [ ] Khatba comparison table on homepage
+
+### Women-First UX
+- [ ] Women-only first message (Bumble-style enforcement in messages router)
+- [ ] "Who Liked Me" page — free for women, premium-gated for men
+- [ ] Profile verification badge (optional, free for women)
+- [ ] Block & Report with instant hide from feed
+- [ ] Homepage "Built for Sisters First" section
+
+### Arabic / RTL Support
+- [ ] Language context (EN/AR) with localStorage persistence
+- [ ] Auto-detect Arabic browser language or Gulf IP → default to Arabic
+- [ ] Language toggle in Navbar
+- [ ] RTL layout support (dir="rtl", Tailwind RTL classes)
+- [ ] Full Arabic translations for all marketing copy
+- [ ] Arabic hero copy on homepage
+- [ ] SAR default pricing for Arabic users
+
+### Trust Signals & Social Proof
+- [ ] "18+ Verified" and "Shariah-Compliant" badges in hero
+- [ ] Animated member counter ("Join 10,000+ Muslims")
+- [ ] Testimonials section with anonymous success stories
+- [ ] "Success Stories" section on homepage
+- [ ] Blog posts: 3 SEO-targeted articles at /blog

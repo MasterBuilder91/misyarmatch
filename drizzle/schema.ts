@@ -58,8 +58,11 @@ export const profiles = mysqlTable("profiles", {
   photoKey: text("photoKey"),
   isPhotoPublic: boolean("isPhotoPublic").default(false).notNull(),
   isProfileVisible: boolean("isProfileVisible").default(true).notNull(),
-  subscriptionTier: mysqlEnum("subscriptionTier", ["free", "premium"]).default("free").notNull(),
+  subscriptionTier: mysqlEnum("subscriptionTier", ["free", "premium", "vip"]).default("free").notNull(),
   premiumExpiresAt: timestamp("premiumExpiresAt"),
+  invisibleMode: boolean("invisibleMode").default(false).notNull(),
+  hideFromSearch: boolean("hideFromSearch").default(false).notNull(),
+  isVerified: boolean("isVerified").default(false).notNull(),
   dailyChatSecondsUsed: int("dailyChatSecondsUsed").default(0).notNull(),
   dailyChatResetAt: timestamp("dailyChatResetAt"),
   isImported: boolean("isImported").default(false).notNull(),
@@ -189,7 +192,7 @@ export const payments = mysqlTable("payments", {
   amount: decimal("amount", { precision: 10, scale: 2 }),
   currency: varchar("currency", { length: 10 }).default("gbp"),
   status: mysqlEnum("status", ["pending", "succeeded", "failed", "refunded"]).default("pending"),
-  tierPurchased: mysqlEnum("tierPurchased", ["premium"]).default("premium"),
+  tierPurchased: mysqlEnum("tierPurchased", ["premium", "vip"]).default("premium"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
 });
 

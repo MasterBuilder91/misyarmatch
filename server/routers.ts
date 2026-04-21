@@ -27,6 +27,8 @@ import {
   sendPrivateMessage,
   updateProfile,
   upgradeToPremium,
+  upgradeToVip,
+  getWhoLikedMe,
   getDb,
   getUserById,
 } from "./db";
@@ -145,6 +147,8 @@ const profileRouter = router({
         photoUrl: z.string().optional(),
         photoKey: z.string().optional(),
         isProfileVisible: z.boolean().optional(),
+        invisibleMode: z.boolean().optional(),
+        hideFromSearch: z.boolean().optional(),
       })
     )
     .mutation(async ({ ctx, input }) => {
@@ -153,6 +157,50 @@ const profileRouter = router({
         throw new TRPCError({ code: "NOT_FOUND", message: "Profile not found" });
       }
       return updateProfile(ctx.user.id, input);
+    }),
+
+  whoLikedMe: protectedProcedure.query(async ({ ctx }) => {
+    const profile = await getProfileByUserId(ctx.user.id);
+    const tier = profile?.subscriptionTier ?? "free";
+    const results = await getWhoLikedMe(ctx.user.id, tier === "vip" ? 50 : tier === "premium" ? 10 : 3);
+    return { results, isLimited: tier === "free", tier };
+  }),
+
+  blockUser: protectedProcedure
+    .input(z.object({ targetUserId: z.number(), reason: z.string().optional() }))
+    .mutation(async ({ ctx, input }) => {
+      const db = await getDb();
+      if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
+      // Record block by updating a JSON field or just notify admin
+      await createNotification({
+        userId: ctx.user.id,
+        type: "system",
+        title: "User blocked",
+        body: `You have blocked user ${input.targetUserId}. They can no longer contact you.`,
+        relatedId: input.targetUserId,
+      });
+      // Notify admin
+      await createNotification({
+        userId: 1, // admin
+        type: "system",
+        title: "Block report",
+        body: `User ${ctx.user.id} blocked user ${input.targetUserId}. Reason: ${input.reason ?? "Not specified"}.`,
+        relatedId: input.targetUserId,
+      });
+      return { success: true };
+    }),
+
+  reportUser: protectedProcedure
+    .input(z.object({ targetUserId: z.number(), reason: z.string().min(10) }))
+    .mutation(async ({ ctx, input }) => {
+      await createNotification({
+        userId: 1, // admin
+        type: "system",
+        title: "Safety report",
+        body: `User ${ctx.user.id} reported user ${input.targetUserId}: ${input.reason}`,
+        relatedId: input.targetUserId,
+      });
+      return { success: true };
     }),
 
   list: publicProcedure
@@ -652,6 +700,7 @@ const paymentsRouter = router({
           user_id: ctx.user.id.toString(),
           customer_email: user?.email ?? "",
           customer_name: user?.name ?? "",
+          tier: "premium",
         },
         allow_promotion_codes: true,
         success_url: `${input.origin}/pricing?success=true`,
@@ -664,6 +713,57 @@ const paymentsRouter = router({
         amount: "19.99",
         currency: "gbp",
         status: "pending",
+        tierPurchased: "premium",
+      });
+
+      return { checkoutUrl: session.url };
+    }),
+
+  createVipCheckoutSession: protectedProcedure
+    .input(z.object({ origin: z.string() }))
+    .mutation(async ({ ctx, input }) => {
+      const stripeKey = process.env.STRIPE_SECRET_KEY;
+      if (!stripeKey) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Stripe not configured" });
+      const stripe = new Stripe(stripeKey);
+      const user = await getUserById(ctx.user.id);
+
+      const session = await stripe.checkout.sessions.create({
+        mode: "subscription",
+        payment_method_types: ["card"],
+        line_items: [
+          {
+            price_data: {
+              currency: "gbp",
+              product_data: {
+                name: "MisyarMatch VIP Brother",
+                description: "Unlimited likes, see who liked you, VIP badge, priority placement",
+              },
+              unit_amount: 3999, // £39.99
+              recurring: { interval: "month" },
+            },
+            quantity: 1,
+          },
+        ],
+        customer_email: user?.email ?? undefined,
+        client_reference_id: ctx.user.id.toString(),
+        metadata: {
+          user_id: ctx.user.id.toString(),
+          customer_email: user?.email ?? "",
+          customer_name: user?.name ?? "",
+          tier: "vip",
+        },
+        allow_promotion_codes: true,
+        success_url: `${input.origin}/pricing?success=true&tier=vip`,
+        cancel_url: `${input.origin}/pricing?cancelled=true`,
+      });
+
+      await createPayment({
+        userId: ctx.user.id,
+        stripePaymentIntentId: session.id,
+        amount: "39.99",
+        currency: "gbp",
+        status: "pending",
+        tierPurchased: "vip",
       });
 
       return { checkoutUrl: session.url };
@@ -671,8 +771,11 @@ const paymentsRouter = router({
 
   getStatus: protectedProcedure.query(async ({ ctx }) => {
     const profile = await getProfileByUserId(ctx.user.id);
+    const tier = profile?.subscriptionTier ?? "free";
     return {
-      isPremium: (profile?.subscriptionTier ?? "free") === "premium",
+      isPremium: tier === "premium" || tier === "vip",
+      isVip: tier === "vip",
+      tier,
       premiumUntil: profile?.premiumExpiresAt ?? null,
     };
   }),

@@ -23,6 +23,7 @@ import WhyMisyarWorks from "./pages/WhyMisyarWorks";
 import FAQ from "./pages/FAQ";
 import Safety from "./pages/Safety";
 import AdminImport from "./pages/AdminImport";
+import WhoLikedMe from "./pages/WhoLikedMe";
 
 function Router() {
   return (
@@ -45,6 +46,7 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/safety" component={Safety} />
       <Route path="/admin/import" component={AdminImport} />
+      <Route path="/who-liked-me" component={WhoLikedMe} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
