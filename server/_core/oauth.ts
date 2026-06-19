@@ -14,13 +14,14 @@ export function registerOAuthRoutes(app: Express) {
     const code = getQueryParam(req, "code");
     const state = getQueryParam(req, "state");
 
-    if (!code || !state) {
-      res.status(400).json({ error: "code and state are required" });
+    if (!code) {
+      res.status(400).json({ error: "code is required" });
       return;
     }
 
     try {
-      const tokenResponse = await sdk.exchangeCodeForToken(code, state);
+      const redirectUri = `${req.protocol}://${req.get("host")}/api/oauth/callback`;
+      const tokenResponse = await sdk.exchangeCodeForToken(code, redirectUri);
       const userInfo = await sdk.getUserInfo(tokenResponse.accessToken);
 
       if (!userInfo.openId) {
@@ -32,7 +33,7 @@ export function registerOAuthRoutes(app: Express) {
         openId: userInfo.openId,
         name: userInfo.name || null,
         email: userInfo.email ?? null,
-        loginMethod: userInfo.loginMethod ?? userInfo.platform ?? null,
+        loginMethod: "google",
         lastSignedIn: new Date(),
       });
 
