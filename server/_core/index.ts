@@ -31,6 +31,8 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
 
 async function startServer() {
   const app = express();
+  // Trust Railway's proxy so req.protocol correctly reports "https"
+  app.set("trust proxy", 1);
   const server = createServer(app);
   // Register Stripe webhook BEFORE express.json() so raw body is available for signature verification
   registerStripeWebhook(app);
