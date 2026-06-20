@@ -42,6 +42,7 @@ export function Footer() {
               <li><Link href="/what-is-misyar" className="hover:text-rose-400 transition-colors">What Is Misyar?</Link></li>
               <li><Link href="/how-it-works" className="hover:text-rose-400 transition-colors">How It Works</Link></li>
               <li><Link href="/why-misyar-works" className="hover:text-rose-400 transition-colors">Why Misyar Works</Link></li>
+              <li><Link href="/you-do-misyar-already" className="hover:text-rose-400 transition-colors">You Already Practice Misyar</Link></li>
               <li><Link href="/faq" className="hover:text-rose-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>

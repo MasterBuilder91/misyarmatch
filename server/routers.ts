@@ -337,12 +337,21 @@ const messagesRouter = router({
       if (match.brotherUserId !== ctx.user.id && match.sisterUserId !== ctx.user.id) {
         throw new TRPCError({ code: "FORBIDDEN" });
       }
+      // Paywall: brothers on the free tier cannot message until they upgrade.
+      // Sisters can always message for free.
+      const myProfile = await getProfileByUserId(ctx.user.id);
+      if (myProfile?.gender === "brother" && (myProfile.subscriptionTier ?? "free") === "free") {
+        throw new TRPCError({
+          code: "FORBIDDEN",
+          message: "Upgrade to Premium to start messaging matches.",
+        });
+      }
+
       await sendPrivateMessage(input.matchId, ctx.user.id, input.content);
 
       // Notify recipient
       const otherUserId =
         match.brotherUserId === ctx.user.id ? match.sisterUserId : match.brotherUserId;
-      const myProfile = await getProfileByUserId(ctx.user.id);
       await createNotification({
         userId: otherUserId,
         type: "new_message",

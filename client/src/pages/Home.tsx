@@ -117,17 +117,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Stats Counter */}
+      {/* Misyar in Context — real, sourced facts (not platform stats) */}
       <section className="py-10 bg-white border-b border-rose-100">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <CounterStat target={10000} suffix="+" label={language === "ar" ? "عضو مسجل" : "Registered Members"} />
-            <CounterStat target={43} suffix="%" label={language === "ar" ? "من المملكة المتحدة" : "From the UK"} />
-            <CounterStat target={850} suffix="+" label={language === "ar" ? "تطابق ناجح" : "Successful Matches"} />
-            <CounterStat target={9} suffix=" min" label={language === "ar" ? "متوسط وقت الجلسة" : "Avg. Session Time"} />
+          <p className="text-center text-xs uppercase tracking-wider text-gray-400 mb-6">
+            {language === "ar" ? "المسيار في العالم العربي اليوم" : "Misyar in the Arab world today"}
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-rose-700">7/10</div>
+              <p className="mt-1 text-sm text-gray-500">
+                {language === "ar"
+                  ? "من عقود الزواج في بعض المناطق هي عقود مسيار، وفق مسؤولي زواج سعوديين"
+                  : "of marriage contracts in some areas are reportedly misyar, per Saudi marriage officials"}
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-rose-700">{language === "ar" ? "عقود" : "Decades"}</div>
+              <p className="mt-1 text-sm text-gray-500">
+                {language === "ar"
+                  ? "المسيار معترف به قانونياً في المملكة العربية السعودية منذ عقود"
+                  : "Misyar has been legally recognized in Saudi Arabia for decades"}
+              </p>
+            </div>
+            <div className="text-center col-span-2 md:col-span-1">
+              <div className="text-3xl md:text-4xl font-bold text-rose-700">{language === "ar" ? "واقع منتشر" : "Widespread"}</div>
+              <p className="mt-1 text-sm text-gray-500">
+                {language === "ar"
+                  ? "وصفه أكاديميون بأنه \"واقع اجتماعي منتشر\" في المجتمع الخليجي"
+                  : 'Described by academics as "a widespread social reality" across Gulf society'}
+              </p>
+            </div>
           </div>
+          <p className="text-center text-[11px] text-gray-400 mt-6">
+            {language === "ar"
+              ? "المصادر: عرب نيوز، ذا أراب ويكلي"
+              : "Sources: Arab News, The Arab Weekly"}
+          </p>
         </div>
       </section>
+
+      {/* Trust Stats Counter intentionally removed — no fabricated platform metrics.
+          Add real CounterStat blocks back here once there's genuine member/match data to report. */}
 
       {/* Privacy Section — "Your Privacy is Sacred" */}
       <section className="py-16 bg-gradient-to-br from-gray-900 to-rose-950 text-white" dir={isRTL ? "rtl" : "ltr"}>

@@ -87,13 +87,13 @@ export default function ProfileView() {
           <div className="bg-white rounded-3xl shadow-sm border border-rose-100 overflow-hidden">
 
             {/* Photo header */}
-            <div className="relative h-48 bg-gradient-to-br from-rose-100 to-blush flex items-center justify-center">
+            <div className="relative h-80 bg-gradient-to-br from-rose-100 to-blush flex items-center justify-center">
               {profile.photoUrl ? (
                 showPhoto ? (
                   <img
                     src={profile.photoUrl}
                     alt={profile.displayName ?? "Profile"}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center">
