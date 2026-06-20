@@ -87,14 +87,23 @@ export default function ProfileView() {
           <div className="bg-white rounded-3xl shadow-sm border border-rose-100 overflow-hidden">
 
             {/* Photo header */}
-            <div className="relative h-80 bg-gradient-to-br from-rose-100 to-blush flex items-center justify-center">
+            <div className="relative h-80 bg-gradient-to-br from-rose-100 to-blush flex items-center justify-center overflow-hidden">
               {profile.photoUrl ? (
                 showPhoto ? (
-                  <img
-                    src={profile.photoUrl}
-                    alt={profile.displayName ?? "Profile"}
-                    className="w-full h-full object-cover object-top"
-                  />
+                  <>
+                    {/* Blurred fill so the photo never gets cropped, regardless of its aspect ratio */}
+                    <img
+                      src={profile.photoUrl}
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 opacity-60"
+                    />
+                    <img
+                      src={profile.photoUrl}
+                      alt={profile.displayName ?? "Profile"}
+                      className="relative w-full h-full object-contain"
+                    />
+                  </>
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center">
                     <div className="w-24 h-24 rounded-full bg-white/50 backdrop-blur-xl flex items-center justify-center mb-2">
