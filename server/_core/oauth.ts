@@ -20,7 +20,8 @@ export function registerOAuthRoutes(app: Express) {
     }
 
     try {
-      const redirectUri = `${req.protocol}://${req.get("host")}/api/oauth/callback`;
+      const protocol = process.env.NODE_ENV === "production" ? "https" : req.protocol;
+      const redirectUri = `${protocol}://${req.get("host")}/api/oauth/callback`;
       const tokenResponse = await sdk.exchangeCodeForToken(code, redirectUri);
       const userInfo = await sdk.getUserInfo(tokenResponse.accessToken);
 
