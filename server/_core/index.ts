@@ -1,4 +1,12 @@
 import "dotenv/config";
+import { webcrypto } from "node:crypto";
+
+// Polyfill global crypto for Node 18 (jose library requires Web Crypto API)
+if (!globalThis.crypto) {
+  // @ts-expect-error - assigning Node's webcrypto to globalThis.crypto
+  globalThis.crypto = webcrypto;
+}
+
 import express from "express";
 import { createServer } from "http";
 import net from "net";
