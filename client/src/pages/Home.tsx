@@ -89,9 +89,6 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{background:'radial-gradient(circle, #B8965A 0%, transparent 70%)', transform:'translate(30%,-30%)'}} />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{background:'radial-gradient(circle, #A02540 0%, transparent 70%)', transform:'translate(-30%,30%)'}} />
         </div>
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{background:'radial-gradient(circle, #B8965A 0%, transparent 70%)', transform:'translate(30%,-30%)'}} />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{background:'radial-gradient(circle, #A02540 0%, transparent 70%)', transform:'translate(-30%,30%)'}} />
-        </div>
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             {/* Eyebrow */}
