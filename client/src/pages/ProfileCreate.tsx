@@ -20,6 +20,14 @@ type Circumstances =
   | "working_abroad"
   | "financial_constraints";
 type MaritalStatus = "never_married" | "divorced" | "widowed" | "married_seeking_second";
+type FaithBackground = "muslim" | "christian" | "jewish" | "prefer_not_to_say";
+
+const FAITH_OPTIONS: { value: FaithBackground; label: string; desc: string }[] = [
+  { value: "muslim", label: "Muslim", desc: "I am Muslim" },
+  { value: "christian", label: "Christian", desc: "I am Christian — open to Islamic marriage framework" },
+  { value: "jewish", label: "Jewish", desc: "I am Jewish — open to Islamic marriage framework" },
+  { value: "prefer_not_to_say", label: "Prefer not to say", desc: "I prefer to keep this private" },
+];
 
 const MARITAL_OPTIONS: { value: MaritalStatus; label: string }[] = [
   { value: "never_married", label: "Never Married" },
@@ -47,9 +55,11 @@ export default function ProfileCreate() {
   const [displayName, setDisplayName] = useState("");
   const [bio, setBio] = useState("");
   const [location, setLocation] = useState("");
-  const [country, setCountry] = useState("United Kingdom");
+  const [country, setCountry] = useState("United States");
   const [maritalStatus, setMaritalStatus] = useState<MaritalStatus | null>(null);
   const [occupation, setOccupation] = useState("");
+  const [faithBackground, setFaithBackground] = useState<FaithBackground>("muslim");
+  const [openToInterfaith, setOpenToInterfaith] = useState(false);
   const [photoUrl, setPhotoUrl] = useState("");
   const [photoKey, setPhotoKey] = useState("");
 
@@ -102,6 +112,8 @@ export default function ProfileCreate() {
         country: country || undefined,
         maritalStatus: maritalStatus || undefined,
         occupation: occupation || undefined,
+        faithBackground: faithBackground,
+        openToInterfaith: openToInterfaith,
         photoUrl: photoUrl || undefined,
         photoKey: photoKey || undefined,
       });
@@ -308,6 +320,44 @@ export default function ProfileCreate() {
                           className="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-gray-900 focus:outline-none focus:ring-2 focus:ring-rose-400"
                         />
                       </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Faith Background</label>
+                      <p className="text-xs text-gray-400 mb-3">MisyarMatch welcomes Muslim, Christian, and Jewish members. Under Islamic law, Muslim men may marry women of the book. All members agree to our faith-respectful framework.</p>
+                      <div className="space-y-2">
+                        {FAITH_OPTIONS.map((opt) => (
+                          <button
+                            key={opt.value}
+                            type="button"
+                            onClick={() => setFaithBackground(opt.value)}
+                            className={`w-full flex items-center gap-3 p-3 rounded-xl border-2 text-left transition-all ${
+                              faithBackground === opt.value
+                                ? "border-rose-600 bg-rose-50"
+                                : "border-gray-200 hover:border-rose-300"
+                            }`}
+                          >
+                            <div>
+                              <div className="font-semibold text-gray-900 text-sm">{opt.label}</div>
+                              <div className="text-xs text-gray-500">{opt.desc}</div>
+                            </div>
+                            {faithBackground === opt.value && <CheckCircle className="w-5 h-5 text-rose-600 ml-auto" />}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3 p-3 rounded-xl border border-gray-200">
+                      <input
+                        type="checkbox"
+                        id="openToInterfaith"
+                        checked={openToInterfaith}
+                        onChange={(e) => setOpenToInterfaith(e.target.checked)}
+                        className="w-4 h-4 accent-rose-600"
+                      />
+                      <label htmlFor="openToInterfaith" className="text-sm text-gray-700 cursor-pointer">
+                        I am open to interfaith matches (within Islamic guidelines)
+                      </label>
                     </div>
 
                     <div>

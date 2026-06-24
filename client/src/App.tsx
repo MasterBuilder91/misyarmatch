@@ -32,7 +32,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/auth" component={Auth} />
       <Route path="/browse" component={Browse} />
-      <Route path="/speed-chat" component={SpeedChat} />
+      {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
       <Route path="/messages/:matchId" component={Messages} />

@@ -53,6 +53,13 @@ export const profiles = mysqlTable("profiles", {
     "financial_constraints",
   ]),
   misyarIntention: text("misyarIntention"),
+  faithBackground: mysqlEnum("faithBackground", [
+    "muslim",
+    "christian",
+    "jewish",
+    "prefer_not_to_say",
+  ]).default("muslim").notNull(),
+  openToInterfaith: boolean("openToInterfaith").default(false).notNull(),
   occupation: varchar("occupation", { length: 100 }),
   photoUrl: text("photoUrl"),
   photoKey: text("photoKey"),

@@ -33,7 +33,6 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/browse", label: t("nav.browse") },
-    { href: "/speed-chat", label: t("nav.speedChat") },
     { href: "/what-is-misyar", label: t("nav.whatIsMisyar") },
     { href: "/pricing", label: t("nav.pricing") },
   ];

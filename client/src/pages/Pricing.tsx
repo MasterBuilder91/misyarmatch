@@ -20,16 +20,24 @@ const GEO_PRICING: Record<string, { currency: string; symbol: string; premium: n
   EG: { currency: "EGP", symbol: "E£", premium: 149.99, vip: 249.99, countryName: "Egypt", countryNameAr: "مصر" },
   PK: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Pakistan", countryNameAr: "باكستان" },
   BD: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Bangladesh", countryNameAr: "بنغلاديش" },
+  US: { currency: "USD", symbol: "$", premium: 9.99, vip: 19.99, countryName: "United States", countryNameAr: "الولايات المتحدة" },
+  CA: { currency: "CAD", symbol: "CA$", premium: 13.99, vip: 24.99, countryName: "Canada", countryNameAr: "كندا" },
+  GB: { currency: "GBP", symbol: "£", premium: 7.99, vip: 14.99, countryName: "United Kingdom", countryNameAr: "المملكة المتحدة" },
+  FR: { currency: "EUR", symbol: "€", premium: 9.99, vip: 18.99, countryName: "France", countryNameAr: "فرنسا" },
+  DE: { currency: "EUR", symbol: "€", premium: 9.99, vip: 18.99, countryName: "Germany", countryNameAr: "ألمانيا" },
+  AU: { currency: "AUD", symbol: "A$", premium: 14.99, vip: 27.99, countryName: "Australia", countryNameAr: "أستراليا" },
+  MY: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Malaysia", countryNameAr: "ماليزيا" },
+  ID: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Indonesia", countryNameAr: "إندونيسيا" },
 };
-const DEFAULT_PRICING = { currency: "GBP", symbol: "£", premium: 9.99, vip: 19.99, countryName: "Global", countryNameAr: "عالمي" };
+const DEFAULT_PRICING = { currency: "USD", symbol: "$", premium: 9.99, vip: 19.99, countryName: "Global", countryNameAr: "عالمي" };
 
 async function detectCountry(): Promise<string> {
   try {
     const res = await fetch("https://ip-api.com/json/?fields=countryCode", { signal: AbortSignal.timeout(3000) });
     const data = await res.json();
-    return data.countryCode ?? "GB";
+    return data.countryCode ?? "US";
   } catch {
-    return "GB";
+    return "US";
   }
 }
 
@@ -38,7 +46,7 @@ export default function Pricing() {
   const search = useSearch();
   const { language, isRTL } = useLanguage();
   const [pricing, setPricing] = useState(DEFAULT_PRICING);
-  const [countryCode, setCountryCode] = useState("GB");
+  const [countryCode, setCountryCode] = useState("US");
 
   useEffect(() => {
     detectCountry().then((code) => {
