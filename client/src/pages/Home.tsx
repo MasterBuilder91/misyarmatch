@@ -67,52 +67,61 @@ export default function Home() {
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch — Halal Misyar Marriage for Serious Muslims"
-        description="The UK's most honest Islamic marriage platform. Find your misyar nikah partner with full transparency about circumstances. Private. Secure. Halal."
+        title="MisyarMatch — Halal Misyar Marriage. Honest. Private. Real."
+        description="The world's first dedicated misyar marriage platform for western Muslims. Find your partner with full transparency. Private, secure, and scholar-backed."
         canonical="/"
       />
 
       {/* Hero */}
-      <section className="gradient-hero text-white py-20 md:py-28 relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-white/20 blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-white/10 blur-3xl" />
+      <section className="gradient-hero text-white py-24 md:py-32 relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
+        {/* Ambient orbs */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{background:'radial-gradient(circle, #B8965A 0%, transparent 70%)', transform:'translate(30%,-30%)'}} />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{background:'radial-gradient(circle, #A02540 0%, transparent 70%)', transform:'translate(-30%,30%)'}} />
         </div>
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-sm font-medium">
-              <Heart className="w-4 h-4 fill-current" />
+            {/* Eyebrow */}
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase" style={{background:'rgba(184,150,90,0.15)', border:'1px solid rgba(184,150,90,0.3)', color:'#D4AF7A'}}>
+              <Heart className="w-3 h-3 fill-current" />
               <span>{t("hero.badge")}</span>
             </div>
-            <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              {t("hero.line1")}<br />{t("hero.line2")}<br />
-              <span className="text-rose-200">{t("hero.line3")}</span>
+            {/* Headline */}
+            <h1 className="font-serif font-light mb-6 leading-none" style={{fontSize:'clamp(3rem,8vw,5.5rem)', letterSpacing:'-0.03em'}}>
+              {t("hero.line1")}<br />
+              {t("hero.line2")}<br />
+              <em style={{color:'#D4AF7A', fontStyle:'italic'}}>{t("hero.line3")}</em>
             </h1>
-            <p className="text-lg md:text-xl text-rose-100 mb-4 leading-relaxed max-w-2xl mx-auto">
+            {/* Gold divider */}
+            <div className="flex justify-center mb-8">
+              <span className="block w-12 h-px" style={{background:'linear-gradient(90deg, transparent, #B8965A, transparent)'}} />
+            </div>
+            <p className="text-base md:text-lg mb-3 leading-relaxed max-w-xl mx-auto" style={{color:'rgba(255,255,255,0.8)'}}>
               {t("hero.sub1")}
             </p>
-            <p className="text-rose-200 mb-10 max-w-xl mx-auto">
+            <p className="text-sm mb-10 max-w-lg mx-auto" style={{color:'rgba(255,255,255,0.5)'}}>
               {t("hero.sub2")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               {isAuthenticated ? (
-                <Button asChild size="lg" className="bg-white text-rose-800 hover:bg-rose-50 font-semibold shadow-lg">
+                <Button asChild size="lg" className="font-medium shadow-gold" style={{background:'linear-gradient(135deg,#8B6A35,#B8965A,#D4AF7A)', color:'#0D0B14', border:'none'}}>
                   <Link href="/browse">
                     {t("hero.cta.browse")} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
               ) : (
-                <Button asChild size="lg" className="bg-white text-rose-800 hover:bg-rose-50 font-semibold shadow-lg">
+                <Button asChild size="lg" className="font-medium shadow-gold" style={{background:'linear-gradient(135deg,#8B6A35,#B8965A,#D4AF7A)', color:'#0D0B14', border:'none'}}>
                   <a href={getLoginUrl()}>
                     {t("hero.cta.join")} <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
               )}
-              <Button asChild size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 bg-transparent">
+              <Button asChild size="lg" variant="outline" style={{borderColor:'rgba(255,255,255,0.25)', color:'white', background:'rgba(255,255,255,0.07)'}}>
                 <Link href="/what-is-misyar">{t("hero.cta.whatIsMisyar")}</Link>
               </Button>
             </div>
-            <p className="mt-6 text-rose-300 text-sm">{t("hero.free")}</p>
+            <p className="mt-5 text-xs tracking-wide" style={{color:'rgba(255,255,255,0.35)'}}>{t("hero.free")}</p>
           </div>
         </div>
       </section>

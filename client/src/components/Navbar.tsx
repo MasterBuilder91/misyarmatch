@@ -46,15 +46,15 @@ export function Navbar() {
     : [];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-rose-100 shadow-sm" dir={isRTL ? "rtl" : "ltr"}>
+    <nav className="sticky top-0 z-50 bg-white/96 backdrop-blur-md border-b shadow-ink" style={{borderBottomColor:'#E2DDD6'}} dir={isRTL ? "rtl" : "ltr"}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-8 h-8 rounded-full gradient-rose flex items-center justify-center shadow-rose">
               <Heart className="w-4 h-4 text-white fill-white" />
             </div>
-            <span className="font-serif font-bold text-xl text-rose-900 group-hover:text-rose-700 transition-colors">
+            <span className="font-serif font-bold text-xl text-[#0D0B14] group-hover:text-[#7C1D2E] transition-colors tracking-tight">
               MisyarMatch
             </span>
           </Link>
@@ -67,8 +67,8 @@ export function Navbar() {
                 href={link.href}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   location === link.href
-                    ? "text-rose-700 bg-rose-50"
-                    : "text-gray-600 hover:text-rose-700 hover:bg-rose-50"
+                    ? "text-[#7C1D2E] bg-[#F0E4E8]"
+                    : "text-[#4A4558] hover:text-[#7C1D2E] hover:bg-[#F0E4E8]"
                 }`}
               >
                 {link.label}
@@ -80,8 +80,8 @@ export function Navbar() {
                 href={link.href}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1.5 ${
                   location === link.href
-                    ? "text-rose-700 bg-rose-50"
-                    : "text-gray-600 hover:text-rose-700 hover:bg-rose-50"
+                    ? "text-[#7C1D2E] bg-[#F0E4E8]"
+                    : "text-[#4A4558] hover:text-[#7C1D2E] hover:bg-[#F0E4E8]"
                 }`}
               >
                 <link.icon className="w-4 h-4" />

@@ -36,68 +36,77 @@
   --font-serif: var(--font-playfair);
 }
 
+/* ─── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-  /* Valentine Romantic Palette — MisyarMatch */
-  --radius: 0.625rem;
-  --background: oklch(0.985 0.006 60);
-  --foreground: oklch(0.18 0.025 15);
-  --card: oklch(1.0 0.0 0);
-  --card-foreground: oklch(0.18 0.025 15);
-  --popover: oklch(1.0 0.0 0);
-  --popover-foreground: oklch(0.18 0.025 15);
-  /* Deep Rose Primary */
-  --primary: oklch(0.42 0.18 15);
-  --primary-foreground: oklch(0.98 0.005 60);
-  /* Blush Secondary */
-  --secondary: oklch(0.93 0.04 15);
-  --secondary-foreground: oklch(0.35 0.12 15);
-  /* Cream Muted */
-  --muted: oklch(0.95 0.012 60);
-  --muted-foreground: oklch(0.52 0.04 15);
-  /* Burgundy Accent */
-  --accent: oklch(0.90 0.055 15);
-  --accent-foreground: oklch(0.35 0.14 15);
-  --destructive: oklch(0.55 0.22 25);
-  --destructive-foreground: oklch(0.98 0.0 0);
-  --border: oklch(0.88 0.022 15);
-  --input: oklch(0.91 0.018 15);
-  --ring: oklch(0.42 0.18 15);
-  --chart-1: oklch(0.42 0.18 15);
-  --chart-2: oklch(0.60 0.14 30);
-  --chart-3: oklch(0.75 0.08 45);
-  --chart-4: oklch(0.85 0.06 60);
-  --chart-5: oklch(0.55 0.12 350);
-  /* Brand tokens */
-  --rose-deep: #9f1239;
-  --rose-medium: #be123c;
-  --blush: #fce7f3;
-  --cream: #fdf6f0;
-  --burgundy: #6b1a2a;
-  --gold: #b5860d;
+  /* ── MisyarMatch Premium Palette ── */
+  --radius: 0.75rem;
+
+  /* Deep Midnight + Gold — luxury, trust, discretion */
+  --ink:        #0D0B14;   /* near-black with violet undertone */
+  --ink-soft:   #1C1826;
+  --surface:    #F7F4F0;   /* warm parchment — not stark white */
+  --surface-2:  #EFEBE4;   /* slightly deeper parchment */
+  --gold:       #B8965A;   /* antique gold — warm, not garish */
+  --gold-light: #D4AF7A;
+  --gold-pale:  #F5ECD9;
+  --crimson:    #7C1D2E;   /* deep crimson — replaces the loud rose */
+  --crimson-mid:#A02540;
+  --crimson-soft:#F0E4E8;
+  --slate:      #4A4558;
+  --slate-light:#8B879A;
+  --white:      #FFFFFF;
+
+  /* Mapped to Tailwind tokens */
+  --background: var(--surface);
+  --foreground: var(--ink);
+  --card: var(--white);
+  --card-foreground: var(--ink);
+  --popover: var(--white);
+  --popover-foreground: var(--ink);
+  --primary: var(--crimson);
+  --primary-foreground: var(--white);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--slate);
+  --accent: var(--gold-pale);
+  --accent-foreground: var(--crimson);
+  --destructive: #C0392B;
+  --destructive-foreground: var(--white);
+  --border: #E2DDD6;
+  --input: #EDE9E2;
+  --ring: var(--crimson);
+  --chart-1: var(--crimson);
+  --chart-2: var(--gold);
+  --chart-3: var(--slate);
+  --chart-4: var(--crimson-mid);
+  --chart-5: var(--gold-light);
+
+  /* Typography */
   --font-inter: 'Inter', system-ui, sans-serif;
-  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-playfair: 'Cormorant Garamond', Georgia, serif;
 }
 
 .dark {
-  --background: oklch(0.12 0.02 15);
-  --foreground: oklch(0.95 0.008 15);
-  --card: oklch(0.16 0.02 15);
-  --card-foreground: oklch(0.95 0.008 15);
-  --popover: oklch(0.16 0.02 15);
-  --popover-foreground: oklch(0.95 0.008 15);
-  --primary: oklch(0.65 0.18 15);
-  --primary-foreground: oklch(0.12 0.02 15);
-  --secondary: oklch(0.22 0.04 15);
-  --secondary-foreground: oklch(0.88 0.04 15);
-  --muted: oklch(0.22 0.02 15);
-  --muted-foreground: oklch(0.65 0.04 15);
-  --accent: oklch(0.25 0.06 15);
-  --accent-foreground: oklch(0.88 0.06 15);
-  --destructive: oklch(0.55 0.22 25);
-  --destructive-foreground: oklch(0.98 0.0 0);
-  --border: oklch(0.28 0.03 15);
-  --input: oklch(0.25 0.02 15);
-  --ring: oklch(0.65 0.18 15);
+  --background: var(--ink);
+  --foreground: #EDE9E2;
+  --card: var(--ink-soft);
+  --card-foreground: #EDE9E2;
+  --popover: var(--ink-soft);
+  --popover-foreground: #EDE9E2;
+  --primary: var(--gold);
+  --primary-foreground: var(--ink);
+  --secondary: #2A2535;
+  --secondary-foreground: #C8C4D0;
+  --muted: #2A2535;
+  --muted-foreground: var(--slate-light);
+  --accent: #2A2535;
+  --accent-foreground: var(--gold-light);
+  --border: #2E2A38;
+  --input: #252030;
+  --ring: var(--gold);
 }
 
 @layer base {
@@ -108,11 +117,14 @@
     @apply bg-background text-foreground;
     font-family: var(--font-inter);
     font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-playfair);
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -128,63 +140,115 @@
 }
 
 @layer utilities {
-  .font-serif { font-family: var(--font-playfair); }
-  .font-sans { font-family: var(--font-inter); }
-  .photo-blur { filter: blur(14px); transition: filter 0.4s ease; }
-  .photo-reveal { filter: blur(0px); transition: filter 0.4s ease; }
-  .gradient-rose { background: linear-gradient(135deg, #9f1239 0%, #be123c 50%, #e11d48 100%); }
-  .gradient-hero { background: linear-gradient(135deg, #6b1a2a 0%, #9f1239 50%, #be123c 100%); }
-  .gradient-cream { background: linear-gradient(180deg, #fdf6f0 0%, #fce7f3 100%); }
-  .shadow-rose { box-shadow: 0 4px 24px rgba(159,18,57,0.15); }
-  .shadow-rose-lg { box-shadow: 0 8px 40px rgba(159,18,57,0.22); }
-  .text-rose-deep { color: #9f1239; }
-  .bg-rose-deep { background-color: #9f1239; }
-  .bg-blush { background-color: #fce7f3; }
-  .bg-cream { background-color: #fdf6f0; }
-  .text-burgundy { color: #6b1a2a; }
-  .bg-burgundy { background-color: #6b1a2a; }
-  .border-rose-deep { border-color: #9f1239; }
+  /* Typography */
+  .font-serif  { font-family: var(--font-playfair); }
+  .font-sans   { font-family: var(--font-inter); }
+
+  /* Photo privacy */
+  .photo-blur   { filter: blur(14px); transition: filter 0.5s ease; }
+  .photo-reveal { filter: blur(0px);  transition: filter 0.5s ease; }
+
+  /* Gradients — premium, dark, directional */
+  .gradient-hero {
+    background: linear-gradient(140deg, #0D0B14 0%, #1C1225 40%, #3B1328 75%, #7C1D2E 100%);
+  }
+  .gradient-rose {
+    background: linear-gradient(135deg, #7C1D2E 0%, #A02540 60%, #C0364F 100%);
+  }
+  .gradient-gold {
+    background: linear-gradient(135deg, #8B6A35 0%, #B8965A 50%, #D4AF7A 100%);
+  }
+  .gradient-cream {
+    background: linear-gradient(180deg, #F7F4F0 0%, #EFEBE4 100%);
+  }
+  .gradient-section {
+    background: linear-gradient(180deg, #F7F4F0 0%, #FDF9F5 100%);
+  }
+
+  /* Shadows */
+  .shadow-rose   { box-shadow: 0 4px 20px rgba(124,29,46,0.12); }
+  .shadow-rose-lg{ box-shadow: 0 8px 40px rgba(124,29,46,0.18); }
+  .shadow-gold   { box-shadow: 0 4px 20px rgba(184,150,90,0.20); }
+  .shadow-ink    { box-shadow: 0 4px 24px rgba(13,11,20,0.10); }
+  .shadow-ink-lg { box-shadow: 0 12px 48px rgba(13,11,20,0.16); }
+
+  /* Colour utilities */
+  .text-gold       { color: var(--gold); }
+  .text-gold-light { color: var(--gold-light); }
+  .text-crimson    { color: var(--crimson); }
+  .bg-crimson      { background-color: var(--crimson); }
+  .bg-gold-pale    { background-color: var(--gold-pale); }
+  .bg-cream        { background-color: var(--surface); }
+  .bg-surface-2    { background-color: var(--surface-2); }
+  .border-gold     { border-color: var(--gold); }
+  .border-crimson  { border-color: var(--crimson); }
+
+  /* Legacy compat — keep rose- classes pointing to crimson */
+  .text-rose-deep  { color: var(--crimson); }
+  .bg-rose-deep    { background-color: var(--crimson); }
+  .bg-blush        { background-color: var(--crimson-soft); }
+  .text-burgundy   { color: var(--crimson); }
+  .bg-burgundy     { background-color: var(--crimson); }
+  .border-rose-deep{ border-color: var(--crimson); }
+  .shadow-rose     { box-shadow: 0 4px 20px rgba(124,29,46,0.12); }
+
+  /* Glass card */
+  .glass {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+  .glass-dark {
+    background: rgba(13,11,20,0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Gold accent line — the signature element */
+  .gold-line {
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+  }
+
+  /* Subtle hover lift */
+  .lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(13,11,20,0.14);
+  }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
-
   .flex {
     min-height: 0;
     min-width: 0;
   }
-
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
-
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
