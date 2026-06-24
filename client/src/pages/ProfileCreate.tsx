@@ -282,7 +282,7 @@ export default function ProfileCreate() {
                           type="text"
                           value={location}
                           onChange={(e) => setLocation(e.target.value)}
-                          placeholder="e.g. London"
+                          placeholder="e.g. Houston, Toronto, Dubai"
                           className="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-gray-900 focus:outline-none focus:ring-2 focus:ring-rose-400"
                         />
                       </div>

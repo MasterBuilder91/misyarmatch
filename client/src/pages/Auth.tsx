@@ -37,7 +37,7 @@ export default function Auth() {
               Welcome to MisyarMatch
             </h1>
             <p className="text-gray-500 mb-8 text-sm leading-relaxed">
-              The UK's most honest Islamic marriage platform. Sign in to find your halal misyar partner.
+              The world's first dedicated misyar marriage platform. Sign in to find your halal misyar partner.
             </p>
 
             {/* Sign in button */}

@@ -7,7 +7,7 @@ export const PRODUCTS = {
   premiumBrother: {
     name: "MisyarMatch Premium Brother",
     description: "Unlimited Speed Chat, direct messaging, priority matching, and extended daily chat time.",
-    monthlyPriceGbp: 1999, // £19.99 in pence
+    monthlyPriceGbp: 999, // $9.99 in cents (USD default)
     currency: "gbp",
     interval: "month" as const,
     features: [

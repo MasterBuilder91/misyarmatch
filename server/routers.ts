@@ -692,12 +692,12 @@ const paymentsRouter = router({
         line_items: [
           {
             price_data: {
-              currency: "gbp",
+              currency: "usd",
               product_data: {
                 name: "MisyarMatch Premium Brother",
                 description: "Unlimited Speed Chat, direct messaging, priority matching",
               },
-              unit_amount: 1999, // £19.99
+              unit_amount: 999, // $9.99
               recurring: { interval: "month" },
             },
             quantity: 1,
@@ -719,8 +719,8 @@ const paymentsRouter = router({
       await createPayment({
         userId: ctx.user.id,
         stripePaymentIntentId: session.id,
-        amount: "19.99",
-        currency: "gbp",
+        amount: "9.99",
+        currency: "usd",
         status: "pending",
         tierPurchased: "premium",
       });
@@ -742,12 +742,12 @@ const paymentsRouter = router({
         line_items: [
           {
             price_data: {
-              currency: "gbp",
+              currency: "usd",
               product_data: {
                 name: "MisyarMatch VIP Brother",
                 description: "Unlimited likes, see who liked you, VIP badge, priority placement",
               },
-              unit_amount: 3999, // £39.99
+              unit_amount: 1999, // $19.99
               recurring: { interval: "month" },
             },
             quantity: 1,
@@ -769,8 +769,8 @@ const paymentsRouter = router({
       await createPayment({
         userId: ctx.user.id,
         stripePaymentIntentId: session.id,
-        amount: "39.99",
-        currency: "gbp",
+        amount: "19.99",
+        currency: "usd",
         status: "pending",
         tierPurchased: "vip",
       });

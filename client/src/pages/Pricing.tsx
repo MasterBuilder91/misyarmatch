@@ -155,7 +155,7 @@ export default function Pricing() {
                   <div className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">
                     {language === "ar" ? "مجاني" : "Free"}
                   </div>
-                  <div className="font-serif text-4xl font-bold text-gray-900">£0</div>
+                  <div className="font-serif text-4xl font-bold text-gray-900">$0</div>
                   <div className="text-gray-500 text-sm mt-1">
                     {language === "ar" ? "للأخوات دائماً" : "Forever for sisters. Always."}
                   </div>

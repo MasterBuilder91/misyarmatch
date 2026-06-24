@@ -335,7 +335,7 @@ export default function Home() {
                 {
                   label: language === "ar" ? "التكلفة" : "Cost",
                   khatba: language === "ar" ? "+5,000 ريال لكل تعريف" : "5,000+ SAR per introduction",
-                  mm: language === "ar" ? "من 37 ريال/شهر" : "From £9.99/month",
+                  mm: language === "ar" ? "من 37 ريال/شهر" : "From $9.99/month",
                   mmGood: true,
                 },
                 {
@@ -478,8 +478,8 @@ export default function Home() {
                 quote: language === "ar"
                   ? "أنا متزوج بالفعل. في كل تطبيق آخر كنت مضطراً لإخفاء ذلك أو يتم حظري فوراً. هنا، هو مجرد فلتر. وجدنا زواجنا الثاني هنا."
                   : "I'm already married. On every other app I had to hide it or get blocked immediately. Here, it's a filter. My wife and I found our second marriage here.",
-                name: language === "ar" ? "أخ من لندن" : "Brother from London",
-                detail: language === "ar" ? "تطابق عبر المحادثة السريعة" : "Matched via Speed Chat",
+                name: language === "ar" ? "أخ من لندن" : "Brother A., Houston",
+                detail: language === "ar" ? "تطابق عبر التصفح" : "Matched via Browse",
                 stars: 5,
               },
               {

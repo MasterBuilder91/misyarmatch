@@ -14,7 +14,7 @@ const BASE_URL = "https://www.misyarmatch.net";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 const SITE_NAME = "MisyarMatch";
 const DEFAULT_KEYWORDS =
-  "misyar marriage, misyar nikah, halal marriage app, Muslim marriage UK, misyar match, Islamic marriage, Muslim singles";
+  "misyar marriage, misyar nikah, halal marriage app, Muslim marriage, misyar match, Islamic marriage, Muslim singles, halal dating, second wife, nikah app, misyar partner";
 
 export function SEOHead({
   title,

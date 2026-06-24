@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-serif font-bold text-lg text-white">MisyarMatch</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              The UK's most honest Islamic marriage platform. No games. No pretending. Just halal.
+              The world's first dedicated misyar marriage platform. No games. No pretending. Just halal.
             </p>
             <p className="text-xs text-gray-500 mt-3">
               <a href="mailto:support@misyarmatch.net" className="hover:text-rose-400 transition-colors">

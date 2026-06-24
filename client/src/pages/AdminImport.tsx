@@ -118,8 +118,8 @@ export default function AdminImport() {
             <h2 className="font-semibold text-gray-900 mb-3">Expected CSV Format</h2>
             <div className="bg-gray-900 rounded-xl p-4 text-xs font-mono text-green-400 overflow-x-auto">
               <div>gender,display_name,age,location,country,marital_status,current_circumstances,bio,occupation,misyar_intention</div>
-              <div>brother,Ahmad,35,London,United Kingdom,divorced,ready_now,"Sincere brother seeking halal connection",Engineer,"Looking for a pious sister for misyar nikah"</div>
-              <div>sister,Fatima,28,Birmingham,United Kingdom,never_married,currently_studying,"Studying medicine","Medical Student","Open to misyar while I complete my studies"</div>
+              <div>brother,Ahmad,35,Houston,United States,divorced,ready_now,"Sincere brother seeking halal connection",Engineer,"Looking for a pious sister for misyar nikah"</div>
+              <div>sister,Fatima,28,Toronto,Canada,never_married,currently_studying,"Studying medicine","Medical Student","Open to misyar while I complete my studies"</div>
             </div>
             <div className="mt-3 text-xs text-gray-500">
               <strong>circumstances options:</strong> ready_now, currently_studying, going_through_divorce, already_married_seeking_second, working_abroad, financial_constraints
