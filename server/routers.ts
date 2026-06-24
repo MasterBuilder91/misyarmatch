@@ -695,7 +695,7 @@ const paymentsRouter = router({
               currency: "usd",
               product_data: {
                 name: "MisyarMatch Premium Brother",
-                description: "Unlimited Speed Chat, direct messaging, priority matching",
+                description: "Unlimited messaging, direct contact with matches, priority placement in Browse",
               },
               unit_amount: 999, // $9.99
               recurring: { interval: "month" },

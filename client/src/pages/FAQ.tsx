@@ -18,11 +18,11 @@ const FAQS = [
   },
   {
     q: "What are the six circumstances options?",
-    a: "Ready Now, Currently Studying, Going Through Divorce, Already Married Seeking Second Wife, Working Abroad, and Financial Constraints. Every member must choose one. It is shown as a badge on their profile and in Speed Chat before any conversation begins.",
+    a: "Ready Now, Currently Studying, Going Through Divorce, Already Married Seeking Second Wife, Working Abroad, and Financial Constraints. Every member must choose one. It is shown as a badge on their profile so both parties know exactly where the other stands before any conversation begins.",
   },
   {
-    q: "What is Speed Chat?",
-    a: "Speed Chat is an anonymous 5-minute text-only session with a random opposite-gender member. No photos. No video. No names. Their circumstances badge is shown before the first word. At the end of the session, both parties can choose to Connect or Skip. If both choose Connect, you match and can message privately.",
+    q: "What is mutual interest and how does matching work?",
+    a: "Browse member profiles and click 'Express Interest' on anyone you find compatible. If they express interest back, you have a mutual match and can message privately. Photos are only revealed on a mutual match — character comes before appearance.",
   },
   {
     q: "Why are photos blurred by default?",
@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: "What is the premium plan for brothers?",
-    a: "Brothers on the free tier have limited daily Speed Chat time. Premium brothers get extended chat time, direct messaging with matches, and priority matching in the Speed Chat queue. Sisters are always free — no premium tier for sisters.",
+    a: "Brothers on the free tier have limited daily messaging. Premium brothers get unlimited messaging, direct contact with matches, and priority placement in Browse. Sisters are always free — no premium tier for sisters, no exceptions.",
   },
   {
     q: "How do I report a concern?",
@@ -83,7 +83,7 @@ export default function FAQ() {
     <Layout>
       <SEOHead
         title="Frequently Asked Questions — MisyarMatch"
-        description="Answers to common questions about MisyarMatch, misyar marriage, Speed Chat, photo privacy, premium plans, and Islamic rulings."
+        description="Answers to common questions about MisyarMatch, misyar marriage, photo privacy, premium plans, and Islamic rulings."
         keywords="misyar marriage FAQ, MisyarMatch questions, halal marriage app FAQ, misyar nikah questions"
         canonical="/faq"
       />

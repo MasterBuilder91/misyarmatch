@@ -196,7 +196,7 @@ export default function ProfileCreate() {
             {step === 3 && (
               <div>
                 <h1 className="font-serif text-2xl font-bold text-gray-900 mb-2">Your Current Circumstances</h1>
-                <p className="text-gray-500 mb-6 text-sm">This badge is shown on your profile and in Speed Chat before any conversation. Be honest — it is the foundation of everything here.</p>
+                <p className="text-gray-500 mb-6 text-sm">This badge is shown on your profile so every member knows where you stand before any conversation. Be honest — it is the foundation of everything here.</p>
                 <div className="space-y-3">
                   {(Object.entries(CIRCUMSTANCES_CONFIG) as [Circumstances, typeof CIRCUMSTANCES_CONFIG[Circumstances]][]).map(([key, config]) => (
                     <button

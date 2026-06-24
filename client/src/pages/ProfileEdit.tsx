@@ -46,7 +46,7 @@ export default function ProfileEdit() {
   const [displayName, setDisplayName] = useState("");
   const [bio, setBio] = useState("");
   const [location, setLocation] = useState("");
-  const [country, setCountry] = useState("United Kingdom");
+  const [country, setCountry] = useState("United States");
   const [maritalStatus, setMaritalStatus] = useState<MaritalStatus | null>(null);
   const [occupation, setOccupation] = useState("");
   const [circumstances, setCircumstances] = useState<Circumstances | null>(null);
@@ -65,7 +65,7 @@ export default function ProfileEdit() {
       setDisplayName(profile.displayName ?? "");
       setBio(profile.bio ?? "");
       setLocation(profile.location ?? "");
-      setCountry(profile.country ?? "United Kingdom");
+      setCountry(profile.country ?? "United States");
       setMaritalStatus((profile.maritalStatus as MaritalStatus) ?? null);
       setOccupation(profile.occupation ?? "");
       setCircumstances((profile.currentCircumstances as Circumstances) ?? null);

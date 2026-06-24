@@ -34,7 +34,7 @@ function parseCSV(text: string): ParsedProfile[] {
       displayName: row.display_name || row.name || "Member",
       age: row.age ? parseInt(row.age) : undefined,
       location: row.location || row.city || undefined,
-      country: row.country || "United Kingdom",
+      country: row.country || "United States",
       maritalStatus: row.marital_status || undefined,
       currentCircumstances: row.current_circumstances || row.circumstances || "ready_now",
       bio: row.bio || undefined,

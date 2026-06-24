@@ -433,10 +433,10 @@ export default function Home() {
               },
               {
                 step: "03", icon: Zap,
-                title: language === "ar" ? "محادثة سريعة مجهولة" : "Speed Chat anonymously",
+                title: language === "ar" ? "أبدِ اهتمامك" : "Express Your Interest",
                 desc: language === "ar"
-                  ? "جلسات نصية مجهولة لمدة 5 دقائق. لا صور. لا ضغط. شارة ظروف الشريك تظهر قبل أول كلمة."
-                  : "5-minute anonymous text sessions. No photos. No pressure. Their circumstances badge is shown before the first word. If you both want to connect — you match.",
+                  ? "إذا وجدت شخصاً متوافقاً، اضغط زر الاهتمام. إذا أبدى هو الاهتمام أيضاً — يتم التطابق وتُكشف الصورة."
+                  : "Found someone compatible? Express interest. If they express interest back — you match, photos are revealed, and private messaging opens.",
               },
               {
                 step: "04", icon: MessageCircle,

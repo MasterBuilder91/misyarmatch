@@ -3,7 +3,7 @@ import { Link } from "wouter";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <footer style={{background:"#0D0B14"}} className="text-gray-400 pt-12 pb-6">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
@@ -18,8 +18,8 @@ export function Footer() {
               The world's first dedicated misyar marriage platform. No games. No pretending. Just halal.
             </p>
             <p className="text-xs text-gray-500 mt-3">
-              <a href="mailto:support@misyarmatch.net" className="hover:text-rose-400 transition-colors">
-                support@misyarmatch.net
+              <a href="mailto:president@misyarmatch.net" className="hover:text-[#B8965A] transition-colors">
+                president@misyarmatch.net
               </a>
             </p>
           </div>
@@ -28,10 +28,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">Platform</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/browse" className="hover:text-rose-400 transition-colors">Browse Members</Link></li>
-              <li><Link href="/speed-chat" className="hover:text-rose-400 transition-colors">Speed Chat</Link></li>
-              <li><Link href="/pricing" className="hover:text-rose-400 transition-colors">Pricing</Link></li>
-              <li><Link href="/auth" className="hover:text-rose-400 transition-colors">Sign In</Link></li>
+              <li><Link href="/browse" className="hover:text-[#B8965A] transition-colors">Browse Members</Link></li>
+              <li><Link href="/pricing" className="hover:text-[#B8965A] transition-colors">Pricing</Link></li>
+              <li><Link href="/auth" className="hover:text-[#B8965A] transition-colors">Sign In</Link></li>
             </ul>
           </div>
 
@@ -39,11 +38,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">Learn</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/what-is-misyar" className="hover:text-rose-400 transition-colors">What Is Misyar?</Link></li>
-              <li><Link href="/how-it-works" className="hover:text-rose-400 transition-colors">How It Works</Link></li>
-              <li><Link href="/why-misyar-works" className="hover:text-rose-400 transition-colors">Why Misyar Works</Link></li>
-              <li><Link href="/you-do-misyar-already" className="hover:text-rose-400 transition-colors">You Already Practice Misyar</Link></li>
-              <li><Link href="/faq" className="hover:text-rose-400 transition-colors">FAQ</Link></li>
+              <li><Link href="/what-is-misyar" className="hover:text-[#B8965A] transition-colors">What Is Misyar?</Link></li>
+              <li><Link href="/how-it-works" className="hover:text-[#B8965A] transition-colors">How It Works</Link></li>
+              <li><Link href="/why-misyar-works" className="hover:text-[#B8965A] transition-colors">Why Misyar Works</Link></li>
+              <li><Link href="/you-do-misyar-already" className="hover:text-[#B8965A] transition-colors">You Already Practice Misyar</Link></li>
+              <li><Link href="/faq" className="hover:text-[#B8965A] transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -51,14 +50,14 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">Trust & Safety</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/safety" className="hover:text-rose-400 transition-colors">Safety Centre</Link></li>
+              <li><Link href="/safety" className="hover:text-[#B8965A] transition-colors">Safety Centre</Link></li>
               <li>
-                <a href="mailto:safety@misyarmatch.net" className="hover:text-rose-400 transition-colors">
+                <a href="mailto:safety@misyarmatch.net" className="hover:text-[#B8965A] transition-colors">
                   Report a Concern
                 </a>
               </li>
               <li>
-                <a href="mailto:support@misyarmatch.net" className="hover:text-rose-400 transition-colors">
+                <a href="mailto:president@misyarmatch.net" className="hover:text-[#B8965A] transition-colors">
                   Contact Support
                 </a>
               </li>

@@ -10,7 +10,7 @@ export default function HowItWorks() {
     <Layout>
       <SEOHead
         title="How MisyarMatch Works — Step by Step Guide"
-        description="Learn how MisyarMatch works — from profile creation to matching. Circumstances transparency, Speed Chat, mutual interest, and private messaging explained."
+        description="Learn how MisyarMatch works — from profile creation to matching. Circumstances transparency, mutual interest, and private messaging explained."
         keywords="how misyar match works, misyar marriage app guide, halal matchmaking process, Muslim marriage platform"
         canonical="/how-it-works"
       />
@@ -104,16 +104,17 @@ export default function HowItWorks() {
               <div className="w-0.5 h-full bg-rose-100 mt-2" />
             </div>
             <div className="pb-8">
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">Speed Chat — anonymous, 5 minutes</h2>
-              <p className="text-gray-600 mb-4">Jump into an anonymous text-only session with a random opposite-gender member. Their circumstances badge is shown before the first word. No photos. No video. Just honest conversation.</p>
+              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">Express interest — mutual matching</h2>
+              <p className="text-gray-600 mb-4">When you find someone compatible, hit <strong>Express Interest</strong>. It's private — they don't see a notification saying who. If they express interest back, it's a mutual match. Photos are revealed. Private messaging opens.</p>
               <div className="bg-gray-900 rounded-xl p-4 text-sm font-mono">
-                <div className="text-green-400 mb-2">// Before chat starts:</div>
-                <div className="text-gray-300">Partner circumstances: <span className="text-yellow-300">Currently Studying 📚</span></div>
-                <div className="text-gray-300 mt-1">Session time: <span className="text-blue-300">5:00</span></div>
-                <div className="text-gray-500 mt-3">// At end of session:</div>
-                <div className="text-gray-300">[ Connect ] or [ Skip ]</div>
+                <div className="text-green-400 mb-2">// How matching works:</div>
+                <div className="text-gray-300">You → Express Interest on a profile</div>
+                <div className="text-gray-300 mt-1">They → Express Interest on your profile</div>
+                <div className="text-yellow-300 mt-3">✓ Mutual match — photos revealed</div>
+                <div className="text-blue-300 mt-1">✓ Private messaging unlocked</div>
+                <div className="text-purple-300 mt-1">✓ AI compatibility insight generated</div>
               </div>
-              <p className="text-gray-500 text-sm mt-3">If both choose Connect — you match and can message privately.</p>
+              <p className="text-gray-500 text-sm mt-3">No pressure. No notification sent when you express interest. It only activates if both choose each other.</p>
             </div>
           </div>
 
