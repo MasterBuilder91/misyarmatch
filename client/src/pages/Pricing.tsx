@@ -6,54 +6,16 @@ import { trpc } from "@/lib/trpc";
 import { getLoginUrl } from "@/const";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { CheckCircle, Crown, Heart, Shield, Zap, Star, BadgeCheck } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSearch } from "wouter";
 import { toast } from "sonner";
 
-// Geo-based pricing table
-const GEO_PRICING: Record<string, { currency: string; symbol: string; premium: number; vip: number; countryName: string; countryNameAr: string }> = {
-  SA: { currency: "SAR", symbol: "﷼", premium: 74.99, vip: 112, countryName: "Saudi Arabia", countryNameAr: "المملكة العربية السعودية" },
-  AE: { currency: "AED", symbol: "د.إ", premium: 74.99, vip: 112, countryName: "UAE", countryNameAr: "الإمارات العربية المتحدة" },
-  KW: { currency: "KWD", symbol: "KD", premium: 5.99, vip: 8.99, countryName: "Kuwait", countryNameAr: "الكويت" },
-  QA: { currency: "QAR", symbol: "QR", premium: 74.99, vip: 112, countryName: "Qatar", countryNameAr: "قطر" },
-  BH: { currency: "BHD", symbol: "BD", premium: 7.49, vip: 11.99, countryName: "Bahrain", countryNameAr: "البحرين" },
-  EG: { currency: "EGP", symbol: "E£", premium: 149.99, vip: 249.99, countryName: "Egypt", countryNameAr: "مصر" },
-  PK: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Pakistan", countryNameAr: "باكستان" },
-  BD: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Bangladesh", countryNameAr: "بنغلاديش" },
-  US: { currency: "USD", symbol: "$", premium: 9.99, vip: 19.99, countryName: "United States", countryNameAr: "الولايات المتحدة" },
-  CA: { currency: "CAD", symbol: "CA$", premium: 13.99, vip: 24.99, countryName: "Canada", countryNameAr: "كندا" },
-  GB: { currency: "GBP", symbol: "£", premium: 7.99, vip: 14.99, countryName: "United Kingdom", countryNameAr: "المملكة المتحدة" },
-  FR: { currency: "EUR", symbol: "€", premium: 9.99, vip: 18.99, countryName: "France", countryNameAr: "فرنسا" },
-  DE: { currency: "EUR", symbol: "€", premium: 9.99, vip: 18.99, countryName: "Germany", countryNameAr: "ألمانيا" },
-  AU: { currency: "AUD", symbol: "A$", premium: 14.99, vip: 27.99, countryName: "Australia", countryNameAr: "أستراليا" },
-  MY: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Malaysia", countryNameAr: "ماليزيا" },
-  ID: { currency: "USD", symbol: "$", premium: 4.99, vip: 7.99, countryName: "Indonesia", countryNameAr: "إندونيسيا" },
-};
-const DEFAULT_PRICING = { currency: "USD", symbol: "$", premium: 9.99, vip: 19.99, countryName: "Global", countryNameAr: "عالمي" };
-
-async function detectCountry(): Promise<string> {
-  try {
-    const res = await fetch("https://ip-api.com/json/?fields=countryCode", { signal: AbortSignal.timeout(3000) });
-    const data = await res.json();
-    return data.countryCode ?? "US";
-  } catch {
-    return "US";
-  }
-}
+const PRICING = { symbol: "$", premium: 9.99, vip: 19.99 };
 
 export default function Pricing() {
   const { isAuthenticated, loading } = useAuth();
   const search = useSearch();
   const { language, isRTL } = useLanguage();
-  const [pricing, setPricing] = useState(DEFAULT_PRICING);
-  const [countryCode, setCountryCode] = useState("US");
-
-  useEffect(() => {
-    detectCountry().then((code) => {
-      setCountryCode(code);
-      setPricing(GEO_PRICING[code] ?? DEFAULT_PRICING);
-    });
-  }, []);
 
   const { data: profile } = trpc.profile.get.useQuery(undefined, {
     enabled: isAuthenticated && !loading,
@@ -89,7 +51,7 @@ export default function Pricing() {
   const isVip = profile?.subscriptionTier === "vip";
   const isSister = profile?.gender === "sister";
 
-  const fmtPrice = (amount: number) => `${pricing.symbol}${amount.toFixed(2)}`;
+  const fmtPrice = (amount: number) => `$${amount.toFixed(2)}`;
 
   const handleUpgrade = (tier: "premium" | "vip") => {
     if (!isAuthenticated) { window.location.href = getLoginUrl(); return; }
@@ -101,7 +63,7 @@ export default function Pricing() {
       <SEOHead
         title="Pricing — MisyarMatch Premium & VIP Plans"
         description="Sisters join MisyarMatch free forever. Brothers choose Premium or VIP for unlimited matches, private messaging, and priority placement. Geo-based pricing for Gulf countries."
-        keywords="MisyarMatch pricing, misyar marriage app cost, halal matchmaking subscription, SAR pricing"
+        keywords="MisyarMatch pricing, misyar marriage app cost, halal matchmaking subscription, Muslim marriage platform"
         canonical="/pricing"
       />
 
@@ -118,16 +80,6 @@ export default function Pricing() {
             <p className="text-rose-300 text-sm mt-2">
               {language === "ar" ? "لا رسوم خفية. لا خوارزميات. فقط أشخاص صادقون." : "No hidden fees. No algorithms. Just honest people."}
             </p>
-            {GEO_PRICING[countryCode] && (
-              <div className="mt-4 inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 text-sm">
-                <span>🌍</span>
-                <span>
-                  {language === "ar"
-                    ? `الأسعار معروضة بـ ${pricing.currency} لـ ${pricing.countryNameAr}`
-                    : `Prices shown in ${pricing.currency} for ${pricing.countryName}`}
-                </span>
-              </div>
-            )}
           </div>
         </section>
 
