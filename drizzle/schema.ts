@@ -190,7 +190,7 @@ export const payments = mysqlTable("payments", {
   stripePaymentIntentId: varchar("stripePaymentIntentId", { length: 255 }),
   stripeCustomerId: varchar("stripeCustomerId", { length: 255 }),
   amount: decimal("amount", { precision: 10, scale: 2 }),
-  currency: varchar("currency", { length: 10 }).default("gbp"),
+  currency: varchar("currency", { length: 10 }).default("usd"),
   status: mysqlEnum("status", ["pending", "succeeded", "failed", "refunded"]).default("pending"),
   tierPurchased: mysqlEnum("tierPurchased", ["premium", "vip"]).default("premium"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),

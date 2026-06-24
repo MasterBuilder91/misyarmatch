@@ -2,11 +2,10 @@ import type { Express, Request, Response } from "express";
 import express from "express";
 import Stripe from "stripe";
 import { getDb } from "./db";
-import { profiles } from "../drizzle/schema";
+import { payments, profiles } from "../drizzle/schema";
 import { eq } from "drizzle-orm";
 
 export function registerStripeWebhook(app: Express) {
-  // MUST register with raw body BEFORE express.json() middleware
   app.post(
     "/api/stripe/webhook",
     express.raw({ type: "application/json" }),
@@ -35,7 +34,6 @@ export function registerStripeWebhook(app: Express) {
 
       console.log(`[Stripe Webhook] Event: ${event.type} | ID: ${event.id}`);
 
-      // Handle test events
       if (event.id.startsWith("evt_test_")) {
         console.log("[Stripe Webhook] Test event detected, returning verification response");
         res.json({ verified: true });
@@ -43,7 +41,15 @@ export function registerStripeWebhook(app: Express) {
       }
 
       try {
+        const db = await getDb();
+        if (!db) {
+          res.status(500).json({ error: "Database not available" });
+          return;
+        }
+
         switch (event.type) {
+
+          // ─── Checkout completed — upgrade user ────────────────────────────
           case "checkout.session.completed": {
             const session = event.data.object as Stripe.Checkout.Session;
             const userId = session.metadata?.user_id
@@ -53,30 +59,109 @@ export function registerStripeWebhook(app: Express) {
               : null;
 
             if (userId) {
-              const db = await getDb();
-              if (db) {
-                const tier = session.metadata?.tier === "vip" ? "vip" : "premium";
-                const expiresAt = new Date();
-                expiresAt.setDate(expiresAt.getDate() + 30);
+              const tier = session.metadata?.tier === "vip" ? "vip" : "premium";
+              const expiresAt = new Date();
+              expiresAt.setDate(expiresAt.getDate() + 30);
+
+              // Upgrade profile
+              await db
+                .update(profiles)
+                .set({ subscriptionTier: tier, premiumExpiresAt: expiresAt })
+                .where(eq(profiles.userId, userId));
+
+              // Store stripeCustomerId on the payment record so we can reverse later
+              if (session.customer) {
+                await db
+                  .update(payments)
+                  .set({
+                    stripeCustomerId: session.customer as string,
+                    status: "succeeded",
+                  })
+                  .where(eq(payments.userId, userId));
+              }
+
+              console.log(`[Stripe Webhook] Upgraded user ${userId} to ${tier} until ${expiresAt.toISOString()}`);
+            }
+            break;
+          }
+
+          // ─── Subscription cancelled/unpaid — downgrade user ───────────────
+          case "customer.subscription.deleted":
+          case "customer.subscription.updated": {
+            const subscription = event.data.object as Stripe.Subscription;
+            const shouldDowngrade =
+              subscription.status === "canceled" ||
+              subscription.status === "unpaid" ||
+              subscription.status === "past_due";
+
+            if (shouldDowngrade) {
+              const customerId = subscription.customer as string;
+
+              // Look up user via payments table using stripeCustomerId
+              const paymentRecord = await db
+                .select({ userId: payments.userId })
+                .from(payments)
+                .where(eq(payments.stripeCustomerId, customerId))
+                .limit(1);
+
+              if (paymentRecord.length > 0) {
+                const userId = paymentRecord[0].userId;
                 await db
                   .update(profiles)
                   .set({
-                    subscriptionTier: tier,
-                    premiumExpiresAt: expiresAt,
+                    subscriptionTier: "free",
+                    premiumExpiresAt: null,
                   })
                   .where(eq(profiles.userId, userId));
-                console.log(`[Stripe Webhook] Upgraded user ${userId} to ${tier} until ${expiresAt.toISOString()}`);
+
+                console.log(`[Stripe Webhook] Downgraded user ${userId} to free — subscription ${subscription.status}`);
+              } else {
+                console.warn(`[Stripe Webhook] Could not find user for customer ${customerId}`);
               }
             }
             break;
           }
 
-          case "customer.subscription.deleted":
-          case "customer.subscription.updated": {
-            const subscription = event.data.object as Stripe.Subscription;
-            if (subscription.status === "canceled" || subscription.status === "unpaid") {
-              // Find user by customer ID — for now log it; in production store stripe_customer_id
-              console.log(`[Stripe Webhook] Subscription ${subscription.status} for customer ${subscription.customer}`);
+          // ─── Invoice payment failed — notify but don't immediately downgrade
+          case "invoice.payment_failed": {
+            const invoice = event.data.object as Stripe.Invoice;
+            const customerId = invoice.customer as string;
+            const paymentRecord = await db
+              .select({ userId: payments.userId })
+              .from(payments)
+              .where(eq(payments.stripeCustomerId, customerId))
+              .limit(1);
+
+            if (paymentRecord.length > 0) {
+              console.log(`[Stripe Webhook] Payment failed for user ${paymentRecord[0].userId} — Stripe will retry`);
+              // Stripe automatically retries and will fire customer.subscription.updated
+              // with status "past_due" or "unpaid" if retries all fail — handled above
+            }
+            break;
+          }
+
+          // ─── Invoice payment succeeded — refresh expiry ───────────────────
+          case "invoice.payment_succeeded": {
+            const invoice = event.data.object as Stripe.Invoice;
+            if (invoice.billing_reason === "subscription_cycle") {
+              const customerId = invoice.customer as string;
+              const paymentRecord = await db
+                .select({ userId: payments.userId })
+                .from(payments)
+                .where(eq(payments.stripeCustomerId, customerId))
+                .limit(1);
+
+              if (paymentRecord.length > 0) {
+                const userId = paymentRecord[0].userId;
+                const newExpiry = new Date();
+                newExpiry.setDate(newExpiry.getDate() + 30);
+                await db
+                  .update(profiles)
+                  .set({ premiumExpiresAt: newExpiry })
+                  .where(eq(profiles.userId, userId));
+
+                console.log(`[Stripe Webhook] Subscription renewed for user ${userId} — expires ${newExpiry.toISOString()}`);
+              }
             }
             break;
           }
