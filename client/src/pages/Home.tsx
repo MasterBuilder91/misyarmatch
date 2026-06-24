@@ -74,8 +74,21 @@ export default function Home() {
 
       {/* Hero */}
       <section className="gradient-hero text-white py-24 md:py-32 relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
+        {/* Background photo */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/couple-bench.png"
+            alt=""
+            className="w-full h-full object-cover object-center opacity-25"
+            loading="eager"
+          />
+          <div className="absolute inset-0" style={{background:'linear-gradient(to right, rgba(13,11,20,0.98) 0%, rgba(13,11,20,0.85) 40%, rgba(13,11,20,0.4) 100%)'}} />
+        </div>
         {/* Ambient orbs */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{background:'radial-gradient(circle, #B8965A 0%, transparent 70%)', transform:'translate(30%,-30%)'}} />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{background:'radial-gradient(circle, #A02540 0%, transparent 70%)', transform:'translate(-30%,30%)'}} />
+        </div>
           <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{background:'radial-gradient(circle, #B8965A 0%, transparent 70%)', transform:'translate(30%,-30%)'}} />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{background:'radial-gradient(circle, #A02540 0%, transparent 70%)', transform:'translate(-30%,30%)'}} />
         </div>
@@ -273,37 +286,50 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-rose-50 to-blush rounded-2xl p-8 border border-rose-100">
-                <div className="text-center mb-6">
-                  <div className="w-16 h-16 rounded-full gradient-rose flex items-center justify-center mx-auto mb-4 shadow-rose">
-                    <BadgeCheck className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">
-                    {language === "ar" ? "شارة التحقق للأخوات" : "Verification Badge for Sisters"}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {language === "ar"
-                      ? "الأخوات يمكنهن التحقق من هويتهن مجاناً للحصول على شارة ثقة. اختياري تماماً."
-                      : "Sisters can verify their identity for free to earn a trust badge. Completely optional."}
+              <div className="relative rounded-2xl overflow-hidden shadow-ink-lg">
+                <img
+                  src="/images/woman-cafe.png"
+                  alt="Muslim woman contemplating"
+                  className="w-full h-80 md:h-96 object-cover"
+                />
+                <div className="absolute inset-0" style={{background:'linear-gradient(to top, rgba(13,11,20,0.85) 0%, transparent 60%)'}} />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="font-serif text-white text-lg font-semibold leading-snug">
+                    {language === "ar" ? "تستحق أكثر من مجرد انتظار." : "She deserves more than waiting."}
                   </p>
-                </div>
-                <div className="space-y-3">
-                  {[
-                    language === "ar" ? "مجاناً للأبد — بلا استثناء" : "Free forever — no exceptions",
-                    language === "ar" ? "أنتِ تبدئين المحادثات" : "You initiate conversations",
-                    language === "ar" ? "ترين من أبدى اهتماماً" : "See who liked you",
-                    language === "ar" ? "حجب فوري لأي شخص" : "Instant block on anyone",
-                    language === "ar" ? "دعم أولوي للأخوات" : "Priority support for women",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                      <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                      {item}
-                    </div>
-                  ))}
+                  <p className="text-sm mt-1" style={{color:'rgba(255,255,255,0.7)'}}>
+                    {language === "ar" ? "المسيار يُعيد السيطرة إليها." : "Misyar puts control back in her hands."}
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Visual Story Section */}
+      <section className="py-0 bg-[#050408]" dir={isRTL ? "rtl" : "ltr"}>
+        <div className="grid grid-cols-2 grid-rows-2">
+          {[
+            { img: "/images/couple-moment.png", title: language === "ar" ? "اللحظة التي تسبق" : "The Moment Before", sub: language === "ar" ? "قابلا بعضهما. لا إحراج. لا نص محدد. فقط منصة جعلت الأمر مقبولاً." : "Two people who found each other. No awkwardness. No script. Just a platform that made it okay." },
+            { img: "/images/couple-playdate.png", title: language === "ar" ? "الحياة التي يبنيانها" : "The Life They Build", sub: language === "ar" ? "لديها أطفال. لديه أطفال. كلاهما بالغ. المنصة جمعتهما. الباقي لهما." : "She has kids. He has kids. Both are adults. The platform introduced them. The rest is theirs." },
+            { img: "/images/couple-bench.png", title: language === "ar" ? "السهرة التالية" : "The Evening After", sub: language === "ar" ? "خاص. هادئ. بشروطهما. لا ضغط لتعريف العلاقة لأي أحد." : "Private. Quiet. On their terms. No pressure to define it for anyone else." },
+            { img: "/images/couple-door.png", title: language === "ar" ? "الإيماءة التي تقول كل شيء" : "The Gesture That Says Everything", sub: language === "ar" ? "يفتح الباب. هي تمشي للداخل. هذا هو المنتج كله." : "He opens the door. She walks through. That's the whole product." },
+          ].map((scene, i) => (
+            <div key={i} className="relative overflow-hidden" style={{aspectRatio:'16/9'}}>
+              <img
+                src={scene.img}
+                alt={scene.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0" style={{background:'linear-gradient(to top, rgba(5,4,8,0.9) 0%, rgba(5,4,8,0.2) 50%, transparent 100%)'}} />
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                <h3 className="font-serif text-white font-bold text-base md:text-lg mb-1">{scene.title}</h3>
+                <p className="text-xs md:text-sm leading-relaxed" style={{color:'rgba(255,255,255,0.75)'}}>{scene.sub}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -548,15 +574,25 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 gradient-hero text-white" dir={isRTL ? "rtl" : "ltr"}>
-        <div className="container text-center">
+      <section className="py-20 relative overflow-hidden text-white" dir={isRTL ? "rtl" : "ltr"}>
+        {/* Background — candlelight couple */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/couple-moment.png"
+            alt=""
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+          <div className="absolute inset-0" style={{background:'rgba(13,11,20,0.82)'}} />
+        </div>
+        <div className="container text-center relative z-10">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
             {t("general.readyToFind")}
           </h2>
-          <p className="text-rose-200 mb-8 max-w-xl mx-auto">
+          <p className="mb-8 max-w-xl mx-auto" style={{color:'rgba(255,255,255,0.75)'}}>
             {t("general.joinThousands")}
           </p>
-          <Button asChild size="lg" className="bg-white text-rose-800 hover:bg-rose-50 font-semibold shadow-lg">
+          <Button asChild size="lg" className="font-semibold shadow-gold" style={{background:'linear-gradient(135deg,#8B6A35,#B8965A,#D4AF7A)', color:'#0D0B14', border:'none'}}>
             <a href={getLoginUrl()}>
               {t("general.createProfile")} <ArrowRight className="w-4 h-4 ml-2" />
             </a>
