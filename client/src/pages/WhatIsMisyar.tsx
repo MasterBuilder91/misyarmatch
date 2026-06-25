@@ -4,14 +4,65 @@ import { BookOpen, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is misyar marriage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misyar marriage (zawāj al-misyār) is a valid Islamic nikah contract in which the wife voluntarily waives certain rights — typically shared accommodation and financial maintenance. All pillars of nikah must be present: wali, witnesses, and mahr. It is not temporary marriage (mut'ah) and it is not secret. It is a full nikah with complete Islamic validity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is misyar marriage halal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Misyar marriage is permitted by major Islamic scholars including Shaykh Ibn Baz (former Grand Mufti of Saudi Arabia), Shaykh Ibn Uthaymeen, the Islamic Fiqh Academy (OIC), and Shaykh Yusuf al-Qaradawi. It fulfils all the conditions of a valid nikah contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between misyar and mut'ah marriage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misyar marriage has no fixed end date — it is a permanent nikah. Mut'ah is a temporary marriage practised in Shi'i Islam and is forbidden in Sunni Islam. Misyar is fully permissible in Sunni Islam. The two are completely different contracts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is misyar marriage suitable for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misyar is particularly suited for: divorced men and women who want halal companionship without full traditional obligations, widows and widowers, professionals who cannot commit to shared accommodation, men who are already married and wish to take a second wife transparently, students and those with financial constraints, converts, and Muslims working abroad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does misyar marriage require a wali (guardian)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A wali (guardian) must be present or give permission, two Muslim witnesses must be present, and a mahr (dowry) must be agreed upon. These are conditions of all valid nikah contracts, including misyar."
+      }
+    }
+  ]
+};
+
 export default function WhatIsMisyar() {
   return (
     <Layout>
       <SEOHead
-        title="What Is Misyar Marriage? — Islamic Guide"
-        description="A comprehensive Islamic guide to misyar nikah — its definition, scholarly rulings, conditions, and who it is for. Based on fatwas from Ibn Baz, Ibn Uthaymeen, and the Islamic Fiqh Academy."
-        keywords="what is misyar marriage, misyar nikah definition, misyar Islamic ruling, Ibn Baz misyar, Ibn Uthaymeen misyar, halal misyar"
+        title="What Is Misyar Marriage? Complete Islamic Guide (2025)"
+        description="Misyar marriage explained — definition, Islamic ruling, scholarly evidence from Ibn Baz and Ibn Uthaymeen, conditions, and who it is for. The first English-language misyar platform for western Muslims."
+        keywords="what is misyar marriage, misyar nikah, misyar marriage halal, misyar marriage western, misyar marriage USA, misyar marriage UK, misyar marriage Canada, misyar marriage app, halal misyar, zawaj misyar, Ibn Baz misyar fatwa, misyar vs mutah, misyar conditions, misyar marriage 2025"
         canonical="/what-is-misyar"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
       />
 
       {/* Hero */}
@@ -122,6 +173,48 @@ export default function WhatIsMisyar() {
               <li>• Converts who may not have family support for a traditional wedding</li>
               <li>• Those working abroad or in long-distance situations</li>
             </ul>
+
+            <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4 mt-10">Misyar Marriage in the West</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              For western Muslims in the United States, United Kingdom, Canada, and Australia, misyar solves a problem that traditional marriage simply cannot address. The western Muslim community faces a unique combination of factors:
+            </p>
+            <ul className="space-y-2 mb-6 text-gray-700">
+              <li>• The collapse of traditional community matchmaking networks — elders and imams who once brokered marriages are no longer available</li>
+              <li>• A generation of divorced, widowed, and single Muslims in their 30s, 40s, and 50s with no halal pathway to companionship</li>
+              <li>• Professional demands that make shared accommodation impractical</li>
+              <li>• Geographic separation from family who might assist with introductions</li>
+              <li>• A post-divorce reality where parents are no longer running your marriage search</li>
+            </ul>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Philadelphia's Black Salafi Muslim community has practiced misyar-style arrangements for decades — documented by NPR, Middle East Forum, and Rutgers University Press. Born into an American framework with no immigrant family pipeline, they built halal infrastructure organically. MisyarMatch brings this solution online for the entire western Muslim diaspora.
+            </p>
+
+            <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4 mt-10">Misyar vs Mut'ah — The Critical Difference</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              This is the most common source of confusion and it matters enormously:
+            </p>
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+                <h3 className="font-bold text-emerald-800 mb-2">Misyar ✅</h3>
+                <ul className="text-sm text-emerald-700 space-y-1">
+                  <li>• Sunni Islam — fully permissible</li>
+                  <li>• No fixed end date — permanent nikah</li>
+                  <li>• Requires wali, witnesses, mahr</li>
+                  <li>• Approved by Ibn Baz, Ibn Uthaymeen</li>
+                  <li>• Woman waives rights voluntarily</li>
+                </ul>
+              </div>
+              <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                <h3 className="font-bold text-red-800 mb-2">Mut'ah ❌</h3>
+                <ul className="text-sm text-red-700 space-y-1">
+                  <li>• Forbidden in Sunni Islam</li>
+                  <li>• Fixed end date agreed upfront</li>
+                  <li>• Practised only in Shi'i Islam</li>
+                  <li>• Considered invalid by Sunni scholars</li>
+                  <li>• Different contract entirely</li>
+                </ul>
+              </div>
+            </div>
 
             <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4 mt-10">What Misyar Is Not</h2>
             <p className="text-gray-700 leading-relaxed mb-4">

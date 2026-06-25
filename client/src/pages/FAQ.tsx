@@ -82,9 +82,9 @@ export default function FAQ() {
   return (
     <Layout>
       <SEOHead
-        title="Frequently Asked Questions — MisyarMatch"
-        description="Answers to common questions about MisyarMatch, misyar marriage, photo privacy, premium plans, and Islamic rulings."
-        keywords="misyar marriage FAQ, MisyarMatch questions, halal marriage app FAQ, misyar nikah questions"
+        title="Misyar Marriage FAQ — Common Questions Answered (2025)"
+        description="Frequently asked questions about misyar marriage, misyar nikah, halal rulings, how MisyarMatch works, photo privacy, and Islamic guidance. Answers from a practicing cleric."
+        keywords="misyar marriage FAQ, misyar marriage questions, is misyar halal, misyar nikah conditions, misyar marriage western, MisyarMatch questions, misyar marriage 2025"
         canonical="/faq"
       />
 

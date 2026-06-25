@@ -67,8 +67,8 @@ export default function Home() {
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch — Halal Misyar Marriage. Honest. Private. Real."
-        description="The world's first dedicated misyar marriage platform for western Muslims. Find your partner with full transparency. Private, secure, and scholar-backed."
+        title="MisyarMatch — Halal Misyar Marriage Platform for Western Muslims"
+        description="The world's first dedicated misyar marriage platform. Meet serious Muslims seeking halal misyar nikah in the US, UK, Canada and Australia. Free. Cleric-founded. No games. No pretending."
         canonical="/"
       />
 
