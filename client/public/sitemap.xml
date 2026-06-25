@@ -1,70 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://www.misyarmatch.net/</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.misyarmatch.net/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.misyarmatch.net/"/>
-  </url>
+  <url><loc>https://www.misyarmatch.net/</loc><lastmod>2025-06-25</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.misyarmatch.net/browse</loc><lastmod>2025-06-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.misyarmatch.net/what-is-misyar</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog</loc><lastmod>2025-06-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
-  <url>
-    <loc>https://www.misyarmatch.net/what-is-misyar</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Blog Articles -->
+  <url><loc>https://www.misyarmatch.net/blog/muslim-marriage-after-divorce</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog/long-distance-islamic-marriage</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog/muslim-widows-remarriage</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog/why-muslims-stay-single</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog/halal-alternatives-to-dating</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/blog/muslim-single-parents-marriage</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <url>
-    <loc>https://www.misyarmatch.net/how-it-works</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/why-misyar-works</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/you-do-misyar-already</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/faq</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/pricing</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/safety</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.misyarmatch.net/browse</loc>
-    <lastmod>2025-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Core Pages -->
+  <url><loc>https://www.misyarmatch.net/how-it-works</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/why-misyar-works</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/you-do-misyar-already</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/faq</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.misyarmatch.net/pricing</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.misyarmatch.net/safety</loc><lastmod>2025-06-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
 </urlset>

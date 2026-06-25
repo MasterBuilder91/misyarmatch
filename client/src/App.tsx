@@ -26,12 +26,25 @@ import Safety from "./pages/Safety";
 import AdminImport from "./pages/AdminImport";
 import WhoLikedMe from "./pages/WhoLikedMe";
 
-function Router() {
+import BlogIndex from "@/pages/blog/BlogIndex";
+import ArticleAfterDivorce from "@/pages/blog/ArticleAfterDivorce";
+import ArticleLongDistance from "@/pages/blog/ArticleLongDistance";
+import ArticleWidows from "@/pages/blog/ArticleWidows";
+import ArticleWhyStaySingle from "@/pages/blog/ArticleWhyStaySingle";
+import ArticleHalalAlternatives from "@/pages/blog/ArticleHalalAlternatives";
+import ArticleSingleParents from "@/pages/blog/ArticleSingleParents";
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/auth" component={Auth} />
       <Route path="/browse" component={Browse} />
+      <Route path="/blog" component={BlogIndex} />
+      <Route path="/blog/muslim-marriage-after-divorce" component={ArticleAfterDivorce} />
+      <Route path="/blog/long-distance-islamic-marriage" component={ArticleLongDistance} />
+      <Route path="/blog/muslim-widows-remarriage" component={ArticleWidows} />
+      <Route path="/blog/why-muslims-stay-single" component={ArticleWhyStaySingle} />
+      <Route path="/blog/halal-alternatives-to-dating" component={ArticleHalalAlternatives} />
+      <Route path="/blog/muslim-single-parents-marriage" component={ArticleSingleParents} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />

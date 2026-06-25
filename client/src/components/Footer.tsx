@@ -38,6 +38,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">Learn</h4>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/blog" className="hover:text-[#B8965A] transition-colors">Blog & Articles</Link></li>
               <li><Link href="/what-is-misyar" className="hover:text-[#B8965A] transition-colors">What Is Misyar?</Link></li>
               <li><Link href="/how-it-works" className="hover:text-[#B8965A] transition-colors">How It Works</Link></li>
               <li><Link href="/why-misyar-works" className="hover:text-[#B8965A] transition-colors">Why Misyar Works</Link></li>
