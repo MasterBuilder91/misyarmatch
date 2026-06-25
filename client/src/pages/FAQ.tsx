@@ -42,7 +42,7 @@ const FAQS = [
   },
   {
     q: "Is my data safe?",
-    a: "Yes. We use Google OAuth for authentication — we never store your password. Photos are stored securely on encrypted S3 storage. Your email is never shown to other members. We do not sell your data. Contact safety@misyarmatch.net for any safety concerns.",
+    a: "Yes. We use Google OAuth for authentication — we never store your password. Photos are stored securely on encrypted S3 storage. Your email is never shown to other members. We do not sell your data. Contact president@misyarmatch.net for any safety concerns.",
   },
   {
     q: "What is the premium plan for brothers?",
@@ -50,7 +50,7 @@ const FAQS = [
   },
   {
     q: "How do I report a concern?",
-    a: "Email safety@misyarmatch.net. We take all reports seriously. We will review and act within 24 hours for urgent safety concerns.",
+    a: "Email president@misyarmatch.net. We take all reports seriously. We will review and act within 24 hours for urgent safety concerns.",
   },
 ];
 
@@ -107,10 +107,10 @@ export default function FAQ() {
             <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">Still have questions?</h3>
             <p className="text-gray-600 mb-4">Our team responds to all enquiries within 24 hours.</p>
             <a
-              href="mailto:support@misyarmatch.net"
+              href="mailto:president@misyarmatch.net"
               className="inline-flex items-center gap-2 text-rose-700 font-semibold hover:text-rose-900"
             >
-              support@misyarmatch.net
+              president@misyarmatch.net
             </a>
           </div>
         </div>

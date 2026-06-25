@@ -59,7 +59,7 @@ export default function Safety() {
               {
                 icon: AlertTriangle,
                 title: "Dedicated safety email",
-                desc: "safety@misyarmatch.net is monitored daily for urgent concerns.",
+                desc: "president@misyarmatch.net is monitored daily for urgent concerns.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-gray-50 rounded-xl p-4 border border-gray-200 flex gap-3">
@@ -122,11 +122,11 @@ export default function Safety() {
               If you encounter suspicious behaviour, harassment, or anything that makes you feel unsafe, please contact us immediately.
             </p>
             <a
-              href="mailto:safety@misyarmatch.net"
+              href="mailto:president@misyarmatch.net"
               className="inline-flex items-center gap-2 bg-rose-700 text-white px-6 py-3 rounded-xl font-semibold hover:bg-rose-800 transition-colors"
             >
               <Shield className="w-4 h-4" />
-              safety@misyarmatch.net
+              president@misyarmatch.net
             </a>
             <p className="text-gray-500 text-xs mt-3">Urgent safety concerns are reviewed within 24 hours.</p>
           </div>

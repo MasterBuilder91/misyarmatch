@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/safety" className="hover:text-[#B8965A] transition-colors">Safety Centre</Link></li>
               <li>
-                <a href="mailto:safety@misyarmatch.net" className="hover:text-[#B8965A] transition-colors">
+                <a href="mailto:president@misyarmatch.net" className="hover:text-[#B8965A] transition-colors">
                   Report a Concern
                 </a>
               </li>
