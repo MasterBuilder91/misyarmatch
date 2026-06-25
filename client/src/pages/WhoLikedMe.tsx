@@ -84,7 +84,7 @@ export default function WhoLikedMe() {
               <p className="text-rose-100 text-sm mb-4">
                 Free members see up to 3 recent likes. Premium members see 10. VIP members see all 50.
               </p>
-              <Link href="/pricing">
+              <Link href="/browse">
                 <Button className="bg-white text-rose-800 hover:bg-rose-50 font-semibold">
                   Upgrade Now
                 </Button>
@@ -121,7 +121,7 @@ export default function WhoLikedMe() {
                         <p className="text-sm text-rose-700 font-medium text-center px-4">
                           Upgrade to Premium to see this profile
                         </p>
-                        <Link href="/pricing">
+                        <Link href="/browse">
                           <Button size="sm" className="mt-3 bg-rose-700 hover:bg-rose-800 text-white text-xs">
                             Unlock
                           </Button>
@@ -200,7 +200,7 @@ export default function WhoLikedMe() {
               <p className="text-gray-500 text-sm mb-3">
                 You're seeing 10 likes. Upgrade to VIP to see all 50.
               </p>
-              <Link href="/pricing">
+              <Link href="/browse">
                 <Button className="bg-rose-700 hover:bg-rose-800 text-white">
                   Upgrade to VIP
                 </Button>

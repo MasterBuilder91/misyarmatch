@@ -53,7 +53,7 @@ import ArticleSingleParents from "@/pages/blog/ArticleSingleParents";
       <Route path="/profile/create" component={ProfileCreate} />
       <Route path="/profile/edit" component={ProfileEdit} />
       <Route path="/profile/:userId" component={ProfileView} />
-      <Route path="/pricing" component={Pricing} />
+      {/* Pricing hidden — free during launch */}
       <Route path="/what-is-misyar" component={WhatIsMisyar} />
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/why-misyar-works" component={WhyMisyarWorks} />

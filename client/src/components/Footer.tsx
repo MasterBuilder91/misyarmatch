@@ -29,7 +29,6 @@ export function Footer() {
             <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">Platform</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/browse" className="hover:text-[#B8965A] transition-colors">Browse Members</Link></li>
-              <li><Link href="/pricing" className="hover:text-[#B8965A] transition-colors">Pricing</Link></li>
               <li><Link href="/auth" className="hover:text-[#B8965A] transition-colors">Sign In</Link></li>
             </ul>
           </div>
