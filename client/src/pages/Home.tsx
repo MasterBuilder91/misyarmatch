@@ -67,8 +67,8 @@ export default function Home() {
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch — Halal Misyar Marriage Platform for Western Muslims"
-        description="The world's first dedicated misyar marriage platform. Meet serious Muslims seeking halal misyar nikah in the US, UK, Canada and Australia. Free. Cleric-founded. No games. No pretending."
+        title="MisyarMatch — Just Launched. Join Free While It Lasts."
+        description="The world's first halal misyar marriage platform just launched. Be one of the first members. Free to join right now — this will not last forever. Cleric-founded. US, UK, Canada, Australia."
         canonical="/"
       />
 
@@ -91,8 +91,12 @@ export default function Home() {
         </div>
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
+            {/* Launch badge */}
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase animate-pulse" style={{background:'rgba(124,29,46,0.4)', border:'1px solid rgba(160,37,64,0.6)', color:'#F4A0B0'}}>
+              🚀 <span>Just Launched — Limited Early Access</span>
+            </div>
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase" style={{background:'rgba(184,150,90,0.15)', border:'1px solid rgba(184,150,90,0.3)', color:'#D4AF7A'}}>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase" style={{background:'rgba(184,150,90,0.15)', border:'1px solid rgba(184,150,90,0.3)', color:'#D4AF7A'}}>
               <Heart className="w-3 h-3 fill-current" />
               <span>{t("hero.badge")}</span>
             </div>
@@ -131,7 +135,9 @@ export default function Home() {
                 <Link href="/what-is-misyar">{t("hero.cta.whatIsMisyar")}</Link>
               </Button>
             </div>
-            <p className="mt-5 text-xs tracking-wide" style={{color:'rgba(255,255,255,0.35)'}}>Free for everyone. No credit card.</p>
+            <p className="mt-5 text-xs tracking-wide" style={{color:'rgba(255,255,255,0.45)'}}>
+              Free to join during launch — this will not last forever.
+            </p>
           </div>
         </div>
       </section>

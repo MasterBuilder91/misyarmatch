@@ -61,9 +61,9 @@ export default function Pricing() {
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch — Free Halal Misyar Marriage Platform"
-        description="MisyarMatch is completely free. Browse, match, and message with no paywall. Optional supporter plans available for those who want to back the platform."
-        keywords="MisyarMatch pricing, free misyar marriage app, halal matchmaking free, Muslim marriage platform"
+        title="MisyarMatch — Free to Join During Launch | Halal Misyar Marriage"
+        description="MisyarMatch just launched and is free to join right now. Be an early member — browse, match, and message at no cost. The first halal misyar marriage platform for western Muslims."
+        keywords="free misyar marriage app, misyar marriage free, new misyar platform 2025, halal matchmaking launch, free Muslim marriage, misyar match free join"
         canonical="/pricing"
       />
 
@@ -71,14 +71,17 @@ export default function Pricing() {
         {/* Header */}
         <section className="gradient-hero text-white py-16">
           <div className="container max-w-3xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase" style={{background:'rgba(124,29,46,0.4)', border:'1px solid rgba(160,37,64,0.5)', color:'#F4A0B0'}}>
+              🚀 Early Access — Join Now While It's Free
+            </div>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
-              {language === "ar" ? "مجاني للجميع. دائماً." : "Free for Everyone. Always."}
+              {language === "ar" ? "انضم مجاناً. الآن. قبل أن تنتهي الفرصة." : "Free to Join. Right Now. While It Lasts."}
             </h1>
             <p className="text-rose-200 text-lg">
-              {language === "ar" ? "تصفح، تطابق، وتواصل — مجاناً تماماً." : "Browse, match, and message — completely free."}
+              {language === "ar" ? "MisyarMatch أطلق للتو. كن من أوائل الأعضاء." : "MisyarMatch just launched. Be one of the first members in your city."}
             </p>
             <p className="text-rose-300 text-sm mt-2">
-              {language === "ar" ? "خطط داعمة اختيارية للميزات الإضافية." : "Optional supporter plans available for extra features."}
+              {language === "ar" ? "مجاني الآن. لن يدوم إلى الأبد." : "Free during launch. This will not last forever — get in early."}
             </p>
           </div>
         </section>
@@ -110,11 +113,11 @@ export default function Pricing() {
                 </div>
                 <div className="mb-5">
                   <div className="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-2">
-                    {language === "ar" ? "مجاني تماماً" : "Completely Free"}
+                    {language === "ar" ? "مجاني خلال الإطلاق" : "Free During Launch"}
                   </div>
                   <div className="font-serif text-4xl font-bold text-gray-900">$0</div>
                   <div className="text-gray-500 text-sm mt-1">
-                    {language === "ar" ? "للأخوات والإخوة — دائماً" : "Brothers & sisters — forever"}
+                    {language === "ar" ? "للجميع الآن — قد يتغير لاحقاً" : "For everyone now — may change later"}
                   </div>
                 </div>
                 <ul className="space-y-2.5 mb-7">
