@@ -33,6 +33,8 @@ import ArticleWidows from "@/pages/blog/ArticleWidows";
 import ArticleWhyStaySingle from "@/pages/blog/ArticleWhyStaySingle";
 import ArticleHalalAlternatives from "@/pages/blog/ArticleHalalAlternatives";
 import ArticleSingleParents from "@/pages/blog/ArticleSingleParents";
+
+function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
