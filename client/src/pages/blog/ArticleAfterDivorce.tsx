@@ -61,7 +61,7 @@ export default function ArticleAfterDivorce() {
         <h2>Practical Steps to Begin</h2>
         <p><strong>1. Process before you search.</strong> Rushing into a second marriage to escape the pain of a first one is not a strategy — it is a trap. Give yourself time. Not years necessarily, but enough time to understand what went wrong and what you actually need next.</p>
         <p><strong>2. Be honest about your circumstances.</strong> On MisyarMatch, every member lists their current circumstances — divorced, studying, working abroad, already married. This is not optional. It is the foundation. Honesty upfront saves everyone time and prevents the compounding pain of deception.</p>
-        <p><strong>3. Know what you want.}</strong> Do you want cohabitation? Are you open to a visiting arrangement? Do you want more children? These are questions you must answer for yourself before asking them of someone else.</p>
+        <p><strong>3. Know what you want.</strong> Do you want cohabitation? Are you open to a visiting arrangement? Do you want more children? These are questions you must answer for yourself before asking them of someone else.</p>
         <p><strong>4. Use a platform built for you.</strong> General Muslim apps like Muzz were built primarily for first-time, young, traditional marriages. MisyarMatch was built specifically for adults who have already lived a chapter — and are ready to begin the next one.</p>
 
         <h2>A Final Word</h2>

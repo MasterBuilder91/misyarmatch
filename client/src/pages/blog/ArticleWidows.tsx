@@ -46,7 +46,7 @@ export default function ArticleWidows() {
         <h2>Practical Steps for Muslim Widows Considering Remarriage</h2>
         <p><strong>Give yourself permission.</strong> Before anything else: give yourself permission. You are not betraying your late husband by wanting to live a full life. You are not dishonoring his memory by choosing halal companionship. He would not want you to be lonely.</p>
         <p><strong>Talk to a scholar you trust.</strong> The practical questions — wali, iddat if you haven't completed it, financial implications — deserve real answers from someone who knows your situation. Do not rely on cultural hearsay. Go to Islamic scholarship directly.</p>
-        <p><strong>Be honest about what you want.}</strong> Do you want cohabitation? A visiting arrangement? Children? No more children? Be honest with yourself first — and then honest with anyone you meet. Clarity prevents pain for everyone.</p>
+        <p><strong>Be honest about what you want.</strong> Do you want cohabitation? A visiting arrangement? Children? No more children? Be honest with yourself first — and then honest with anyone you meet. Clarity prevents pain for everyone.</p>
         <p><strong>Use a platform built for people like you.</strong> MisyarMatch was built for exactly this demographic — adults with established lives, real circumstances, and real needs, who want a halal pathway that doesn't require them to pretend they are 22 and starting from zero.</p>
 
         <h2>A Final Word</h2>
