@@ -61,9 +61,9 @@ export default function Pricing() {
   return (
     <Layout>
       <SEOHead
-        title="Pricing — MisyarMatch Premium & VIP Plans"
-        description="Sisters join MisyarMatch free forever. Brothers choose Premium or VIP for unlimited matches, private messaging, and priority placement. Geo-based pricing for Gulf countries."
-        keywords="MisyarMatch pricing, misyar marriage app cost, halal matchmaking subscription, Muslim marriage platform"
+        title="MisyarMatch — Free Halal Misyar Marriage Platform"
+        description="MisyarMatch is completely free. Browse, match, and message with no paywall. Optional supporter plans available for those who want to back the platform."
+        keywords="MisyarMatch pricing, free misyar marriage app, halal matchmaking free, Muslim marriage platform"
         canonical="/pricing"
       />
 
@@ -72,13 +72,13 @@ export default function Pricing() {
         <section className="gradient-hero text-white py-16">
           <div className="container max-w-3xl mx-auto text-center">
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
-              {language === "ar" ? "أسعار بسيطة وصادقة" : "Simple, Honest Pricing"}
+              {language === "ar" ? "مجاني للجميع. دائماً." : "Free for Everyone. Always."}
             </h1>
             <p className="text-rose-200 text-lg">
-              {language === "ar" ? "الأخوات مجاناً للأبد. الإخوة يبدأون مجاناً." : "Sisters free forever. Brothers start free."}
+              {language === "ar" ? "تصفح، تطابق، وتواصل — مجاناً تماماً." : "Browse, match, and message — completely free."}
             </p>
             <p className="text-rose-300 text-sm mt-2">
-              {language === "ar" ? "لا رسوم خفية. لا خوارزميات. فقط أشخاص صادقون." : "No hidden fees. No algorithms. Just honest people."}
+              {language === "ar" ? "خطط داعمة اختيارية للميزات الإضافية." : "Optional supporter plans available for extra features."}
             </p>
           </div>
         </section>
@@ -102,35 +102,40 @@ export default function Pricing() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
               {/* Free */}
-              <div className="bg-white rounded-2xl p-7 border border-gray-200 shadow-sm">
+              <div className="bg-white rounded-2xl p-7 border-2 border-emerald-500 shadow-sm relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-full">
+                    {language === "ar" ? "✓ للجميع" : "✓ EVERYONE"}
+                  </span>
+                </div>
                 <div className="mb-5">
-                  <div className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">
-                    {language === "ar" ? "مجاني" : "Free"}
+                  <div className="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-2">
+                    {language === "ar" ? "مجاني تماماً" : "Completely Free"}
                   </div>
                   <div className="font-serif text-4xl font-bold text-gray-900">$0</div>
                   <div className="text-gray-500 text-sm mt-1">
-                    {language === "ar" ? "للأخوات دائماً" : "Forever for sisters. Always."}
+                    {language === "ar" ? "للأخوات والإخوة — دائماً" : "Brothers & sisters — forever"}
                   </div>
                 </div>
                 <ul className="space-y-2.5 mb-7">
                   {(language === "ar" ? [
                     "إنشاء الملف الشخصي الكامل",
                     "تصفح جميع الأعضاء",
-                    "إبداء الاهتمام",
-                    "محادثة سريعة (30 دقيقة/يوم للإخوة)",
-                    "استقبال الرسائل من التطابقات",
+                    "إبداء الاهتمام غير محدود",
+                    "التطابق المتبادل",
+                    "رسائل خاصة مع التطابقات",
+                    "رؤية من أعجب بك",
+                    "رؤى التوافق الإسلامية",
                     "شارة الظروف مرئية",
-                    "الأخوات: كل شيء مجاناً",
                   ] : [
                     "Full profile creation",
                     "Browse all members",
-                    "Express interest",
-                    "Browse all member profiles",
-                    "Express interest (limited per day)",
-                    "View circumstances badges",
-                    "Receive messages from matches",
+                    "Unlimited express interest",
+                    "Mutual matching",
+                    "Private messaging with matches",
+                    "See who liked you",
+                    "AI Islamic compatibility insights",
                     "Circumstances badge visible",
-                    "Sisters: unlimited everything",
                   ]).map((f) => (
                     <li key={f} className="flex items-center gap-2 text-sm text-gray-700">
                       <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
@@ -139,54 +144,41 @@ export default function Pricing() {
                   ))}
                 </ul>
                 {!isAuthenticated ? (
-                  <Button asChild variant="outline" className="w-full border-gray-300">
-                    <a href={getLoginUrl()}>{language === "ar" ? "انضم مجاناً" : "Join Free"}</a>
+                  <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700 text-white border-0">
+                    <a href={getLoginUrl()}>{language === "ar" ? "انضم مجاناً الآن" : "Join Free Now"}</a>
                   </Button>
                 ) : (
-                  <Button variant="outline" className="w-full border-gray-300" disabled>
-                    {isPremium || isVip ? (language === "ar" ? "الخطة المجانية" : "Free Tier") : (language === "ar" ? "خطتك الحالية" : "Your Current Plan")}
+                  <Button variant="outline" className="w-full border-emerald-500 text-emerald-700" disabled>
+                    {language === "ar" ? "✓ خطتك الحالية" : "✓ Your Plan"}
                   </Button>
                 )}
               </div>
 
-              {/* Premium */}
-              <div className="bg-white rounded-2xl p-7 border-2 border-rose-600 shadow-rose relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-rose-600 text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                    <Star className="w-3 h-3" /> {language === "ar" ? "الأكثر شيوعاً" : "MOST POPULAR"}
-                  </span>
-                </div>
+              {/* Supporter */}
+              <div className="bg-white rounded-2xl p-7 border border-rose-200 shadow-sm relative">
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-2">
-                    <Crown className="w-4 h-4 text-rose-600" />
+                    <Heart className="w-4 h-4 text-rose-600" />
                     <div className="text-sm font-bold text-rose-600 uppercase tracking-wider">
-                      {language === "ar" ? "أخ مميز" : "Premium Brother"}
+                      {language === "ar" ? "داعم" : "Supporter"}
                     </div>
                   </div>
-                  <div className="font-serif text-4xl font-bold text-gray-900">{fmtPrice(pricing.premium)}</div>
+                  <div className="font-serif text-4xl font-bold text-gray-900">{fmtPrice(PRICING.premium)}</div>
                   <div className="text-gray-500 text-sm mt-1">
-                    {language === "ar" ? "شهرياً · إلغاء في أي وقت" : "per month · cancel anytime"}
+                    {language === "ar" ? "شهرياً · ادعم المنصة" : "per month · back the platform"}
                   </div>
                 </div>
                 <ul className="space-y-2.5 mb-7">
                   {(language === "ar" ? [
-                    "كل مميزات الخطة المجانية",
-                    "20 إعجاباً يومياً",
-                    "محادثة سريعة غير محدودة",
-                    "رسائل مباشرة مع جميع التطابقات",
-                    "رؤية من أعجب بك (محدود)",
-                    "رسائل تختفي تلقائياً",
-                    "رؤى التوافق الإسلامية بالذكاء الاصطناعي",
-                    "شارة مميزة على الملف الشخصي",
+                    "كل شيء في الخطة المجانية",
+                    "شارة داعم على الملف الشخصي",
+                    "أولوية في نتائج البحث",
+                    "دعم المنصة واستمرارها",
                   ] : [
                     "Everything in Free",
-                    "20 likes per day",
-                    "Unlimited express interest",
-                    "Direct messaging with all matches",
-                    "See who liked you (limited)",
-                    "Self-destructing messages",
-                    "AI Islamic compatibility insights",
-                    "Premium badge on profile",
+                    "Supporter badge on profile",
+                    "Priority placement in Browse",
+                    "Keep MisyarMatch running & growing",
                   ]).map((f) => (
                     <li key={f} className="flex items-center gap-2 text-sm text-gray-700">
                       <CheckCircle className="w-4 h-4 text-rose-500 flex-shrink-0" />
@@ -196,20 +188,12 @@ export default function Pricing() {
                 </ul>
                 {!isAuthenticated ? (
                   <Button asChild className="w-full gradient-rose text-white border-0 shadow-rose">
-                    <a href={getLoginUrl()}>{language === "ar" ? "انضم وترقَّ" : "Join & Upgrade"}</a>
-                  </Button>
-                ) : isSister ? (
-                  <div className="text-center text-emerald-700 font-semibold text-sm py-3">
-                    {language === "ar" ? "الأخوات مجانيات دائماً ❤️" : "Sisters are always free ❤️"}
-                  </div>
-                ) : isVip ? (
-                  <Button variant="outline" className="w-full" disabled>
-                    {language === "ar" ? "مشمول في VIP" : "Included in VIP"}
+                    <a href={getLoginUrl()}>{language === "ar" ? "ادعم المنصة" : "Support the Platform"}</a>
                   </Button>
                 ) : isPremium ? (
                   <div className="flex items-center justify-center gap-2 text-emerald-700 font-semibold py-3">
-                    <Crown className="w-4 h-4" />
-                    {language === "ar" ? "أنت مشترك مميز!" : "You're Premium!"}
+                    <Heart className="w-4 h-4" />
+                    {language === "ar" ? "شكراً لدعمك! ❤️" : "Thank you for supporting! ❤️"}
                   </div>
                 ) : (
                   <Button
@@ -220,18 +204,13 @@ export default function Pricing() {
                   >
                     {createCheckout.isPending
                       ? (language === "ar" ? "جارٍ المعالجة..." : "Loading...")
-                      : (language === "ar" ? `ترقية — ${fmtPrice(pricing.premium)}/شهر` : `Upgrade — ${fmtPrice(pricing.premium)}/month`)}
+                      : (language === "ar" ? `ادعم — ${fmtPrice(PRICING.premium)}/شهر` : `Support — ${fmtPrice(PRICING.premium)}/month`)}
                   </Button>
                 )}
               </div>
 
-              {/* VIP */}
-              <div className="bg-white rounded-2xl p-7 border-2 border-amber-500 shadow-sm relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-amber-500 to-rose-600 text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                    <BadgeCheck className="w-3 h-3" /> {language === "ar" ? "الأفضل قيمة" : "BEST VALUE"}
-                  </span>
-                </div>
+              {/* VIP Supporter */}
+              <div className="bg-white rounded-2xl p-7 border border-amber-200 shadow-sm relative">
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-2">
                     <Crown className="w-4 h-4 text-amber-600" />
@@ -239,7 +218,7 @@ export default function Pricing() {
                       {language === "ar" ? "أخ VIP" : "VIP Brother"}
                     </div>
                   </div>
-                  <div className="font-serif text-4xl font-bold text-gray-900">{fmtPrice(pricing.vip)}</div>
+                  <div className="font-serif text-4xl font-bold text-gray-900">{fmtPrice(PRICING.vip)}</div>
                   <div className="text-gray-500 text-sm mt-1">
                     {language === "ar" ? "شهرياً · إلغاء في أي وقت" : "per month · cancel anytime"}
                   </div>
@@ -290,7 +269,7 @@ export default function Pricing() {
                   >
                     {createCheckout.isPending
                       ? (language === "ar" ? "جارٍ المعالجة..." : "Loading...")
-                      : (language === "ar" ? `احصل على VIP — ${fmtPrice(pricing.vip)}/شهر` : `Get VIP — ${fmtPrice(pricing.vip)}/month`)}
+                      : (language === "ar" ? `احصل على VIP — ${fmtPrice(PRICING.vip)}/شهر` : `Get VIP — ${fmtPrice(PRICING.vip)}/month`)}
                   </Button>
                 )}
               </div>

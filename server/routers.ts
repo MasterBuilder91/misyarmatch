@@ -160,10 +160,8 @@ const profileRouter = router({
     }),
 
   whoLikedMe: protectedProcedure.query(async ({ ctx }) => {
-    const profile = await getProfileByUserId(ctx.user.id);
-    const tier = profile?.subscriptionTier ?? "free";
-    const results = await getWhoLikedMe(ctx.user.id, tier === "vip" ? 50 : tier === "premium" ? 10 : 3);
-    return { results, isLimited: tier === "free", tier };
+    const results = await getWhoLikedMe(ctx.user.id, 50);
+    return { results, isLimited: false, tier: "free" };
   }),
 
   blockUser: protectedProcedure
@@ -337,15 +335,8 @@ const messagesRouter = router({
       if (match.brotherUserId !== ctx.user.id && match.sisterUserId !== ctx.user.id) {
         throw new TRPCError({ code: "FORBIDDEN" });
       }
-      // Paywall: brothers on the free tier cannot message until they upgrade.
-      // Sisters can always message for free.
+      // All members can message freely — open platform
       const myProfile = await getProfileByUserId(ctx.user.id);
-      if (myProfile?.gender === "brother" && (myProfile.subscriptionTier ?? "free") === "free") {
-        throw new TRPCError({
-          code: "FORBIDDEN",
-          message: "Upgrade to Premium to start messaging matches.",
-        });
-      }
 
       await sendPrivateMessage(input.matchId, ctx.user.id, input.content);
 

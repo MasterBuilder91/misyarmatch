@@ -131,7 +131,7 @@ export default function Home() {
                 <Link href="/what-is-misyar">{t("hero.cta.whatIsMisyar")}</Link>
               </Button>
             </div>
-            <p className="mt-5 text-xs tracking-wide" style={{color:'rgba(255,255,255,0.35)'}}>{t("hero.free")}</p>
+            <p className="mt-5 text-xs tracking-wide" style={{color:'rgba(255,255,255,0.35)'}}>Free for everyone. No credit card.</p>
           </div>
         </div>
       </section>
