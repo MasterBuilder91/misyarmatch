@@ -81,6 +81,16 @@ import ArticleTwoAdultsAttracted from "@/pages/blog/ArticleTwoAdultsAttracted";
 import ArticleDivorceeWithKids from "@/pages/blog/ArticleDivorceeWithKids";
 import ArticleIsLegalZina from "@/pages/blog/ArticleIsLegalZina";
 import ArticleConvertWoman from "@/pages/blog/ArticleConvertWoman";
+import ArticleZakatFitrMisyar from "@/pages/blog/ArticleZakatFitrMisyar";
+import ArticleMisyarInheritance from "@/pages/blog/ArticleMisyarInheritance";
+import ArticleMisyarRamadan from "@/pages/blog/ArticleMisyarRamadan";
+import ArticleMisyarIddah from "@/pages/blog/ArticleMisyarIddah";
+import ArticleMisyarChildren from "@/pages/blog/ArticleMisyarChildren";
+import ArticleRibaHaram from "@/pages/blog/ArticleRibaHaram";
+import ArticleHijabObligation from "@/pages/blog/ArticleHijabObligation";
+import ArticleMuslimNonMuslimMarriage from "@/pages/blog/ArticleMuslimNonMuslimMarriage";
+import ArticleMisyarHajjMahram from "@/pages/blog/ArticleMisyarHajjMahram";
+import ArticleIsSmokingHaram from "@/pages/blog/ArticleIsSmokingHaram";
 
 function Router() {
   return (
@@ -140,6 +150,16 @@ function Router() {
       <Route path="/blog/divorced-muslim-mother-misyar" component={ArticleDivorceeWithKids} />
       <Route path="/blog/misyar-not-legal-zina" component={ArticleIsLegalZina} />
       <Route path="/blog/muslim-convert-woman-marriage" component={ArticleConvertWoman} />
+      <Route path="/blog/zakat-al-fitr-misyar-wife" component={ArticleZakatFitrMisyar} />
+      <Route path="/blog/does-misyar-wife-inherit" component={ArticleMisyarInheritance} />
+      <Route path="/blog/misyar-and-ramadan" component={ArticleMisyarRamadan} />
+      <Route path="/blog/misyar-wife-iddah" component={ArticleMisyarIddah} />
+      <Route path="/blog/misyar-marriage-children-rights" component={ArticleMisyarChildren} />
+      <Route path="/blog/is-riba-haram-mortgages" component={ArticleRibaHaram} />
+      <Route path="/blog/is-hijab-obligatory" component={ArticleHijabObligation} />
+      <Route path="/blog/muslim-marry-non-muslim" component={ArticleMuslimNonMuslimMarriage} />
+      <Route path="/blog/misyar-husband-mahram-hajj" component={ArticleMisyarHajjMahram} />
+      <Route path="/blog/is-smoking-haram" component={ArticleIsSmokingHaram} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
