@@ -75,6 +75,12 @@ import ArticleMisyarAlreadyMarried from "@/pages/blog/ArticleMisyarAlreadyMarrie
 import ArticleMisyarDivorcedNoWali from "@/pages/blog/ArticleMisyarDivorcedNoWali";
 import ArticleMisyarPrivate from "@/pages/blog/ArticleMisyarPrivate";
 import ArticleIslamAndLoneliness from "@/pages/blog/ArticleIslamAndLoneliness";
+import ArticleOlderMuslimWomen from "@/pages/blog/ArticleOlderMuslimWomen";
+import ArticleAgeGapIslam from "@/pages/blog/ArticleAgeGapIslam";
+import ArticleTwoAdultsAttracted from "@/pages/blog/ArticleTwoAdultsAttracted";
+import ArticleDivorceeWithKids from "@/pages/blog/ArticleDivorceeWithKids";
+import ArticleIsLegalZina from "@/pages/blog/ArticleIsLegalZina";
+import ArticleConvertWoman from "@/pages/blog/ArticleConvertWoman";
 
 function Router() {
   return (
@@ -128,6 +134,12 @@ function Router() {
       <Route path="/blog/misyar-divorced-woman-no-wali" component={ArticleMisyarDivorcedNoWali} />
       <Route path="/blog/misyar-nikah-private-valid" component={ArticleMisyarPrivate} />
       <Route path="/blog/loneliness-muslim-communities" component={ArticleIslamAndLoneliness} />
+      <Route path="/blog/attractive-muslim-women-50s" component={ArticleOlderMuslimWomen} />
+      <Route path="/blog/age-gap-marriages-islam" component={ArticleAgeGapIslam} />
+      <Route path="/blog/two-adults-attracted-misyar" component={ArticleTwoAdultsAttracted} />
+      <Route path="/blog/divorced-muslim-mother-misyar" component={ArticleDivorceeWithKids} />
+      <Route path="/blog/misyar-not-legal-zina" component={ArticleIsLegalZina} />
+      <Route path="/blog/muslim-convert-woman-marriage" component={ArticleConvertWoman} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />

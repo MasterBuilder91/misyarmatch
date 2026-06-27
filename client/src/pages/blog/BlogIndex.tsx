@@ -5,7 +5,47 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
-    slug: "husband-provides-everything-except-himself",
+    slug: "attractive-muslim-women-50s",
+    title: "The Attractive Muslim Woman in Her 50s That Nobody Is Asking About",
+    excerpt: "She is sharp, warm, beautiful, and has desires that did not retire when she turned 50. She is supposed to pretend otherwise. Islam does not agree.",
+    tag: "Marriage & Relationships",
+    readTime: "10 min",
+  },
+  {
+    slug: "age-gap-marriages-islam",
+    title: "Age Gap Marriages in Islam: The Historical Reality vs. the Cultural Discomfort",
+    excerpt: "Umm Ayman and Zayd. Khadijah and the Prophet ﷺ. The most respected marriages in Islamic history involved older women and younger men. The Prophet arranged them himself.",
+    tag: "Marriage & Relationships",
+    readTime: "9 min",
+  },
+  {
+    slug: "two-adults-attracted-misyar",
+    title: "Two Muslim Adults Who Like Each Other. Lives That Cannot Merge. The Solution Has Always Been There.",
+    excerpt: "Two people. Mutual attraction. A hundred reasons the conventional marriage does not fit. So they do nothing. And one of them eventually finds somewhere less halal to put it.",
+    tag: "Marriage & Relationships",
+    readTime: "8 min",
+  },
+  {
+    slug: "divorced-muslim-mother-misyar",
+    title: "The Divorced Muslim Mother Who Doesn't Want Her Life Taken Over Again",
+    excerpt: "She rebuilt. She wants connection. She does not want to hand her independence to someone else again and hope for the best. Islam has an answer for exactly this.",
+    tag: "Marriage & Relationships",
+    readTime: "9 min",
+  },
+  {
+    slug: "misyar-not-legal-zina",
+    title: "'Misyar Is Just Legal Zina': Dismantling the Most Common Objection",
+    excerpt: "This objection sounds serious. It sounds Islamic. It is neither. Here is why — carefully, from the scholarship, without dismissing the concern behind it.",
+    tag: "Fiqh & Rights",
+    readTime: "9 min",
+  },
+  {
+    slug: "muslim-convert-woman-marriage",
+    title: "The Muslim Convert Woman Nobody Wants to Marry — And the Fiqh That Protects Her",
+    excerpt: "She took her shahada. She changed her life. She became genuinely Muslim. And then she discovered her welcome into parts of the ummah was conditional.",
+    tag: "New Muslims",
+    readTime: "9 min",
+  },
     title: "The Husband Who Provides Everything Except Himself",
     excerpt: "She has the house, the car, the holidays. What she does not have is her husband. And nobody will validate that this is a problem worth naming.",
     tag: "Marriage & Relationships",
