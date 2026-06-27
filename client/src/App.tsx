@@ -57,6 +57,15 @@ import ArticleTattoos from "@/pages/blog/ArticleTattoos";
 import ArticleConvertingToIslam from "@/pages/blog/ArticleConvertingToIslam";
 import ArticleAfterDeathIslam from "@/pages/blog/ArticleAfterDeathIslam";
 import ArticleMissFridayPrayer from "@/pages/blog/ArticleMissFridayPrayer";
+import ArticleVictorianMarriage from "@/pages/blog/ArticleVictorianMarriage";
+import ArticlePornAddiction from "@/pages/blog/ArticlePortAddiction";
+import ArticleArrangedMarriage from "@/pages/blog/ArticleArrangedMarriage";
+import ArticleMuslimWomanDesire from "@/pages/blog/ArticleMuslimWomanDesire";
+import ArticleMuslimDivorceSpiral from "@/pages/blog/ArticleMuslimDivorceSpiral";
+import ArticleWaitingForPerfect from "@/pages/blog/ArticleWaitingForPerfect";
+import ArticleSecondWife from "@/pages/blog/ArticleSecondWife";
+import ArticleHalalDating from "@/pages/blog/ArticleHalalDating";
+import ArticleMuslimWomenSexuality from "@/pages/blog/ArticleMuslimWomenSexuality";
 
 function Router() {
   return (
@@ -92,6 +101,15 @@ function Router() {
       <Route path="/blog/how-to-convert-to-islam" component={ArticleConvertingToIslam} />
       <Route path="/blog/what-happens-after-death-islam" component={ArticleAfterDeathIslam} />
       <Route path="/blog/missing-friday-prayer" component={ArticleMissFridayPrayer} />
+      <Route path="/blog/victorian-muslim-marriage" component={ArticleVictorianMarriage} />
+      <Route path="/blog/pornography-muslim-men" component={ArticlePornAddiction} />
+      <Route path="/blog/arranged-marriage-reality" component={ArticleArrangedMarriage} />
+      <Route path="/blog/muslim-woman-desire" component={ArticleMuslimWomanDesire} />
+      <Route path="/blog/muslim-divorce-spiral" component={ArticleMuslimDivorceSpiral} />
+      <Route path="/blog/waiting-for-perfect-marriage" component={ArticleWaitingForPerfect} />
+      <Route path="/blog/being-the-second-wife" component={ArticleSecondWife} />
+      <Route path="/blog/halal-dating-contradiction" component={ArticleHalalDating} />
+      <Route path="/blog/muslim-women-sexuality-classical" component={ArticleMuslimWomenSexuality} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
