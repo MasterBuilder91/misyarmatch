@@ -100,6 +100,16 @@ import ArticleZakat from "@/pages/blog/ArticleZakat";
 import ArticleHowManyRakats from "@/pages/blog/ArticleHowManyRakats";
 import ArticleDuaAnxiety from "@/pages/blog/ArticleDuaAnxiety";
 import ArticleMasturbationIslam from "@/pages/blog/ArticleMasturbationIslam";
+import ArticleSisterWives from "@/pages/blog/ArticleSisterWives";
+import ArticlePakistaniWoman from "@/pages/blog/ArticlePakistaniWoman";
+import ArticleArabHusband from "@/pages/blog/ArticleArabHusband";
+import ArticleConvertMarriageCulture from "@/pages/blog/ArticleConvertMarriageCulture";
+import ArticleLGBTQIslam from "@/pages/blog/ArticleLGBTQIslam";
+import ArticleNonMuslimFriends from "@/pages/blog/ArticleNonMuslimFriends";
+import ArticleTawbah from "@/pages/blog/ArticleTawbah";
+import ArticleDuaSleep from "@/pages/blog/ArticleDuaSleep";
+import ArticleMisyarExpat from "@/pages/blog/ArticleMisyarExpat";
+import ArticleMisyarGulf from "@/pages/blog/ArticleMisyarGulf";
 
 function Router() {
   return (
@@ -178,6 +188,16 @@ function Router() {
       <Route path="/blog/how-many-rakats-each-prayer" component={ArticleHowManyRakats} />
       <Route path="/blog/dua-for-anxiety-stress" component={ArticleDuaAnxiety} />
       <Route path="/blog/is-masturbation-haram" component={ArticleMasturbationIslam} />
+      <Route path="/blog/sister-wives-polygyny-islamic-boundaries" component={ArticleSisterWives} />
+      <Route path="/blog/pakistani-muslim-woman-wanted" component={ArticlePakistaniWoman} />
+      <Route path="/blog/arab-husband-stopped-seeing-wife" component={ArticleArabHusband} />
+      <Route path="/blog/convert-muslim-marriage-culture-shock" component={ArticleConvertMarriageCulture} />
+      <Route path="/blog/what-does-islam-say-about-lgbtq" component={ArticleLGBTQIslam} />
+      <Route path="/blog/can-muslims-have-non-muslim-friends" component={ArticleNonMuslimFriends} />
+      <Route path="/blog/how-to-make-tawbah" component={ArticleTawbah} />
+      <Route path="/blog/dua-before-sleeping" component={ArticleDuaSleep} />
+      <Route path="/blog/misyar-for-muslim-expat" component={ArticleMisyarExpat} />
+      <Route path="/blog/misyar-in-the-gulf" component={ArticleMisyarGulf} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
