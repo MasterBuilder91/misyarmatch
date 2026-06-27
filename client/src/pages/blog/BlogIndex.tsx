@@ -5,7 +5,33 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
-    slug: "bdsm-and-islam",
+    slug: "muslim-men-marry-christian-jewish-women",
+    title: "Muslim Men and the Permission They Forgot: Marrying Christian and Jewish Women in the West",
+    excerpt: "A Quranic permission so clear, so explicit, so unambiguous — buried so thoroughly by cultural pressure that millions of Muslim men in the West do not know it exists.",
+    tag: "Marriage & Fiqh",
+    readTime: "10 min",
+  },
+  {
+    slug: "pornography-destroys-muslim-marriages",
+    title: "What Muslim Men Learn About Women From Pornography — And Why It Destroys Their Marriages",
+    excerpt: "For most Muslim men in the West, pornography was their first detailed education about intimacy. That education was wrong in almost every important way. Here is what Al-Ghazali taught instead.",
+    tag: "Marriage & Relationships",
+    readTime: "10 min",
+  },
+  {
+    slug: "somali-muslim-marriage-culture",
+    title: "The Somali Muslim Marriage and What the Culture Cost Her",
+    excerpt: "She is Muslim, she is 31, and she grew up watching aunts navigate marriages where everyone had strong opinions except about whether the two people involved actually wanted each other.",
+    tag: "Marriage & Relationships",
+    readTime: "10 min",
+  },
+  {
+    slug: "mother-in-law-destroys-muslim-marriage",
+    title: "The Mother-in-Law Who Destroyed the Marriage: Islam's Actual Position on Interference",
+    excerpt: "She loved her son. She believed her involvement was protective. The Islamic scholars are explicit about a wife's right to a private household — rights that interference violates.",
+    tag: "Marriage & Relationships",
+    readTime: "10 min",
+  },
     title: "BDSM and Islam: What the Fiqh Actually Says About Power, Consent, and Intimacy in Marriage",
     excerpt: "If you found this through a search about BDSM, welcome. You are not going to be lectured. You are going to get an honest engagement with what Islamic scholarship says — and you might be surprised.",
     tag: "Marriage & Intimacy",

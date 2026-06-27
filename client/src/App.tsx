@@ -116,6 +116,10 @@ import ArticleMSANikah from "@/pages/blog/ArticleMSANikah";
 import ArticleMisyarFourWives from "@/pages/blog/ArticleMisyarFourWives";
 import ArticleAbortionIslam from "@/pages/blog/ArticleAbortionIslam";
 import ArticleWudu from "@/pages/blog/ArticleWudu";
+import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
+import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
+import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
+import ArticleMotherInLaw from "@/pages/blog/ArticleMotherInLaw";
 
 function Router() {
   return (
@@ -210,6 +214,10 @@ function Router() {
       <Route path="/blog/misyar-wife-counts-four-wives" component={ArticleMisyarFourWives} />
       <Route path="/blog/abortion-ruling-in-islam" component={ArticleAbortionIslam} />
       <Route path="/blog/how-to-perform-wudu" component={ArticleWudu} />
+      <Route path="/blog/muslim-men-marry-christian-jewish-women" component={ArticleMarryingKitabiyya} />
+      <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
+      <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />
+      <Route path="/blog/mother-in-law-destroys-muslim-marriage" component={ArticleMotherInLaw} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
