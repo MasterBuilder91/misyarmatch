@@ -37,7 +37,7 @@ const ARTICLES = [
     slug: 'how-to-pray-tahajjud',
     title: 'How to Pray Tahajjud: The Night Prayer That Changes Everything',
     excerpt: 'The Prophet ﷺ never abandoned it. His companions competed for it. Understanding why requires understanding what happens in those quiet hours when the world is asleep.',
-    tag: 'Worship & Du'a',
+    tag: "Worship & Du'a",
     readTime: '7 min',
   },
   {
