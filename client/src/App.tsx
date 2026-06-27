@@ -47,6 +47,16 @@ import ArticleWomanDivorce from "@/pages/blog/ArticleWomanDivorce";
 import ArticleSecondMarriage from "@/pages/blog/ArticleSecondMarriage";
 import ArticleWomanLivingAlone from "@/pages/blog/ArticleWomanLivingAlone";
 import ArticleNikahFirst from "@/pages/blog/ArticleNikahFirst";
+import ArticleMusicInIslam from "@/pages/blog/ArticleMusicInIslam";
+import ArticleBoyfriendGirlfriend from "@/pages/blog/ArticleBoyfriendGirlfriend";
+import ArticleGhusl from "@/pages/blog/ArticleGhusl";
+import ArticleCryptoHalal from "@/pages/blog/ArticleCryptoHalal";
+import ArticleBirthdays from "@/pages/blog/ArticleBirthdays";
+import ArticleDepressionIslam from "@/pages/blog/ArticleDepressionIslam";
+import ArticleTattoos from "@/pages/blog/ArticleTattoos";
+import ArticleConvertingToIslam from "@/pages/blog/ArticleConvertingToIslam";
+import ArticleAfterDeathIslam from "@/pages/blog/ArticleAfterDeathIslam";
+import ArticleMissFridayPrayer from "@/pages/blog/ArticleMissFridayPrayer";
 
 function Router() {
   return (
@@ -72,6 +82,16 @@ function Router() {
       <Route path="/blog/second-marriage-islam" component={ArticleSecondMarriage} />
       <Route path="/blog/muslim-woman-living-alone" component={ArticleWomanLivingAlone} />
       <Route path="/blog/nikah-first-always" component={ArticleNikahFirst} />
+      <Route path="/blog/music-in-islam" component={ArticleMusicInIslam} />
+      <Route path="/blog/boyfriend-girlfriend-islam" component={ArticleBoyfriendGirlfriend} />
+      <Route path="/blog/how-to-perform-ghusl" component={ArticleGhusl} />
+      <Route path="/blog/is-crypto-halal" component={ArticleCryptoHalal} />
+      <Route path="/blog/birthdays-in-islam" component={ArticleBirthdays} />
+      <Route path="/blog/depression-and-islam" component={ArticleDepressionIslam} />
+      <Route path="/blog/tattoos-in-islam" component={ArticleTattoos} />
+      <Route path="/blog/how-to-convert-to-islam" component={ArticleConvertingToIslam} />
+      <Route path="/blog/what-happens-after-death-islam" component={ArticleAfterDeathIslam} />
+      <Route path="/blog/missing-friday-prayer" component={ArticleMissFridayPrayer} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
