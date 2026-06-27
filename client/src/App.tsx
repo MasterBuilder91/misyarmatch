@@ -66,6 +66,15 @@ import ArticleWaitingForPerfect from "@/pages/blog/ArticleWaitingForPerfect";
 import ArticleSecondWife from "@/pages/blog/ArticleSecondWife";
 import ArticleHalalDating from "@/pages/blog/ArticleHalalDating";
 import ArticleMuslimWomenSexuality from "@/pages/blog/ArticleMuslimWomenSexuality";
+import ArticleHusbandProvides from "@/pages/blog/ArticleHusbandProvides";
+import ArticleMenTerrifiedOfDesire from "@/pages/blog/ArticleMenTerrifiedOfDesire";
+import ArticleGoodMuslimGirl from "@/pages/blog/ArticleGoodMuslimGirl";
+import ArticleMahrStatusSymbol from "@/pages/blog/ArticleMahrStatusSymbol";
+import ArticleWidowMoveOn from "@/pages/blog/ArticleWidowMoveOn";
+import ArticleMisyarAlreadyMarried from "@/pages/blog/ArticleMisyarAlreadyMarried";
+import ArticleMisyarDivorcedNoWali from "@/pages/blog/ArticleMisyarDivorcedNoWali";
+import ArticleMisyarPrivate from "@/pages/blog/ArticleMisyarPrivate";
+import ArticleIslamAndLoneliness from "@/pages/blog/ArticleIslamAndLoneliness";
 
 function Router() {
   return (
@@ -110,6 +119,15 @@ function Router() {
       <Route path="/blog/being-the-second-wife" component={ArticleSecondWife} />
       <Route path="/blog/halal-dating-contradiction" component={ArticleHalalDating} />
       <Route path="/blog/muslim-women-sexuality-classical" component={ArticleMuslimWomenSexuality} />
+      <Route path="/blog/husband-provides-everything-except-himself" component={ArticleHusbandProvides} />
+      <Route path="/blog/muslim-men-terrified-of-desire" component={ArticleMenTerrifiedOfDesire} />
+      <Route path="/blog/good-muslim-girl-dying-inside" component={ArticleGoodMuslimGirl} />
+      <Route path="/blog/mahr-status-symbol" component={ArticleMahrStatusSymbol} />
+      <Route path="/blog/muslim-widow-move-on" component={ArticleWidowMoveOn} />
+      <Route path="/blog/misyar-already-married" component={ArticleMisyarAlreadyMarried} />
+      <Route path="/blog/misyar-divorced-woman-no-wali" component={ArticleMisyarDivorcedNoWali} />
+      <Route path="/blog/misyar-nikah-private-valid" component={ArticleMisyarPrivate} />
+      <Route path="/blog/loneliness-muslim-communities" component={ArticleIslamAndLoneliness} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
