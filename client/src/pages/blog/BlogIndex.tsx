@@ -5,7 +5,47 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
-    slug: "sister-wives-polygyny-islamic-boundaries",
+    slug: "bdsm-and-islam",
+    title: "BDSM and Islam: What the Fiqh Actually Says About Power, Consent, and Intimacy in Marriage",
+    excerpt: "If you found this through a search about BDSM, welcome. You are not going to be lectured. You are going to get an honest engagement with what Islamic scholarship says — and you might be surprised.",
+    tag: "Marriage & Intimacy",
+    readTime: "10 min",
+  },
+  {
+    slug: "bestiality-accusation-islam-fiqh",
+    title: "The Accusation of Bestiality Against Muslims: What the Fiqh Actually Says",
+    excerpt: "This accusation is false. The classical scholars addressed it directly and explicitly. Here is the complete, scholarship-backed rebuttal — and what Islam is actually promoting.",
+    tag: "Belief & Creed",
+    readTime: "8 min",
+  },
+  {
+    slug: "msa-students-get-the-nikah",
+    title: "MSA Students: Get the Nikah. Before You Do Something You Cannot Take Back.",
+    excerpt: "Taqwa, even when it looks tacky to the naysayers. Nikah, even when nobody throws you a party. The Prophet ﷺ said marry whoever is able — not whoever has graduated.",
+    tag: "Marriage & Relationships",
+    readTime: "9 min",
+  },
+  {
+    slug: "misyar-wife-counts-four-wives",
+    title: "Does a Misyar Wife Count Toward the Limit of Four Wives?",
+    excerpt: "Yes. Unambiguously. A misyar wife is a wife. This is one of the clearest indicators of the misyar marriage's full legal status — and every man considering one must understand this.",
+    tag: "Fiqh & Rights",
+    readTime: "6 min",
+  },
+  {
+    slug: "abortion-ruling-in-islam",
+    title: "What Is the Islamic Ruling on Abortion? The Complete Scholarly Picture",
+    excerpt: "Neither absolute prohibition nor unrestricted permission. The Islamic framework is stage-based, reason-dependent, and genuinely nuanced. Here is the complete, honest picture.",
+    tag: "Fiqh & Rights",
+    readTime: "9 min",
+  },
+  {
+    slug: "how-to-perform-wudu",
+    title: "How to Perform Wudu Correctly — The Complete Step-by-Step Guide",
+    excerpt: "The obligatory elements, the full sunnah method, what breaks it, and where the four madhabs differ — everything you need.",
+    tag: "Worship & Purification",
+    readTime: "6 min",
+  },
     title: "Sister Wives, Polygyny, and Where Islam Draws the Line — Completely",
     excerpt: "The modern 'sister wives' concept sounds like beautiful bonding. Islam draws clear, precise, fiqh-backed lines around what co-wives owe each other — and what they absolutely do not.",
     tag: "Marriage & Fiqh",

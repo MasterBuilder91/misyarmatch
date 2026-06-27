@@ -110,6 +110,12 @@ import ArticleTawbah from "@/pages/blog/ArticleTawbah";
 import ArticleDuaSleep from "@/pages/blog/ArticleDuaSleep";
 import ArticleMisyarExpat from "@/pages/blog/ArticleMisyarExpat";
 import ArticleMisyarGulf from "@/pages/blog/ArticleMisyarGulf";
+import ArticleBDSMIslam from "@/pages/blog/ArticleBDSMIslam";
+import ArticleBeastialityIslam from "@/pages/blog/ArticleBeastialityIslam";
+import ArticleMSANikah from "@/pages/blog/ArticleMSANikah";
+import ArticleMisyarFourWives from "@/pages/blog/ArticleMisyarFourWives";
+import ArticleAbortionIslam from "@/pages/blog/ArticleAbortionIslam";
+import ArticleWudu from "@/pages/blog/ArticleWudu";
 
 function Router() {
   return (
@@ -198,6 +204,12 @@ function Router() {
       <Route path="/blog/dua-before-sleeping" component={ArticleDuaSleep} />
       <Route path="/blog/misyar-for-muslim-expat" component={ArticleMisyarExpat} />
       <Route path="/blog/misyar-in-the-gulf" component={ArticleMisyarGulf} />
+      <Route path="/blog/bdsm-and-islam" component={ArticleBDSMIslam} />
+      <Route path="/blog/bestiality-accusation-islam-fiqh" component={ArticleBeastialityIslam} />
+      <Route path="/blog/msa-students-get-the-nikah" component={ArticleMSANikah} />
+      <Route path="/blog/misyar-wife-counts-four-wives" component={ArticleMisyarFourWives} />
+      <Route path="/blog/abortion-ruling-in-islam" component={ArticleAbortionIslam} />
+      <Route path="/blog/how-to-perform-wudu" component={ArticleWudu} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
