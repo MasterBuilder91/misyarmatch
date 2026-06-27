@@ -32,6 +32,8 @@ const ARTICLES = [
     tag: "Marriage & Relationships",
     readTime: "10 min",
   },
+  {
+    slug: "bdsm-and-islam",
     title: "BDSM and Islam: What the Fiqh Actually Says About Power, Consent, and Intimacy in Marriage",
     excerpt: "If you found this through a search about BDSM, welcome. You are not going to be lectured. You are going to get an honest engagement with what Islamic scholarship says — and you might be surprised.",
     tag: "Marriage & Intimacy",
@@ -72,6 +74,8 @@ const ARTICLES = [
     tag: "Worship & Purification",
     readTime: "6 min",
   },
+  {
+    slug: "sister-wives-polygyny-islamic-boundaries",
     title: "Sister Wives, Polygyny, and Where Islam Draws the Line — Completely",
     excerpt: "The modern 'sister wives' concept sounds like beautiful bonding. Islam draws clear, precise, fiqh-backed lines around what co-wives owe each other — and what they absolutely do not.",
     tag: "Marriage & Fiqh",
@@ -140,6 +144,8 @@ const ARTICLES = [
     tag: "Marriage & Relationships",
     readTime: "8 min",
   },
+  {
+    slug: "misyar-wife-travel-permission",
     title: "Does a Misyar Wife Need Her Husband's Permission to Travel?",
     excerpt: "The ruling on travel permission in a misyar arrangement — where her independence was part of the deal from the start.",
     tag: "Fiqh & Rights",
@@ -201,6 +207,8 @@ const ARTICLES = [
     tag: "Halal & Haram",
     readTime: "7 min",
   },
+  {
+    slug: "zakat-al-fitr-misyar-wife",
     title: "Zakat al-Fitr: Who Must Pay It — And Does a Man Pay It for His Misyar Wife?",
     excerpt: "Yes — and the answer reveals something important: a misyar wife is a real wife, with the rights and obligations that come with that status.",
     tag: "Worship & Fiqh",
@@ -269,6 +277,8 @@ const ARTICLES = [
     tag: "Halal & Haram",
     readTime: "6 min",
   },
+  {
+    slug: "attractive-muslim-women-50s",
     title: "The Attractive Muslim Woman in Her 50s That Nobody Is Asking About",
     excerpt: "She is sharp, warm, beautiful, and has desires that did not retire when she turned 50. She is supposed to pretend otherwise. Islam does not agree.",
     tag: "Marriage & Relationships",
@@ -309,6 +319,8 @@ const ARTICLES = [
     tag: "New Muslims",
     readTime: "9 min",
   },
+  {
+    slug: "husband-provides-everything-except-himself",
     title: "The Husband Who Provides Everything Except Himself",
     excerpt: "She has the house, the car, the holidays. What she does not have is her husband. And nobody will validate that this is a problem worth naming.",
     tag: "Marriage & Relationships",
@@ -370,6 +382,8 @@ const ARTICLES = [
     tag: "Muslim Life",
     readTime: "9 min",
   },
+  {
+    slug: "victorian-muslim-marriage",
     title: "The Victorian Muslim Wedding: Why We Built a Beautiful Trap and Called It Deen",
     excerpt: "The walimah with 300 guests. The bride in gold. The sheikh with tears in his eyes. It is beautiful. It is also destroying people. Let's be honest about both.",
     tag: "Marriage & Relationships",
@@ -431,6 +445,8 @@ const ARTICLES = [
     tag: "Marriage & Intimacy",
     readTime: "9 min",
   },
+  {
+    slug: "music-in-islam",
     title: "Is Music Haram in Islam? The Full Scholarly Debate",
     excerpt: "Few Islamic questions generate more debate. This is not a simple yes or no — there is genuine scholarly disagreement, and honest Muslims deserve an honest explanation.",
     tag: "Halal & Haram",
@@ -499,6 +515,8 @@ const ARTICLES = [
     tag: "Worship",
     readTime: "5 min",
   },
+  {
+    slug: "nikah-first-always",
     title: "Is It Haram to Be in a Relationship? Islam's Answer Is Simple: Nikah First. Always.",
     excerpt: "Yes, a romantic relationship outside of marriage is haram. But Islam's answer is not 'be alone and suffer.' It is: get married. The path is simpler than you think.",
     tag: "Marriage & Relationships",
