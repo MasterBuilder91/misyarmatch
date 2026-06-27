@@ -120,6 +120,14 @@ import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
 import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
 import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
 import ArticleMotherInLaw from "@/pages/blog/ArticleMotherInLaw";
+import ArticleTurkishManCry from "@/pages/blog/ArticleTurkishManCry";
+import ArticleBlackAmericanMuslim from "@/pages/blog/ArticleBlackAmericanMuslim";
+import ArticleAbusiveMarriage from "@/pages/blog/ArticleAbusiveMariage";
+import ArticleIslamSuicide from "@/pages/blog/ArticleIslamSuicide";
+import ArticleTahajjud from "@/pages/blog/ArticleTahajjud";
+import ArticleWastingFood from "@/pages/blog/ArticleWastingFood";
+import ArticleMisyarEid from "@/pages/blog/ArticleMisyarEid";
+import ArticleMusicRamadan from "@/pages/blog/ArticleMusicRamadan";
 
 function Router() {
   return (
@@ -218,6 +226,14 @@ function Router() {
       <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
       <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />
       <Route path="/blog/mother-in-law-destroys-muslim-marriage" component={ArticleMotherInLaw} />
+      <Route path="/blog/turkish-muslim-man-emotional-unavailability" component={ArticleTurkishManCry} />
+      <Route path="/blog/black-american-muslim-marriage-loneliness" component={ArticleBlackAmericanMuslim} />
+      <Route path="/blog/muslim-woman-married-abuser-imam-said-sabr" component={ArticleAbusiveMarriage} />
+      <Route path="/blog/what-does-islam-say-about-suicide" component={ArticleIslamSuicide} />
+      <Route path="/blog/how-to-pray-tahajjud" component={ArticleTahajjud} />
+      <Route path="/blog/is-wasting-food-haram" component={ArticleWastingFood} />
+      <Route path="/blog/misyar-spouses-celebrate-eid" component={ArticleMisyarEid} />
+      <Route path="/blog/is-music-haram-during-ramadan" component={ArticleMusicRamadan} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
