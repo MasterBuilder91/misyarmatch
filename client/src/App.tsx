@@ -20,6 +20,9 @@ import Pricing from "./pages/Pricing";
 import WhatIsMisyar from "./pages/WhatIsMisyar";
 import HowItWorks from "./pages/HowItWorks";
 import YouDoMisyarAlready from "./pages/YouDoMisyarAlready";
+import MisyarForHer from "./pages/MisyarForHer";
+import MisyarForHim from "./pages/MisyarForHim";
+import NoFakeProfiles from "./pages/NoFakeProfiles";
 import WhyMisyarWorks from "./pages/WhyMisyarWorks";
 import FAQ from "./pages/FAQ";
 import Safety from "./pages/Safety";
@@ -60,6 +63,9 @@ function Router() {
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/why-misyar-works" component={WhyMisyarWorks} />
       <Route path="/you-do-misyar-already" component={YouDoMisyarAlready} />
+      <Route path="/misyar-for-her" component={MisyarForHer} />
+      <Route path="/misyar-for-him" component={MisyarForHim} />
+      <Route path="/no-fake-profiles" component={NoFakeProfiles} />
       <Route path="/faq" component={FAQ} />
       <Route path="/safety" component={Safety} />
       <Route path="/admin/import" component={AdminImport} />

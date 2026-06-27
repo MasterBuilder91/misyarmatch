@@ -146,31 +146,31 @@ export default function Home() {
       <section className="py-10 bg-white border-b border-rose-100">
         <div className="container">
           <p className="text-center text-xs uppercase tracking-wider text-gray-400 mb-6">
-            {language === "ar" ? "المسيار في العالم العربي اليوم" : "Misyar in the Arab world today"}
+            {language === "ar" ? "المسيار عبر التاريخ" : "Misyar through history"}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-rose-700">{language === "ar" ? "قرون" : "Centuries"}</div>
+              <p className="mt-1 text-sm text-gray-500">
+                {language === "ar"
+                  ? "المسلمون يمارسون أشكالاً من عقود الزواج المرنة المماثلة للمسيار منذ قرون"
+                  : "Muslims have practiced flexible marriage contracts like this for centuries — misyar is simply the modern name for it"}
+              </p>
+            </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-rose-700">7/10</div>
               <p className="mt-1 text-sm text-gray-500">
                 {language === "ar"
-                  ? "من عقود الزواج في بعض المناطق هي عقود مسيار، وفق مسؤولي زواج سعوديين"
-                  : "of marriage contracts in some areas are reportedly misyar, per Saudi marriage officials"}
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-rose-700">{language === "ar" ? "عقود" : "Decades"}</div>
-              <p className="mt-1 text-sm text-gray-500">
-                {language === "ar"
-                  ? "المسيار معترف به قانونياً في المملكة العربية السعودية منذ عقود"
-                  : "Misyar has been legally recognized in Saudi Arabia for decades"}
+                  ? "من عقود الزواج في بعض المناطق هي عقود مسيار اليوم"
+                  : "of marriage contracts in some areas today are reportedly misyar"}
               </p>
             </div>
             <div className="text-center col-span-2 md:col-span-1">
               <div className="text-3xl md:text-4xl font-bold text-rose-700">{language === "ar" ? "واقع منتشر" : "Widespread"}</div>
               <p className="mt-1 text-sm text-gray-500">
                 {language === "ar"
-                  ? "وصفه أكاديميون بأنه \"واقع اجتماعي منتشر\" في المجتمع الخليجي"
-                  : 'Described by academics as "a widespread social reality" across Gulf society'}
+                  ? "وصفه أكاديميون بأنه \"واقع اجتماعي منتشر\" في المجتمع الخليجي اليوم — وبالمناسبة، معترف به قانونياً أيضاً"
+                  : 'Described by academics as "a widespread social reality" today — and, by the way, it\'s legally recognized too'}
               </p>
             </div>
           </div>
@@ -184,6 +184,49 @@ export default function Home() {
 
       {/* Trust Stats Counter intentionally removed — no fabricated platform metrics.
           Add real CounterStat blocks back here once there's genuine member/match data to report. */}
+
+      {/* Quiz / Trust CTA Section */}
+      <section className="py-16 bg-rose-50">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-center text-gray-900 mb-2">
+            {language === "ar" ? "هل المسيار مناسب لك؟" : "Is Misyar Right For You?"}
+          </h2>
+          <p className="text-center text-gray-500 mb-10">
+            {language === "ar"
+              ? "تحقق من بضع جمل واحصل على إجابتك في دقيقة واحدة"
+              : "Check a few statements. Get your answer in under a minute."}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/misyar-for-her" className="bg-white rounded-2xl p-6 border border-rose-100 hover:shadow-md transition-shadow text-center">
+              <h3 className="font-bold text-rose-700 mb-2">{language === "ar" ? "للنساء" : "For Women"}</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                {language === "ar" ? "هل المسيار مناسب لكِ؟" : "Take the quiz"}
+              </p>
+              <span className="inline-flex items-center text-sm font-medium text-rose-600">
+                {language === "ar" ? "ابدئي" : "Start"} <ArrowRight className="w-4 h-4 ml-1" />
+              </span>
+            </Link>
+            <Link href="/misyar-for-him" className="bg-white rounded-2xl p-6 border border-rose-100 hover:shadow-md transition-shadow text-center">
+              <h3 className="font-bold text-rose-700 mb-2">{language === "ar" ? "للرجال" : "For Men"}</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                {language === "ar" ? "هل المسيار مناسب لك؟" : "Take the quiz"}
+              </p>
+              <span className="inline-flex items-center text-sm font-medium text-rose-600">
+                {language === "ar" ? "ابدأ" : "Start"} <ArrowRight className="w-4 h-4 ml-1" />
+              </span>
+            </Link>
+            <Link href="/no-fake-profiles" className="bg-white rounded-2xl p-6 border border-rose-100 hover:shadow-md transition-shadow text-center">
+              <h3 className="font-bold text-rose-700 mb-2">{language === "ar" ? "وعدنا لك" : "Our Promise"}</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                {language === "ar" ? "لا ملفات وهمية. أبداً." : "No fake profiles. Ever."}
+              </p>
+              <span className="inline-flex items-center text-sm font-medium text-rose-600">
+                {language === "ar" ? "اقرأ المزيد" : "Read more"} <ArrowRight className="w-4 h-4 ml-1" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Privacy Section — "Your Privacy is Sacred" */}
       <section className="py-16 bg-gradient-to-br from-gray-900 to-rose-950 text-white" dir={isRTL ? "rtl" : "ltr"}>
