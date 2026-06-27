@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
+import { useState } from "react";
 import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
@@ -717,9 +718,26 @@ function getTagStyle(tag: string) {
   return TAG_COLORS[tag] ?? { bg: "#F3F4F6", text: "#374151" };
 }
 
+
+const ALL_CATEGORIES = ["All", ...Array.from(new Set(ARTICLES.map(a => a.tag))).sort()];
+const PAGE_SIZE = 12;
+
 export default function BlogIndex() {
   const featured = ARTICLES[0];
-  const rest = ARTICLES.slice(1);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [page, setPage] = useState(1);
+
+  const filtered = activeCategory === "All"
+    ? ARTICLES.slice(1)
+    : ARTICLES.filter(a => a.tag === activeCategory);
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  const handleCategory = (cat: string) => {
+    setActiveCategory(cat);
+    setPage(1);
+  };
 
   return (
     <Layout>
@@ -759,7 +777,7 @@ export default function BlogIndex() {
       <section className="py-16" style={{ background: "#F7F3EF" }}>
         <div className="container max-w-5xl mx-auto">
 
-          {/* Featured article */}
+          {activeCategory === "All" && page === 1 && (
           <Link href={`/blog/${featured.slug}`}>
             <div
               className="group mb-10 rounded-3xl overflow-hidden cursor-pointer transition-all hover:shadow-xl"
@@ -795,9 +813,30 @@ export default function BlogIndex() {
             </div>
           </Link>
 
+          {/* Category filters */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {ALL_CATEGORIES.map(cat => (
+              <button
+                key={cat}
+                onClick={() => handleCategory(cat)}
+                className="text-xs font-semibold px-3 py-1.5 rounded-full transition-all"
+                style={activeCategory === cat
+                  ? { background: "#7C1D2E", color: "#fff" }
+                  : { background: "#fff", color: "#6B7280", border: "1px solid #E5E7EB" }
+                }
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          <p className="text-sm text-gray-400 mb-6">
+            {filtered.length} article{filtered.length !== 1 ? "s" : ""}
+          </p>
+
           {/* Article grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {rest.map((article) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+            {visible.map((article) => {
               const tagStyle = getTagStyle(article.tag);
               return (
                 <Link key={article.slug} href={`/blog/${article.slug}`}>
@@ -830,6 +869,24 @@ export default function BlogIndex() {
               );
             })}
           </div>
+
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-3 mt-4">
+              <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}
+                className="px-4 py-2 rounded-xl text-sm font-medium disabled:opacity-30"
+                style={{ background: "#fff", border: "1px solid #E5E7EB" }}>← Prev</button>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
+                <button key={p} onClick={() => setPage(p)}
+                  className="w-9 h-9 rounded-xl text-sm font-bold"
+                  style={p === page ? { background: "#7C1D2E", color: "#fff" } : { background: "#fff", color: "#6B7280", border: "1px solid #E5E7EB" }}>
+                  {p}
+                </button>
+              ))}
+              <button onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}
+                className="px-4 py-2 rounded-xl text-sm font-medium disabled:opacity-30"
+                style={{ background: "#fff", border: "1px solid #E5E7EB" }}>Next →</button>
+            </div>
+          )}
         </div>
       </section>
     </Layout>
