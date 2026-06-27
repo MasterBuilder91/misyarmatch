@@ -91,6 +91,15 @@ import ArticleHijabObligation from "@/pages/blog/ArticleHijabObligation";
 import ArticleMuslimNonMuslimMarriage from "@/pages/blog/ArticleMuslimNonMuslimMarriage";
 import ArticleMisyarHajjMahram from "@/pages/blog/ArticleMisyarHajjMahram";
 import ArticleIsSmokingHaram from "@/pages/blog/ArticleIsSmokingHaram";
+import ArticleMisyarTravel from "@/pages/blog/ArticleMisyarTravel";
+import ArticleMisyarDivorce from "@/pages/blog/ArticleMisyarDivorce";
+import ArticleWrongWoman from "@/pages/blog/ArticleWrongWoman";
+import ArticleNeverMarry from "@/pages/blog/ArticleNeverMarry";
+import ArticleBedroomDead from "@/pages/blog/ArticleBedroomDead";
+import ArticleZakat from "@/pages/blog/ArticleZakat";
+import ArticleHowManyRakats from "@/pages/blog/ArticleHowManyRakats";
+import ArticleDuaAnxiety from "@/pages/blog/ArticleDuaAnxiety";
+import ArticleMasturbationIslam from "@/pages/blog/ArticleMasturbationIslam";
 
 function Router() {
   return (
@@ -160,6 +169,15 @@ function Router() {
       <Route path="/blog/muslim-marry-non-muslim" component={ArticleMuslimNonMuslimMarriage} />
       <Route path="/blog/misyar-husband-mahram-hajj" component={ArticleMisyarHajjMahram} />
       <Route path="/blog/is-smoking-haram" component={ArticleIsSmokingHaram} />
+      <Route path="/blog/misyar-wife-travel-permission" component={ArticleMisyarTravel} />
+      <Route path="/blog/how-does-misyar-marriage-end" component={ArticleMisyarDivorce} />
+      <Route path="/blog/married-wrong-woman-mothers-choice" component={ArticleWrongWoman} />
+      <Route path="/blog/muslim-women-who-never-marry" component={ArticleNeverMarry} />
+      <Route path="/blog/halal-marriage-dead-bedroom" component={ArticleBedroomDead} />
+      <Route path="/blog/what-is-zakat" component={ArticleZakat} />
+      <Route path="/blog/how-many-rakats-each-prayer" component={ArticleHowManyRakats} />
+      <Route path="/blog/dua-for-anxiety-stress" component={ArticleDuaAnxiety} />
+      <Route path="/blog/is-masturbation-haram" component={ArticleMasturbationIslam} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
