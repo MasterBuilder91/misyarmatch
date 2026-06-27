@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
@@ -193,50 +193,143 @@ const ARTICLES = [
   },
 ];
 
+const TAG_COLORS: Record<string, { bg: string; text: string }> = {
+  "Marriage & Relationships": { bg: "#FEE2E2", text: "#991B1B" },
+  "Fiqh & Rights": { bg: "#FEF3C7", text: "#92400E" },
+  "Halal & Haram": { bg: "#D1FAE5", text: "#065F46" },
+  "Muslim Life": { bg: "#DBEAFE", text: "#1E40AF" },
+  "Worship & Purification": { bg: "#EDE9FE", text: "#5B21B6" },
+  "Worship & Du'a": { bg: "#EDE9FE", text: "#5B21B6" },
+  "Worship": { bg: "#EDE9FE", text: "#5B21B6" },
+  "Rights & Fiqh": { bg: "#FEF3C7", text: "#92400E" },
+  "Marriage & Intimacy": { bg: "#FEE2E2", text: "#991B1B" },
+  "Marriage & Fiqh": { bg: "#FEE2E2", text: "#991B1B" },
+  "New Muslims": { bg: "#CCFBF1", text: "#065F46" },
+  "Belief & Creed": { bg: "#E0E7FF", text: "#3730A3" },
+  "Singles": { bg: "#FCE7F3", text: "#9D174D" },
+  "Remarriage": { bg: "#FEE2E2", text: "#991B1B" },
+  "Long Distance": { bg: "#E0F2FE", text: "#075985" },
+  "Widowhood": { bg: "#F1F5F9", text: "#334155" },
+  "Islamic Values": { bg: "#D1FAE5", text: "#065F46" },
+  "Single Parents": { bg: "#FFEDD5", text: "#9A3412" },
+};
+
+function getTagStyle(tag: string) {
+  return TAG_COLORS[tag] ?? { bg: "#F3F4F6", text: "#374151" };
+}
+
 export default function BlogIndex() {
+  const featured = ARTICLES[0];
+  const rest = ARTICLES.slice(1);
+
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch Blog — Muslim Marriage, Misyar, Remarriage & Companionship"
-        description="In-depth articles on misyar marriage, Muslim remarriage after divorce, widowhood, long-distance Islamic marriage, and halal alternatives to loneliness. Written by a practicing cleric."
-        keywords="Muslim marriage blog, misyar marriage articles, Islamic remarriage guide, Muslim divorce remarriage, halal companionship, Muslim widows marriage, long distance nikah"
+        title="MisyarMatch Blog — Muslim Marriage, Misyar, Islamic Law & Halal Life"
+        description="In-depth articles on misyar marriage, Islamic fiqh, Muslim remarriage, halal relationships, worship, and everyday Islamic questions. Written by a practicing cleric."
+        keywords="Muslim marriage blog, misyar marriage articles, Islamic fiqh questions, halal haram, Muslim life guidance"
         canonical="/blog"
       />
 
-      <section className="gradient-hero text-white py-16">
-        <div className="container max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-wider" style={{background:'rgba(184,150,90,0.15)', border:'1px solid rgba(184,150,90,0.3)', color:'#D4AF7A'}}>
-            <BookOpen className="w-3 h-3" /> Knowledge Centre
+      {/* Hero */}
+      <section
+        className="text-white pt-20 pb-24 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #0D0B14 0%, #3B1328 55%, #7C1D2E 100%)" }}
+      >
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full border border-white" style={{ transform: "translate(20%, -20%)" }} />
+          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full border border-white" style={{ transform: "translate(-20%, 20%)" }} />
+        </div>
+        <div className="container max-w-4xl mx-auto relative text-center">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest"
+            style={{ background: "rgba(184,150,90,0.15)", border: "1px solid rgba(184,150,90,0.4)", color: "#D4AF7A" }}>
+            <BookOpen className="w-3.5 h-3.5" /> Knowledge Centre
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">The MisyarMatch Blog</h1>
-          <p className="text-rose-200 text-lg">Honest writing on Muslim marriage, misyar nikah, companionship, and building halal relationships in the modern world.</p>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold mb-5 leading-tight">
+            The MisyarMatch Blog
+          </h1>
+          <p className="text-rose-200/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            Honest writing on Muslim marriage, misyar nikah, Islamic fiqh, and building halal relationships in the modern world.
+          </p>
+          <div className="mt-8 text-sm text-rose-300/60">
+            {ARTICLES.length} articles · Written by Muhammed Abdullah
+          </div>
         </div>
       </section>
 
-      <section className="py-16 bg-[#F7F4F0]">
-        <div className="container max-w-4xl mx-auto">
-          <div className="grid gap-6">
-            {ARTICLES.map((article) => (
-              <Link key={article.slug} href={`/blog/${article.slug}`}>
-                <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-all cursor-pointer group">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full" style={{background:'#F0E4E8', color:'#7C1D2E'}}>
-                          {article.tag}
-                        </span>
-                        <span className="text-xs text-gray-400">{article.readTime} read</span>
-                      </div>
-                      <h2 className="font-serif text-xl font-bold text-gray-900 mb-2 group-hover:text-[#7C1D2E] transition-colors leading-snug">
-                        {article.title}
-                      </h2>
-                      <p className="text-gray-600 text-sm leading-relaxed">{article.excerpt}</p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-[#7C1D2E] flex-shrink-0 mt-1 transition-colors" />
-                  </div>
+      <section className="py-16" style={{ background: "#F7F3EF" }}>
+        <div className="container max-w-5xl mx-auto">
+
+          {/* Featured article */}
+          <Link href={`/blog/${featured.slug}`}>
+            <div
+              className="group mb-10 rounded-3xl overflow-hidden cursor-pointer transition-all hover:shadow-xl"
+              style={{
+                background: "linear-gradient(135deg, #0D0B14 0%, #3B1328 55%, #7C1D2E 100%)",
+                boxShadow: "0 8px 40px rgba(124,29,46,0.25)"
+              }}
+            >
+              <div className="p-10 md:p-14">
+                <div className="flex items-center gap-3 mb-5">
+                  <span
+                    className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+                    style={{ background: getTagStyle(featured.tag).bg, color: getTagStyle(featured.tag).text }}
+                  >
+                    {featured.tag}
+                  </span>
+                  <span className="text-xs text-rose-300/60">{featured.readTime} read</span>
+                  <span className="text-xs text-rose-300/60 ml-auto flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-rose-400 inline-block" /> Featured
+                  </span>
                 </div>
-              </Link>
-            ))}
+                <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-4 leading-tight group-hover:text-rose-100 transition-colors">
+                  {featured.title}
+                </h2>
+                <p className="text-rose-200/70 text-base md:text-lg leading-relaxed mb-6 max-w-2xl">
+                  {featured.excerpt}
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold"
+                  style={{ color: "#D4AF7A" }}>
+                  Read article <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Article grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {rest.map((article) => {
+              const tagStyle = getTagStyle(article.tag);
+              return (
+                <Link key={article.slug} href={`/blog/${article.slug}`}>
+                  <div
+                    className="group bg-white rounded-2xl p-7 border border-gray-100 cursor-pointer transition-all hover:shadow-lg hover:-translate-y-0.5 h-full flex flex-col"
+                    style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <span
+                        className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
+                        style={{ background: tagStyle.bg, color: tagStyle.text }}
+                      >
+                        {article.tag}
+                      </span>
+                      <span className="text-xs text-gray-400 flex items-center gap-1">
+                        <Clock className="w-3 h-3" /> {article.readTime}
+                      </span>
+                    </div>
+                    <h2 className="font-serif text-lg font-bold text-gray-900 mb-3 leading-snug group-hover:text-rose-700 transition-colors flex-1">
+                      {article.title}
+                    </h2>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-2">
+                      {article.excerpt}
+                    </p>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-600 group-hover:gap-2.5 transition-all">
+                      Read article <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
