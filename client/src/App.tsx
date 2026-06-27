@@ -36,6 +36,17 @@ import ArticleWidows from "@/pages/blog/ArticleWidows";
 import ArticleWhyStaySingle from "@/pages/blog/ArticleWhyStaySingle";
 import ArticleHalalAlternatives from "@/pages/blog/ArticleHalalAlternatives";
 import ArticleSingleParents from "@/pages/blog/ArticleSingleParents";
+import ArticleTalkingBeforeMarriage from "@/pages/blog/ArticleTalkingBeforeMarriage";
+import ArticleWaliRights from "@/pages/blog/ArticleWaliRights";
+import ArticleSecretNikah from "@/pages/blog/ArticleSecretNikah";
+import ArticleLoneliness from "@/pages/blog/ArticleLoneliness";
+import ArticleDuaForSpouse from "@/pages/blog/ArticleDuaForSpouse";
+import ArticleWifesRights from "@/pages/blog/ArticleWifesRights";
+import ArticleIntimacyInIslam from "@/pages/blog/ArticleIntimacyInIslam";
+import ArticleWomanDivorce from "@/pages/blog/ArticleWomanDivorce";
+import ArticleSecondMarriage from "@/pages/blog/ArticleSecondMarriage";
+import ArticleWomanLivingAlone from "@/pages/blog/ArticleWomanLivingAlone";
+import ArticleNikahFirst from "@/pages/blog/ArticleNikahFirst";
 
 function Router() {
   return (
@@ -50,6 +61,17 @@ function Router() {
       <Route path="/blog/why-muslims-stay-single" component={ArticleWhyStaySingle} />
       <Route path="/blog/halal-alternatives-to-dating" component={ArticleHalalAlternatives} />
       <Route path="/blog/muslim-single-parents-marriage" component={ArticleSingleParents} />
+      <Route path="/blog/talking-before-marriage" component={ArticleTalkingBeforeMarriage} />
+      <Route path="/blog/wali-rights-thayyib" component={ArticleWaliRights} />
+      <Route path="/blog/secret-nikah" component={ArticleSecretNikah} />
+      <Route path="/blog/loneliness-in-islam" component={ArticleLoneliness} />
+      <Route path="/blog/dua-for-spouse" component={ArticleDuaForSpouse} />
+      <Route path="/blog/wifes-rights-in-islam" component={ArticleWifesRights} />
+      <Route path="/blog/intimacy-in-islam" component={ArticleIntimacyInIslam} />
+      <Route path="/blog/woman-divorce-islam" component={ArticleWomanDivorce} />
+      <Route path="/blog/second-marriage-islam" component={ArticleSecondMarriage} />
+      <Route path="/blog/muslim-woman-living-alone" component={ArticleWomanLivingAlone} />
+      <Route path="/blog/nikah-first-always" component={ArticleNikahFirst} />
       {/* Speed chat removed */}
       <Route path="/matches" component={Matches} />
       <Route path="/messages" component={Messages} />
