@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Layout } from "@/components/Layout";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { EmailCapture } from "@/components/EmailCapture";
 import { ARTICLES } from "@/pages/blog/BlogIndex";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
@@ -203,6 +204,9 @@ export function ArticleLayout({ children, title, excerpt, slug, tag, readTime, d
               <p className="text-sm text-gray-500">Founder, MisyarMatch · Islamic Studies Diploma (Zad Academy) · Friday Khutbah Preacher</p>
             </div>
           </div>
+
+          {/* Email capture */}
+          <EmailCapture variant="banner" />
 
           {/* CTA */}
           <div

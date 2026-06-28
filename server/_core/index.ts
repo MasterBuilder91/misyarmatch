@@ -1,3 +1,4 @@
+import { pingOnStartup } from "../pingGoogle";
 import "dotenv/config";
 import { webcrypto } from "node:crypto";
 

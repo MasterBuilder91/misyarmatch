@@ -945,3 +945,26 @@ export const appRouter = router({
 });
 
 export type AppRouter = typeof appRouter;
+
+// Email subscription
+router.post("/subscribe", async (req, res) => {
+  try {
+    const { email } = req.body;
+    if (!email || !email.includes("@")) {
+      return res.status(400).json({ error: "Invalid email" });
+    }
+    // Store in DB
+    await db.execute(
+      "CREATE TABLE IF NOT EXISTS subscribers (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255) UNIQUE NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"
+    );
+    await db.execute(
+      "INSERT IGNORE INTO subscribers (email) VALUES (?)",
+      [email.toLowerCase().trim()]
+    );
+    console.log(`[Subscribe] New subscriber: ${email}`);
+    return res.json({ success: true });
+  } catch (err) {
+    console.error("[Subscribe] Error:", err);
+    return res.status(500).json({ error: "Server error" });
+  }
+});
