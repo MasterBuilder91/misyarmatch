@@ -50,6 +50,27 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   registerStorageProxy(app);
   registerOAuthRoutes(app);
+
+  // Email subscription
+  app.post("/api/subscribe", async (req: any, res: any) => {
+    try {
+      const { email } = req.body;
+      if (!email || !email.includes("@")) {
+        return res.status(400).json({ error: "Invalid email" });
+      }
+      const { db } = await import("../db");
+      await db.execute(
+        "CREATE TABLE IF NOT EXISTS subscribers (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255) UNIQUE NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"
+      );
+      await db.execute("INSERT IGNORE INTO subscribers (email) VALUES (?)", [email.toLowerCase().trim()]);
+      console.log(`[Subscribe] New subscriber: ${email}`);
+      return res.json({ success: true });
+    } catch (err) {
+      console.error("[Subscribe] Error:", err);
+      return res.status(500).json({ error: "Server error" });
+    }
+  });
+
   // tRPC API
   app.use(
     "/api/trpc",
