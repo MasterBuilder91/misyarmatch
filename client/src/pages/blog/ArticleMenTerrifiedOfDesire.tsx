@@ -4,6 +4,8 @@ export default function ArticleMenTerrifiedOfDesire() {
   return (
     <ArticleLayout
       title="Why Muslim Men Are Terrified of Their Own Desires"
+        slug="muslim-men-terrified-of-desire"
+        excerpt="He has been taught that strong desire is weakness. He has not been told that Islam built an entire institution specifically to serve it."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleVirginityWorship() {
   return (
     <ArticleLayout
       title="Stop Worshipping Virginity: What Islam Actually Says About Human Needs and Growing Up"
+        slug="stop-worshipping-virginity"
+        excerpt="Islam is a religion of needs. When you need to eat, you eat. When you need intimacy, you marry. The deen was never designed to produce people who pretend they have no body."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

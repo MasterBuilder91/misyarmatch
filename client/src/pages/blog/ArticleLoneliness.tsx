@@ -4,6 +4,8 @@ export default function ArticleLoneliness() {
   return (
     <ArticleLayout
       title="What Islam Says About Loneliness — And Why the Answer Is Always Nikah"
+        slug="loneliness-in-islam"
+        excerpt="Islam does not tell lonely Muslims to simply wait and suffer. It prescribes marriage — and the path to that marriage is more accessible than most people know."
       tag="Muslim Life"
       readTime="6 min"
       date="June 2026"

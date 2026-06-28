@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleMisyarNafaqah() {
   return (
-    <ArticleLayout title="What Happens to Nafaqah (Financial Support) in a Misyar Marriage?" tag="Fiqh & Rights" readTime="7 min" date="June 2026">
+    <ArticleLayout title="What Happens to Nafaqah (Financial Support) in a Misyar Marriage?"
+        slug="misyar-nafaqah-financial-support"
+        excerpt="The wife typically waives ongoing maintenance in misyar. But what cannot be waived, what happens if she changes her mind, and what remains obligatory regardless." tag="Fiqh & Rights" readTime="7 min" date="June 2026">
       <p>Nafaqah — the husband's obligation to financially support his wife — is one of the defining features of Islamic marriage. It is also one of the rights most commonly waived in misyar arrangements. Understanding exactly what is waived, what cannot be waived, and what happens if circumstances change is essential for anyone in or considering a misyar marriage.</p>
       <h2>The Standard Obligation</h2>
       <p>In a conventional Islamic marriage, a husband is obligated to provide his wife with food, clothing, shelter, and medical care appropriate to his financial means and her accustomed standard of living. This is documented across all four madhabs and rooted in the Quran: <em>"Let the man of means spend according to his means."</em> (65:7) It is a legal obligation, not a moral preference. A wife who is not receiving nafaqah has legal recourse through an Islamic court or qadi.</p>

@@ -4,6 +4,8 @@ export default function ArticleMahrStatusSymbol() {
   return (
     <ArticleLayout
       title="What Happened to Muslim Marriages When We Made Mahr a Status Symbol"
+        slug="mahr-status-symbol"
+        excerpt="The Prophet ﷺ said the best mahr is the simplest. Then we turned it into a financial negotiation that is blocking millions of Muslims from nikah."
       tag="Marriage & Fiqh"
       readTime="9 min"
       date="June 2026"

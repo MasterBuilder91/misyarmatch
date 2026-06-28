@@ -4,6 +4,8 @@ export default function ArticleTurkishManCry() {
   return (
     <ArticleLayout
       title="The Turkish Muslim Man Who Cannot Cry in Front of His Wife"
+        slug="turkish-muslim-man-emotional-unavailability"
+        excerpt="He built the business. He provides generously. He is respected by everyone. His wife has never seen him afraid. She is married to a performance of a man rather than a man."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

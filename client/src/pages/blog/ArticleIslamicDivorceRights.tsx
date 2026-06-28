@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleIslamicDivorceRights() {
   return (
-    <ArticleLayout title="Islamic Divorce Rights: What Every Muslim Woman Needs to Know and Is Never Told" tag="Fiqh & Rights" readTime="9 min" date="June 2026">
+    <ArticleLayout title="Islamic Divorce Rights: What Every Muslim Woman Needs to Know and Is Never Told"
+        slug="muslim-women-divorce-rights"
+        excerpt="What the fiqh guarantees and what women actually receive are often entirely different things — not because the fiqh is unclear, but because the knowledge is withheld." tag="Fiqh & Rights" readTime="9 min" date="June 2026">
       <p>Muslim women's rights in divorce are among the most clearly established and most consistently withheld pieces of knowledge in contemporary Muslim communities. What the fiqh guarantees and what women actually receive are often entirely different things — not because the fiqh is unclear, but because the knowledge is not transmitted and the culture actively suppresses its application.</p>
       <h2>The Right to Khul'</h2>
       <p>A Muslim woman can divorce herself from her husband by returning her mahr. This is called khul'. It does not require proof of abuse. It does not require the husband's cooperation. It does not require the community's approval. The Prophet ﷺ granted khul' to a woman who said simply: "I do not hate him for any fault in his character or religion, but I hate disbelief after Islam" — meaning she could not bear to be with him. He did not ask for more reasons. He accepted her word and the nikah ended.</p>

@@ -4,6 +4,8 @@ export default function ArticleMisyarInheritance() {
   return (
     <ArticleLayout
       title="Does a Misyar Wife Inherit From Her Husband? The Complete Ruling"
+        slug="does-misyar-wife-inherit"
+        excerpt="Yes. The inheritance share is set by Allah in the Quran. It cannot be waived by private agreement. The misyar wife inherits."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

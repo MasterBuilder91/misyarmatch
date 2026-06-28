@@ -4,6 +4,8 @@ export default function ArticleBeastialityIslam() {
   return (
     <ArticleLayout
       title="The Accusation of Bestiality Against Muslims: What the Fiqh Actually Says"
+        slug="bestiality-accusation-islam-fiqh"
+        excerpt="This accusation is false. The classical scholars addressed it directly and explicitly. Here is the complete, scholarship-backed rebuttal — and what Islam is actually promoting."
       tag="Belief & Creed"
       readTime="8 min"
       date="June 2026"

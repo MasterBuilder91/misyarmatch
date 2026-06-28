@@ -4,6 +4,8 @@ export default function ArticleZakat() {
   return (
     <ArticleLayout
       title="What Is Zakat and Who Must Pay It? The Complete Guide Including the Nisab for 2026"
+        slug="what-is-zakat"
+        excerpt="Zakat is precisely defined — 2.5% of eligible wealth held above the nisab for a full lunar year. Here is everything you need to know, including the misyar wife question."
       tag="Worship & Fiqh"
       readTime="8 min"
       date="June 2026"

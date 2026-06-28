@@ -4,6 +4,8 @@ export default function ArticleMisyarExpat() {
   return (
     <ArticleLayout
       title="Misyar for the Muslim Expat: The Halal Solution to the Longest Years of Your Life"
+        slug="misyar-for-muslim-expat"
+        excerpt="London for two years. Dubai before that. Riyadh before that. The career is excellent. The loneliness is real. Islam has always had a halal answer for this exact situation."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

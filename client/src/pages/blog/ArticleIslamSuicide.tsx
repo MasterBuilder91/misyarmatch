@@ -4,6 +4,8 @@ export default function ArticleIslamSuicide() {
   return (
     <ArticleLayout
       title="What Does Islam Say About Suicide? A Complete and Compassionate Guide"
+        slug="what-does-islam-say-about-suicide"
+        excerpt="If you are reading this because you are struggling — this is written with you in mind. Not as a lecture. As a genuine attempt to give you what Islam actually says, including the mercy."
       tag="Muslim Life"
       readTime="9 min"
       date="June 2026"

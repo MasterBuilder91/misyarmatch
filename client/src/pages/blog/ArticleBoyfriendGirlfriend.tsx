@@ -4,6 +4,8 @@ export default function ArticleBoyfriendGirlfriend() {
   return (
     <ArticleLayout
       title="Is It Haram to Have a Boyfriend or Girlfriend in Islam?"
+        slug="boyfriend-girlfriend-islam"
+        excerpt="Yes — but Islam's answer is not celibacy and suffering. It is nikah. And the path to nikah is more accessible than most people realise."
       tag="Halal & Haram"
       readTime="5 min"
       date="June 2026"

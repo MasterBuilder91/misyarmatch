@@ -4,6 +4,8 @@ export default function ArticleMisyarGulf() {
   return (
     <ArticleLayout
       title="Misyar in the Gulf: How It Actually Works on the Ground"
+        slug="misyar-in-the-gulf"
+        excerpt="Not an abstract fiqh concept — a living practice. Who does misyar in Saudi Arabia and the UAE, why, and what the arrangements actually look like."
       tag="Marriage & Relationships"
       readTime="8 min"
       date="June 2026"

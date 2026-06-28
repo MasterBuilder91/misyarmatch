@@ -4,6 +4,8 @@ export default function ArticleMisyarPrivate() {
   return (
     <ArticleLayout
       title="Is a Misyar Nikah Valid If Only a Few People Know About It?"
+        slug="misyar-nikah-private-valid"
+        excerpt="Privacy is one of the most common reasons people seek misyar — and one of the most common sources of anxiety about its validity."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

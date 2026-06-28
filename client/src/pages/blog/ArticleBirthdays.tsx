@@ -4,6 +4,8 @@ export default function ArticleBirthdays() {
   return (
     <ArticleLayout
       title="Can Muslims Celebrate Birthdays? What the Scholars Say"
+        slug="birthdays-in-islam"
+        excerpt="The fatwa landscape is genuinely divided — and cultural background often shapes the answer more than the actual fiqh does."
       tag="Halal & Haram"
       readTime="5 min"
       date="June 2026"

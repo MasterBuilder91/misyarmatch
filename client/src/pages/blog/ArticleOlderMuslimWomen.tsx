@@ -4,6 +4,8 @@ export default function ArticleOlderMuslimWomen() {
   return (
     <ArticleLayout
       title="The Attractive Muslim Woman in Her 50s That Nobody Is Asking About"
+        slug="attractive-muslim-women-50s"
+        excerpt="She is sharp, warm, beautiful, and has desires that did not retire when she turned 50. She is supposed to pretend otherwise. Islam does not agree."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

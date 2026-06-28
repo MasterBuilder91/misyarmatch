@@ -4,6 +4,8 @@ export default function ArticleMuslimWomenSexuality() {
   return (
     <ArticleLayout
       title="What Classical Islamic Scholars Said About Female Sexuality — And Why We Stopped Saying It"
+        slug="muslim-women-sexuality-classical"
+        excerpt="For centuries, Muslim scholars wrote about this with frankness that would make contemporary Muslims uncomfortable. They were not being immodest. They were being scholars."
       tag="Marriage & Intimacy"
       readTime="9 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleWomanLivingAlone() {
   return (
     <ArticleLayout
       title="Can a Muslim Woman Live Alone? What Islam Actually Says"
+        slug="muslim-woman-living-alone"
+        excerpt="The answer is more nuanced than either cultural extreme. Here is the fiqh, plainly explained."
       tag="Muslim Life"
       readTime="6 min"
       date="June 2026"

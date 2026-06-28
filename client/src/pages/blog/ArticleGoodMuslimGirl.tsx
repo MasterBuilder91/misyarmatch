@@ -4,6 +4,8 @@ export default function ArticleGoodMuslimGirl() {
   return (
     <ArticleLayout
       title="The Good Muslim Girl Who Is Dying Inside"
+        slug="good-muslim-girl-dying-inside"
+        excerpt="She does everything right. She covers. She prays. She has not told anyone about the thing that is slowly eating her alive."
       tag="Marriage & Intimacy"
       readTime="9 min"
       date="June 2026"

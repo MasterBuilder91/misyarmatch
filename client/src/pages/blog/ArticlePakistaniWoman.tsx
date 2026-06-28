@@ -4,6 +4,8 @@ export default function ArticlePakistaniWoman() {
   return (
     <ArticleLayout
       title="The Pakistani Muslim Woman Who Wants to Be Wanted"
+        slug="pakistani-muslim-woman-wanted"
+        excerpt="She carries the weight of her family's expectations, her community's gaze, and a culture that has grafted its ideas onto Islamic language. She has never been given permission to want what she actually wants."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

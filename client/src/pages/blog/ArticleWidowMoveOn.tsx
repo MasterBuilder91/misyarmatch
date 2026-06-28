@@ -4,6 +4,8 @@ export default function ArticleWidowMoveOn() {
   return (
     <ArticleLayout
       title="The Muslim Widow Who Is Not Allowed to Move On"
+        slug="muslim-widow-move-on"
+        excerpt="The Prophet ﷺ married widows. The companions married widows. Islam gives her four months and ten days. Her community gives her permanent mourning."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

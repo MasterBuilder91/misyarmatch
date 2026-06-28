@@ -4,6 +4,8 @@ export default function ArticleMisyarChildren() {
   return (
     <ArticleLayout
       title="If a Misyar Wife Becomes Pregnant: Children's Rights and Lineage in Islamic Law"
+        slug="misyar-marriage-children-rights"
+        excerpt="The child of a misyar marriage has full rights in Islamic law. Full lineage. Full inheritance. Full financial support. The arrangement does not change this."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

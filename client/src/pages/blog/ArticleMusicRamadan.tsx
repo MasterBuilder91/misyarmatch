@@ -4,6 +4,8 @@ export default function ArticleMusicRamadan() {
   return (
     <ArticleLayout
       title="Is Music Haram During Ramadan Specifically? What Changes in the Sacred Month"
+        slug="is-music-haram-during-ramadan"
+        excerpt="There is no specific hadith singling out music as prohibited during Ramadan while permitted otherwise. Here is what actually changes — and what does not."
       tag="Halal & Haram"
       readTime="6 min"
       date="June 2026"

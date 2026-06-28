@@ -4,6 +4,8 @@ export default function ArticleWastingFood() {
   return (
     <ArticleLayout
       title="Is Wasting Food Haram in Islam? What the Quran and Sunnah Actually Say"
+        slug="is-wasting-food-haram"
+        excerpt="The Prophet ﷺ instructed his companions to lick the bowl and the fingers. His relationship with food was one of profound gratitude and zero tolerance for waste."
       tag="Muslim Life"
       readTime="5 min"
       date="June 2026"

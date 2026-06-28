@@ -4,6 +4,8 @@ export default function ArticleWrongWoman() {
   return (
     <ArticleLayout
       title="The Muslim Man Who Married the Wrong Woman Because His Mother Chose"
+        slug="married-wrong-woman-mothers-choice"
+        excerpt="He said yes because he did not know how to say no. He has been saying yes ever since — to a life correct in every external detail and empty in every internal one."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

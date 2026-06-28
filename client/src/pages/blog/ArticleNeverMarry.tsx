@@ -4,6 +4,8 @@ export default function ArticleNeverMarry() {
   return (
     <ArticleLayout
       title="What Happens to Muslim Women Who Never Marry — The Reality Nobody Prepares Them For"
+        slug="muslim-women-who-never-marry"
+        excerpt="There is a growing cohort of Muslim women in their late 30s and beyond who did everything right and were still failed by the system. This is what Islam actually offers them now."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

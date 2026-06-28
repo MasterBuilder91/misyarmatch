@@ -4,6 +4,8 @@ export default function ArticleTalkingBeforeMarriage() {
   return (
     <ArticleLayout
       title="Is It Haram to Talk to a Girl or Guy Before Marriage?"
+        slug="talking-before-marriage"
+        excerpt="One of the most searched Islamic questions online — and one of the most honestly contested. Here is what the scholars actually say."
       tag="Marriage & Relationships"
       readTime="6 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleTawbah() {
   return (
     <ArticleLayout
       title="How to Make Tawbah (Repentance) in Islam — And Whether Allah Really Forgives Everything"
+        slug="how-to-make-tawbah"
+        excerpt="Allah is more pleased with the repentance of His slave than one of you finding a lost camel in the desert. This is what He is like. Here is how tawbah actually works."
       tag="Worship & Du'a"
       readTime="7 min"
       date="June 2026"

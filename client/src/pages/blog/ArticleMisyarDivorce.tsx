@@ -4,6 +4,8 @@ export default function ArticleMisyarDivorce() {
   return (
     <ArticleLayout
       title="How Does a Misyar Marriage End? Talaq, Khul', and What Each Party Is Owed"
+        slug="how-does-misyar-marriage-end"
+        excerpt="A misyar marriage ends the same way any Islamic marriage ends. Here is what each party is owed and what happens during the iddah."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

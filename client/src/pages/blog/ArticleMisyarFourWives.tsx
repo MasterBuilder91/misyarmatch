@@ -4,6 +4,8 @@ export default function ArticleMisyarFourWives() {
   return (
     <ArticleLayout
       title="Does a Misyar Wife Count Toward the Limit of Four Wives?"
+        slug="misyar-wife-counts-four-wives"
+        excerpt="Yes. Unambiguously. A misyar wife is a wife. This is one of the clearest indicators of the misyar marriage's full legal status — and every man considering one must understand this."
       tag="Fiqh & Rights"
       readTime="6 min"
       date="June 2026"

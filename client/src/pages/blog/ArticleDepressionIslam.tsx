@@ -4,6 +4,8 @@ export default function ArticleDepressionIslam() {
   return (
     <ArticleLayout
       title="What Does Islam Say About Depression and Mental Health?"
+        slug="depression-and-islam"
+        excerpt="A Muslim struggling with mental health is not weak in faith. Islam addresses this with both spiritual and practical guidance."
       tag="Muslim Life"
       readTime="7 min"
       date="June 2026"

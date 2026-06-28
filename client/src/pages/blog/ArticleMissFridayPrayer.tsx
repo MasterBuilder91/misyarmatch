@@ -4,6 +4,8 @@ export default function ArticleMissFridayPrayer() {
   return (
     <ArticleLayout
       title="Is It Haram to Miss Friday Prayer (Jumu'ah)? The Ruling and the Warning"
+        slug="missing-friday-prayer"
+        excerpt="Missing Jumu'ah without a valid excuse is a major sin with serious prophetic warnings. Here is the ruling, clearly stated."
       tag="Worship"
       readTime="5 min"
       date="June 2026"

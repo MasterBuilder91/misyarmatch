@@ -4,6 +4,8 @@ export default function ArticleRibaHaram() {
   return (
     <ArticleLayout
       title="Is Riba (Interest) Haram? Mortgages, Student Loans, and What the Scholars Actually Say"
+        slug="is-riba-haram-mortgages"
+        excerpt="Few prohibitions are more clearly established and more widely violated. Here is the complete picture — including the difficult mortgage question Muslims are actually living with."
       tag="Halal & Haram"
       readTime="9 min"
       date="June 2026"

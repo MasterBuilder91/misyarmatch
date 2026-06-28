@@ -4,6 +4,8 @@ export default function ArticleWifesRights() {
   return (
     <ArticleLayout
       title="A Wife's Rights in Islam — Including the One Most Husbands Don't Know About"
+        slug="wifes-rights-in-islam"
+        excerpt="Most Muslims know the basics. Far fewer know the full picture — including a right that modern Muslim culture has almost completely suppressed."
       tag="Rights & Fiqh"
       readTime="8 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleWudu() {
   return (
     <ArticleLayout
       title="How to Perform Wudu Correctly — The Complete Step-by-Step Guide"
+        slug="how-to-perform-wudu"
+        excerpt="The obligatory elements, the full sunnah method, what breaks it, and where the four madhabs differ — everything you need."
       tag="Worship & Purification"
       readTime="6 min"
       date="June 2026"

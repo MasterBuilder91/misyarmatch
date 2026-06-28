@@ -4,6 +4,8 @@ export default function ArticleTwoAdultsAttracted() {
   return (
     <ArticleLayout
       title="Two Muslim Adults Who Like Each Other. Lives That Cannot Merge. The Solution Has Always Been There."
+        slug="two-adults-attracted-misyar"
+        excerpt="Two people. Mutual attraction. A hundred reasons the conventional marriage does not fit. So they do nothing. And one of them eventually finds somewhere less halal to put it."
       tag="Marriage & Relationships"
       readTime="8 min"
       date="June 2026"

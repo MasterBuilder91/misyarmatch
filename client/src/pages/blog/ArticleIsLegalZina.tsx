@@ -4,6 +4,8 @@ export default function ArticleIsLegalZina() {
   return (
     <ArticleLayout
       title="'Misyar Is Just Legal Zina': Dismantling the Most Common Objection"
+        slug="misyar-not-legal-zina"
+        excerpt="This objection sounds serious. It sounds Islamic. It is neither. Here is why — carefully, from the scholarship, without dismissing the concern behind it."
       tag="Fiqh & Rights"
       readTime="9 min"
       date="June 2026"

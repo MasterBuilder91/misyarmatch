@@ -4,6 +4,8 @@ export default function ArticleAbusiveMarriage() {
   return (
     <ArticleLayout
       title="The Muslim Woman Who Married Her Abuser Because the Imam Said Sabr"
+        slug="muslim-woman-married-abuser-imam-said-sabr"
+        excerpt="She went to the imam. She told him her husband hit her. He told her to be patient. She went home. It happened again. This is what Islam actually says about this."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

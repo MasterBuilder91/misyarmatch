@@ -4,6 +4,8 @@ export default function ArticleWaitingForPerfect() {
   return (
     <ArticleLayout
       title="Waiting for the Perfect Muslim Marriage Is Making You Worse at Being Muslim"
+        slug="waiting-for-perfect-marriage"
+        excerpt="The standard is beautiful. The standard is also destroying people. Let's be honest about both."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

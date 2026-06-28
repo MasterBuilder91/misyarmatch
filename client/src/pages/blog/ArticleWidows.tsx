@@ -6,6 +6,8 @@ export default function ArticleWidows() {
     <>
       <SEOHead
         title="Muslim Widows and Remarriage: Breaking the Silence (2025)"
+        slug="muslim-widows-remarriage"
+        excerpt="The Prophet ﷺ married widows. The companions married widows. Yet Muslim widows today face more stigma than any other group seeking remarriage. It has to stop."
         description="Muslim widows face unique stigma around remarriage that has no basis in Islam. This article addresses the religious reality, the emotional journey, and practical pathways to halal companionship after loss."
         keywords="Muslim widow remarriage, Muslim widow marriage, Islamic remarriage after death spouse, widow nikah, halal remarriage widow, Muslim widower marriage, widow misyar, Muslim widow matchmaking"
         canonical="/blog/muslim-widows-remarriage"

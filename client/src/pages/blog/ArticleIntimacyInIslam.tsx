@@ -4,6 +4,8 @@ export default function ArticleIntimacyInIslam() {
   return (
     <ArticleLayout
       title="Foreplay Is Sunnah: What Classical Islamic Scholars Said About Intimacy in Marriage"
+        slug="intimacy-in-islam"
+        excerpt="Classical scholars wrote openly about intimacy. Modern Muslim culture suppressed it. Here is what Islam has always actually said."
       tag="Marriage & Intimacy"
       readTime="7 min"
       date="June 2026"

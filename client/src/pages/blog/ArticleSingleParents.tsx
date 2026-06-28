@@ -6,6 +6,8 @@ export default function ArticleSingleParents() {
     <>
       <SEOHead
         title="Marriage for Muslim Single Parents: A Realistic Guide (2025)"
+        slug="muslim-single-parents-marriage"
+        excerpt="You have children. You have a life. You have real needs. Here is how Muslim single parents approach remarriage without pretending the complications don't exist."
         description="You have children. You have a life. You have real needs. Here is a practical, Islamic guide to remarriage for Muslim single parents — without pretending the complications don't exist."
         keywords="Muslim single parents marriage, Muslim single mother marriage, Muslim single father remarriage, Islamic marriage with children, misyar single parents, Muslim remarriage children, halal marriage single parent"
         canonical="/blog/muslim-single-parents-marriage"

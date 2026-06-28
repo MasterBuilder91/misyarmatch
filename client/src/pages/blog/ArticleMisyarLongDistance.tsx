@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleMisyarLongDistance() {
   return (
-    <ArticleLayout title="Long Distance Misyar: Can a Nikah Work Across Cities or Countries?" tag="Marriage & Fiqh" readTime="7 min" date="June 2026">
+    <ArticleLayout title="Long Distance Misyar: Can a Nikah Work Across Cities or Countries?"
+        slug="misyar-long-distance"
+        excerpt="The Muslim world is mobile. The misyar structure already assumes non-cohabitation. Long distance is a degree of difference, not a different category." tag="Marriage & Fiqh" readTime="7 min" date="June 2026">
       <p>The Muslim world is mobile. Professionals move across countries for work. Families are scattered across continents. Marriages that begin in one city often have to survive months in different ones. The question of how misyar — which already involves non-cohabitation — works when the distance is not across town but across an ocean is one of the most practically important in contemporary Islamic marriage.</p>
       <h2>What Misyar Already Establishes</h2>
       <p>The foundational feature of misyar — that the husband does not live with the wife full-time, that she maintains her own household, that he visits on a schedule they agree on — actually maps well onto long-distance arrangements. The misyar structure already assumes that full cohabitation is not the model. A couple who are in different cities are essentially living a misyar arrangement whether they call it that or not.</p>

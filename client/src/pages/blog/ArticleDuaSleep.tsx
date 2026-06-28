@@ -4,6 +4,8 @@ export default function ArticleDuaSleep() {
   return (
     <ArticleLayout
       title="Dua Before Sleeping: The Prophetic Nighttime Routine That Changes Everything"
+        slug="dua-before-sleeping"
+        excerpt="The complete Sunnah nighttime routine — Ayat al-Kursi, the three Quls, the tasbih of Fatimah, and the du'a the Prophet ﷺ said before surrendering to sleep."
       tag="Worship & Du'a"
       readTime="6 min"
       date="June 2026"

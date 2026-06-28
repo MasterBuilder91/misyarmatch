@@ -4,6 +4,8 @@ export default function ArticleHowManyRakats() {
   return (
     <ArticleLayout
       title="How Many Rakats in Each Prayer? The Complete Guide to the Five Daily Prayers"
+        slug="how-many-rakats-each-prayer"
+        excerpt="Fajr, Dhuhr, Asr, Maghrib, Isha — the complete breakdown of fard and sunnah rakats for every prayer."
       tag="Worship & Purification"
       readTime="7 min"
       date="June 2026"

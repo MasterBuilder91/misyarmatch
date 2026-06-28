@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Layout } from "@/components/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,8 @@ import { getLoginUrl } from "@/const";
 interface Props {
   children: React.ReactNode;
   title: string;
+  excerpt?: string;
+  slug?: string;
   tag: string;
   readTime: string;
   date?: string;
@@ -34,7 +37,7 @@ const TAG_COLORS: Record<string, string> = {
   "Single Parents": "bg-orange-100 text-orange-700",
 };
 
-export function ArticleLayout({ children, title, tag, readTime, date = "June 2026" }: Props) {
+export function ArticleLayout({ children, title, excerpt, slug, tag, readTime, date = "June 2026" }: Props) {
   const [scrollProgress, setScrollProgress] = useState(0);
   const tagColor = TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600";
 
@@ -51,6 +54,28 @@ export function ArticleLayout({ children, title, tag, readTime, date = "June 202
 
   return (
     <Layout>
+      <SEOHead
+        title={title}
+        description={excerpt ?? `${title} — In-depth Islamic guidance from Abu Salman at MisyarMatch.`}
+        keywords={`${tag}, misyar marriage, Islamic fiqh, Muslim marriage, halal relationships, ${title.toLowerCase()}`}
+        canonical={slug ? `/blog/${slug}` : undefined}
+        ogType="article"
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": excerpt ?? title,
+        "author": { "@type": "Person", "name": "Abu Salman" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MisyarMatch",
+          "url": "https://misyarmatch.net"
+        },
+        "datePublished": "2026-06-27",
+        "dateModified": "2026-06-27",
+        "mainEntityOfPage": { "@type": "WebPage" }
+      }) }} />
       {/* Reading progress bar */}
       <div
         className="fixed top-0 left-0 z-50 h-0.5 bg-rose-500 transition-all duration-100"

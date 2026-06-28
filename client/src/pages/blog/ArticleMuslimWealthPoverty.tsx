@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleMuslimWealthPoverty() {
   return (
-    <ArticleLayout title="What Islam Says About Wealth, Poverty, and Why Being Poor Is Not a Sin" tag="Muslim Life" readTime="7 min" date="June 2026">
+    <ArticleLayout title="What Islam Says About Wealth, Poverty, and Why Being Poor Is Not a Sin"
+        slug="islam-wealth-poverty"
+        excerpt="Muslim communities have a complicated relationship with money. The honest Islamic position is more nuanced than either 'money is spiritual poison' or 'wealth is Allah's blessing.'" tag="Muslim Life" readTime="7 min" date="June 2026">
       <p>Muslim communities have a complicated relationship with wealth. On one hand, the Quran warns extensively against love of money. On the other hand, the Prophet ﷺ was a successful merchant, many companions were wealthy, and Islamic civilization was built partly on trade. The honest Islamic position on wealth and poverty is more nuanced than either "money is spiritual poison" or "wealth is a sign of Allah's blessing."</p>
       <h2>Wealth Is Not Haram — Attachment to It Is</h2>
       <p>Allah says: <em>"Know that the life of this world is but amusement and diversion and adornment and boasting to one another and competition in increase of wealth and children."</em> (57:20) This verse is not a prohibition of wealth. It is a warning against making wealth the purpose of life — against the competition for accumulation that becomes an end in itself rather than a means to something greater.</p>

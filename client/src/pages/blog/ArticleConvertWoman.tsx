@@ -4,6 +4,8 @@ export default function ArticleConvertWoman() {
   return (
     <ArticleLayout
       title="The Muslim Convert Woman Nobody Wants to Marry — And the Fiqh That Protects Her"
+        slug="muslim-convert-woman-marriage"
+        excerpt="She took her shahada. She changed her life. She became genuinely Muslim. And then she discovered her welcome into parts of the ummah was conditional."
       tag="New Muslims"
       readTime="9 min"
       date="June 2026"

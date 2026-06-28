@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleTalkingStage() {
   return (
-    <ArticleLayout title="The Muslim 'Talking Stage' Is Not Islamic — And It Is Costing You Everything" tag="Marriage & Relationships" readTime="8 min" date="June 2026">
+    <ArticleLayout title="The Muslim 'Talking Stage' Is Not Islamic — And It Is Costing You Everything"
+        slug="muslim-talking-stage"
+        excerpt="Months of WhatsApp, growing emotional intimacy, no commitment. It is called halal because it stops short of physical contact. It is not halal. And the damage it does is real." tag="Marriage & Relationships" readTime="8 min" date="June 2026">
       <p>The "talking stage" is the informal pre-relationship period that has become standard among young Muslims in Western countries — months of WhatsApp conversations, Instagram DMs, occasional meetings, growing emotional intimacy, and absolutely no commitment on either side. It is called "halal" by its practitioners because it stops short of physical intimacy. It is not halal. And the damage it does is real.</p>
       <h2>What the Talking Stage Actually Is</h2>
       <p>It is a relationship. Not in name — in substance. Two people who communicate daily, who share their feelings, fears, and ambitions, who become emotionally dependent on each other's attention, who feel jealousy when the other person mentions someone else — these people are in a relationship. The absence of physical contact does not change this. The absence of a label does not change this.</p>

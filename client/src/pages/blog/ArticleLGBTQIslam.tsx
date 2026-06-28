@@ -4,6 +4,8 @@ export default function ArticleLGBTQIslam() {
   return (
     <ArticleLayout
       title="What Does Islam Say About LGBTQ? The Clear Ruling and the Compassionate Response"
+        slug="what-does-islam-say-about-lgbtq"
+        excerpt="The scholarly ruling is unanimous. The pastoral response requires more nuance than either side of the cultural debate usually provides."
       tag="Belief & Creed"
       readTime="9 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleMisyarRamadan() {
   return (
     <ArticleLayout
       title="Misyar and Ramadan: Fasting, Intimacy, and the Rights That Don't Pause"
+        slug="misyar-and-ramadan"
+        excerpt="The misyar marriage in Ramadan — what is permitted at night, what is prohibited during the day, and what obligations remain regardless of the structure."
       tag="Worship & Fiqh"
       readTime="7 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleVictorianMarriage() {
   return (
     <ArticleLayout
       title="The Victorian Muslim Wedding: Why We Built a Beautiful Trap and Called It Deen"
+        slug="victorian-muslim-marriage"
+        excerpt="The walimah with 300 guests. The bride in gold. The sheikh with tears in his eyes. It is beautiful. It is also destroying people. Let's be honest about both."
       tag="Marriage & Relationships"
       readTime="11 min"
       date="June 2026"

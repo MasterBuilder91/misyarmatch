@@ -4,6 +4,8 @@ export default function ArticleArrangedMarriage() {
   return (
     <ArticleLayout
       title="Arranged Marriage: The Beautiful Idea That Became a Family Business Merger"
+        slug="arranged-marriage-reality"
+        excerpt="Arranged marriage, done right, is one of the most sensible institutions in human history. Let's give it that credit — before we look at what it has become."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

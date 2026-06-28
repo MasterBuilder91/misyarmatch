@@ -4,6 +4,8 @@ export default function ArticleMuslimNonMuslimMarriage() {
   return (
     <ArticleLayout
       title="Can a Muslim Marry a Non-Muslim? The Complete Ruling for Men and Women"
+        slug="muslim-marry-non-muslim"
+        excerpt="The ruling is different for men and women, and the reasoning matters. Here is the complete picture — clearly, without political softening."
       tag="Fiqh & Rights"
       readTime="8 min"
       date="June 2026"

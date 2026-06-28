@@ -4,6 +4,8 @@ export default function ArticleArabHusband() {
   return (
     <ArticleLayout
       title="The Arab Husband and the Wife He Stopped Seeing"
+        slug="arab-husband-stopped-seeing-wife"
+        excerpt="He married her when she was 22 and he was 27. Fifteen years later she is still beautiful. He has stopped seeing her entirely. Not because he is cruel. Because he stopped looking."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleMarryingKitabiyya() {
   return (
     <ArticleLayout
       title="Muslim Men and the Permission They Forgot: Marrying Christian and Jewish Women in the West"
+        slug="muslim-men-marry-christian-jewish-women"
+        excerpt="A Quranic permission so clear, so explicit, so unambiguous — buried so thoroughly by cultural pressure that millions of Muslim men in the West do not know it exists."
       tag="Marriage & Fiqh"
       readTime="10 min"
       date="June 2026"

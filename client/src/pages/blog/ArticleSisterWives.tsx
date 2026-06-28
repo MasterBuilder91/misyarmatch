@@ -4,6 +4,8 @@ export default function ArticleSisterWives() {
   return (
     <ArticleLayout
       title="Sister Wives, Polygyny, and Where Islam Draws the Line — Completely"
+        slug="sister-wives-polygyny-islamic-boundaries"
+        excerpt="The modern 'sister wives' concept sounds like beautiful bonding. Islam draws clear, precise, fiqh-backed lines around what co-wives owe each other — and what they absolutely do not."
       tag="Marriage & Fiqh"
       readTime="11 min"
       date="June 2026"

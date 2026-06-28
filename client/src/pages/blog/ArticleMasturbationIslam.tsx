@@ -4,6 +4,8 @@ export default function ArticleMasturbationIslam() {
   return (
     <ArticleLayout
       title="Is Masturbation Haram in Islam? The Scholarly Debate and the Real Prescription"
+        slug="is-masturbation-haram"
+        excerpt="The majority position, the minority position, and what Islam actually prescribes for the underlying need — which is not masturbation."
       tag="Halal & Haram"
       readTime="7 min"
       date="June 2026"

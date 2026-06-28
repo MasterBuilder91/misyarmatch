@@ -4,6 +4,8 @@ export default function ArticleIsSmokingHaram() {
   return (
     <ArticleLayout
       title="Is Smoking Haram in Islam? The Modern Fatwa and the Classical Principles"
+        slug="is-smoking-haram"
+        excerpt="No Quranic text addresses tobacco directly. The majority contemporary position derives from classical principles applied to modern medical knowledge — and it is clear."
       tag="Halal & Haram"
       readTime="6 min"
       date="June 2026"

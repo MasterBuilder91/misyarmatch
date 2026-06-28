@@ -4,6 +4,8 @@ export default function ArticleSecretNikah() {
   return (
     <ArticleLayout
       title="Is a Nikah Valid Without Parents' Knowledge? What the Scholars Actually Say"
+        slug="secret-nikah"
+        excerpt="The conditions for a valid nikah do not include parental approval. Here is what is actually required — and what is not."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

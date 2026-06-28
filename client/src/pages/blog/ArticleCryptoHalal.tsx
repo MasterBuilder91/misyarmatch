@@ -4,6 +4,8 @@ export default function ArticleCryptoHalal() {
   return (
     <ArticleLayout
       title="Is Cryptocurrency Halal or Haram? The Scholarly Debate in 2026"
+        slug="is-crypto-halal"
+        excerpt="The disagreement is genuine, the arguments are substantive, and the honest answer is: it depends."
       tag="Halal & Haram"
       readTime="7 min"
       date="June 2026"

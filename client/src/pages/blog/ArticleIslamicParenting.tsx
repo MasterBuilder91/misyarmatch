@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleIslamicParenting() {
   return (
-    <ArticleLayout title="What Islam Actually Says About Raising Children — Beyond the Rules" tag="Muslim Life" readTime="8 min" date="June 2026">
+    <ArticleLayout title="What Islam Actually Says About Raising Children — Beyond the Rules"
+        slug="islamic-parenting"
+        excerpt="The Prophet ﷺ got on the ground to let his grandsons ride on his back during prayer. The Islamic parenting model was never primarily about enforcement." tag="Muslim Life" readTime="8 min" date="June 2026">
       <p>Islamic parenting discourse tends to focus on rules: what children must do, what they must not do, when they must pray, what they must wear, who they must not befriend. The rules are real and they matter. But the Prophet ﷺ's actual approach to children was something more foundational than rules — and understanding it changes everything about how Muslim parents relate to their children.</p>
       <h2>The Prophet ﷺ and Children</h2>
       <p>The Prophet ﷺ was documented in the hadith literature as someone who was physically warm with children, who played with them, who got on the ground to let his grandsons ride on his back during prayer. He said: <em>"He is not one of us who does not show mercy to our young ones."</em> (Tirmidhi) The relationship he modeled with children was one of warmth, playfulness, and genuine tenderness — not simply instruction and correction.</p>

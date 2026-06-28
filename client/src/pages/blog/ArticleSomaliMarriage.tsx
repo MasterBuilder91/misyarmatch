@@ -4,6 +4,8 @@ export default function ArticleSomaliMarriage() {
   return (
     <ArticleLayout
       title="The Somali Muslim Marriage and What the Culture Cost Her"
+        slug="somali-muslim-marriage-culture"
+        excerpt="She is Muslim, she is 31, and she grew up watching aunts navigate marriages where everyone had strong opinions except about whether the two people involved actually wanted each other."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

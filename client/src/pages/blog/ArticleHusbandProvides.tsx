@@ -4,6 +4,8 @@ export default function ArticleHusbandProvides() {
   return (
     <ArticleLayout
       title="The Husband Who Provides Everything Except Himself"
+        slug="husband-provides-everything-except-himself"
+        excerpt="She has the house, the car, the holidays. What she does not have is her husband. And nobody will validate that this is a problem worth naming."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

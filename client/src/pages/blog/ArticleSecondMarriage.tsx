@@ -4,6 +4,8 @@ export default function ArticleSecondMarriage() {
   return (
     <ArticleLayout
       title="Second Marriage in Islam: Rights, Rules, and What Your First Wife Is Actually Owed"
+        slug="second-marriage-islam"
+        excerpt="The permission is real. The conditions are equally real. Here is what Islamic law actually requires of a man who remarries."
       tag="Marriage & Fiqh"
       readTime="8 min"
       date="June 2026"

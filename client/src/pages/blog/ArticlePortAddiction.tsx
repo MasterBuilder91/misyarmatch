@@ -4,6 +4,8 @@ export default function ArticlePornAddiction() {
   return (
     <ArticleLayout
       title="The Epidemic Nobody Talks About in the Masjid: Pornography and the Muslim Man"
+        slug="pornography-muslim-men"
+        excerpt="Between 50-70% of Muslim men report regular pornography use. Including practicing ones. The silence is costing us more than the conversation ever could."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleNikahFirst() {
   return (
     <ArticleLayout
       title="Is It Haram to Be in a Relationship? Islam's Answer Is Simple: Nikah First. Always."
+        slug="nikah-first-always"
+        excerpt="Yes, a romantic relationship outside of marriage is haram. But Islam's answer is not 'be alone and suffer.' It is: get married. The path is simpler than you think."
       tag="Marriage & Relationships"
       readTime="6 min"
       date="June 2026"

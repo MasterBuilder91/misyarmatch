@@ -4,6 +4,8 @@ export default function ArticleMisyarTravel() {
   return (
     <ArticleLayout
       title="Does a Misyar Wife Need Her Husband's Permission to Travel?"
+        slug="misyar-wife-travel-permission"
+        excerpt="The ruling on travel permission in a misyar arrangement — where her independence was part of the deal from the start."
       tag="Fiqh & Rights"
       readTime="6 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleBedroomDead() {
   return (
     <ArticleLayout
       title="When the Marriage Is Halal But the Bedroom Is Dead"
+        slug="halal-marriage-dead-bedroom"
+        excerpt="The nikah is valid. The household functions. For months — sometimes years — they have not touched each other with any real intention. Islam has both a diagnosis and a prescription."
       tag="Marriage & Intimacy"
       readTime="10 min"
       date="June 2026"

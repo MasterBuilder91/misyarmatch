@@ -4,6 +4,8 @@ export default function ArticleZakatFitrMisyar() {
   return (
     <ArticleLayout
       title="Zakat al-Fitr: Who Must Pay It — And Does a Man Pay It for His Misyar Wife?"
+        slug="zakat-al-fitr-misyar-wife"
+        excerpt="Yes — and the answer reveals something important: a misyar wife is a real wife, with the rights and obligations that come with that status."
       tag="Worship & Fiqh"
       readTime="7 min"
       date="June 2026"

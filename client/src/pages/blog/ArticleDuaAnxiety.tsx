@@ -4,6 +4,8 @@ export default function ArticleDuaAnxiety() {
   return (
     <ArticleLayout
       title="Dua for Anxiety and Stress: What the Prophet ﷺ Taught and What It Actually Does"
+        slug="dua-for-anxiety-stress"
+        excerpt="The Prophet ﷺ experienced anxiety and grief. He navigated them with specific practices he taught to his companions. These are not metaphors — they are real tools."
       tag="Worship & Du'a"
       readTime="6 min"
       date="June 2026"

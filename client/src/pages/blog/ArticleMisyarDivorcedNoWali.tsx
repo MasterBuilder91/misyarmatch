@@ -4,6 +4,8 @@ export default function ArticleMisyarDivorcedNoWali() {
   return (
     <ArticleLayout
       title="Misyar for a Divorced Muslim Woman Without a Wali: Is It Valid?"
+        slug="misyar-divorced-woman-no-wali"
+        excerpt="The answer across the scholarly tradition is more accessible than most women have been told. Here is the complete fiqh picture."
       tag="Fiqh & Rights"
       readTime="8 min"
       date="June 2026"

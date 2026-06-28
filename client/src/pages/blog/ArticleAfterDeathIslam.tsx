@@ -4,6 +4,8 @@ export default function ArticleAfterDeathIslam() {
   return (
     <ArticleLayout
       title="What Happens After Death in Islam — The Complete Picture"
+        slug="what-happens-after-death-islam"
+        excerpt="From the moment of death through the Day of Judgment — the complete journey, drawn entirely from Quran and authentic Sunnah."
       tag="Belief & Creed"
       readTime="9 min"
       date="June 2026"

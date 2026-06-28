@@ -4,6 +4,8 @@ export default function ArticleHijabObligation() {
   return (
     <ArticleLayout
       title="Is Hijab Obligatory in Islam? The Scholarly Evidence on Both Sides"
+        slug="is-hijab-obligatory"
+        excerpt="The most politically charged question in contemporary Islam deserves a clear, honest engagement with what the scholarship actually says."
       tag="Halal & Haram"
       readTime="8 min"
       date="June 2026"

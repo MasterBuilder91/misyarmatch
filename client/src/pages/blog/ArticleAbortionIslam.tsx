@@ -4,6 +4,8 @@ export default function ArticleAbortionIslam() {
   return (
     <ArticleLayout
       title="What Is the Islamic Ruling on Abortion? The Complete Scholarly Picture"
+        slug="abortion-ruling-in-islam"
+        excerpt="Neither absolute prohibition nor unrestricted permission. The Islamic framework is stage-based, reason-dependent, and genuinely nuanced. Here is the complete, honest picture."
       tag="Fiqh & Rights"
       readTime="9 min"
       date="June 2026"

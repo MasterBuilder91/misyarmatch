@@ -4,6 +4,8 @@ export default function ArticleConvertMarriageCulture() {
   return (
     <ArticleLayout
       title="What Converts to Islam Were Never Told About Muslim Marriage Culture"
+        slug="convert-muslim-marriage-culture-shock"
+        excerpt="You took your shahada. You were welcomed. Then you tried to get married in this community. And you discovered the door was much narrower than advertised."
       tag="New Muslims"
       readTime="10 min"
       date="June 2026"

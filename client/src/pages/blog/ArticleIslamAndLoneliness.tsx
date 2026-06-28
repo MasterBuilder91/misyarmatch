@@ -4,6 +4,8 @@ export default function ArticleIslamAndLoneliness() {
   return (
     <ArticleLayout
       title="The Loneliness Epidemic in Muslim Communities — And the Answer Islam Has Always Had"
+        slug="loneliness-muslim-communities"
+        excerpt="The WHO classifies loneliness as a global health epidemic. It is happening inside Muslim communities that have the theological resources to address it — and the cultural rigidity to prevent addressing it."
       tag="Muslim Life"
       readTime="9 min"
       date="June 2026"

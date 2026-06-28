@@ -4,6 +4,8 @@ export default function ArticleMotherInLaw() {
   return (
     <ArticleLayout
       title="The Mother-in-Law Who Destroyed the Marriage: Islam's Actual Position on Interference"
+        slug="mother-in-law-destroys-muslim-marriage"
+        excerpt="She loved her son. She believed her involvement was protective. The Islamic scholars are explicit about a wife's right to a private household — rights that interference violates."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

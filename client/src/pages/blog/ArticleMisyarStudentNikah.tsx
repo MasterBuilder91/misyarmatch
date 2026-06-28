@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleMisyarStudentNikah() {
   return (
-    <ArticleLayout title="The Student Nikah: How Muslim University Students Can Get Married Before They Graduate" tag="Marriage & Relationships" readTime="8 min" date="June 2026">
+    <ArticleLayout title="The Student Nikah: How Muslim University Students Can Get Married Before They Graduate"
+        slug="student-nikah-university"
+        excerpt="You are 20, at university, surrounded by people, and told marriage is for after graduation. The Prophet ﷺ said whoever is able should marry. He did not say whoever has graduated." tag="Marriage & Relationships" readTime="8 min" date="June 2026">
       <p>You are 20 years old. You are at university. You are surrounded by the most concentrated population of young, attractive, interesting people you will ever encounter in one place. You are Muslim. You are trying not to fall into haram. And you have been told, implicitly or explicitly, that marriage is something that happens after graduation, after a career is established, after you can afford a household. You have been told, in other words, to hold on for the next five to ten years. Nobody meant to set you up to fail. But that is what they did.</p>
       <h2>The Prophet ﷺ Disagrees With the Timeline</h2>
       <p>He said: <em>"O young people, whoever among you is able to marry should marry."</em> He did not say: whoever has graduated. Whoever has a career. Whoever can afford a household. The Islamic prescription for the young Muslim with desire and the ability to make a commitment is marriage — now, in whatever simple form is accessible, not in five years when the cultural production becomes affordable.</p>

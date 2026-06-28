@@ -4,6 +4,8 @@ export default function ArticleMSANikah() {
   return (
     <ArticleLayout
       title="MSA Students: Get the Nikah. Before You Do Something You Cannot Take Back."
+        slug="msa-students-get-the-nikah"
+        excerpt="Taqwa, even when it looks tacky to the naysayers. Nikah, even when nobody throws you a party. The Prophet ﷺ said marry whoever is able — not whoever has graduated."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

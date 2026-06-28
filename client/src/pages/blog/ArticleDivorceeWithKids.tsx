@@ -4,6 +4,8 @@ export default function ArticleDivorceeWithKids() {
   return (
     <ArticleLayout
       title="The Divorced Muslim Mother Who Doesn't Want Her Life Taken Over Again"
+        slug="divorced-muslim-mother-misyar"
+        excerpt="She rebuilt. She wants connection. She does not want to hand her independence to someone else again and hope for the best. Islam has an answer for exactly this."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

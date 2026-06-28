@@ -4,6 +4,8 @@ export default function ArticleHalalDating() {
   return (
     <ArticleLayout
       title="'Halal Dating' Is a Contradiction — And the Alternative Is Better Than You Think"
+        slug="halal-dating-contradiction"
+        excerpt="The desire behind it is real and legitimate. The concept itself is a contradiction. And the workable alternative is simpler than most people realise."
       tag="Marriage & Relationships"
       readTime="8 min"
       date="June 2026"

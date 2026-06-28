@@ -4,6 +4,8 @@ export default function ArticleMusicInIslam() {
   return (
     <ArticleLayout
       title="Is Music Haram in Islam? The Full Scholarly Debate"
+        slug="music-in-islam"
+        excerpt="Few Islamic questions generate more debate. This is not a simple yes or no — there is genuine scholarly disagreement, and honest Muslims deserve an honest explanation."
       tag="Halal & Haram"
       readTime="8 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleAgeGapIslam() {
   return (
     <ArticleLayout
       title="Age Gap Marriages in Islam: The Historical Reality vs. the Cultural Discomfort"
+        slug="age-gap-marriages-islam"
+        excerpt="Umm Ayman and Zayd. Khadijah and the Prophet ﷺ. The most respected marriages in Islamic history involved older women and younger men. The Prophet arranged them himself."
       tag="Marriage & Relationships"
       readTime="9 min"
       date="June 2026"

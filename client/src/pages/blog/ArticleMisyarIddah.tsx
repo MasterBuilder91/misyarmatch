@@ -4,6 +4,8 @@ export default function ArticleMisyarIddah() {
   return (
     <ArticleLayout
       title="What Is the Iddah of a Misyar Wife After Divorce or Death?"
+        slug="misyar-wife-iddah"
+        excerpt="The iddah applies fully to the misyar wife — and during it, her husband owes her maintenance he may have been exempted from before."
       tag="Fiqh & Rights"
       readTime="7 min"
       date="June 2026"

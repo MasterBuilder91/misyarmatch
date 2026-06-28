@@ -4,6 +4,8 @@ export default function ArticleMuslimMenPornMarriage() {
   return (
     <ArticleLayout
       title="What Muslim Men Learn About Women From Pornography — And Why It Destroys Their Marriages"
+        slug="pornography-destroys-muslim-marriages"
+        excerpt="For most Muslim men in the West, pornography was their first detailed education about intimacy. That education was wrong in almost every important way. Here is what Al-Ghazali taught instead."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

@@ -1,7 +1,9 @@
 import { ArticleLayout } from "./ArticleLayout";
 export default function ArticleForeplay() {
   return (
-    <ArticleLayout title="Foreplay Is Sunnah: What the Prophet ﷺ Actually Taught About Intimacy in Marriage" tag="Marriage & Intimacy" readTime="7 min" date="June 2026">
+    <ArticleLayout title="Foreplay Is Sunnah: What the Prophet ﷺ Actually Taught About Intimacy in Marriage"
+        slug="foreplay-is-sunnah"
+        excerpt="The Prophet ﷺ said let there be a messenger between you and your wife. When asked what the messenger was, he said: kisses and words. This is not a Western import. It is prophetic." tag="Marriage & Intimacy" readTime="7 min" date="June 2026">
       <p>The Prophet ﷺ said: <em>"Let none of you approach his wife like an animal. Let there be a messenger between them."</em> When asked what the messenger was, he said: kisses and words. (Daylami — narrated with some weakness in chain but accepted in meaning by scholars including Al-Ghazali) The idea that intimate engagement should begin with tenderness, with words of affection, with physical warmth before the act of intercourse — this is not a Western romantic import. It is from the prophetic tradition.</p>
       <h2>Al-Ghazali on the Husband's Obligation</h2>
       <p>Al-Ghazali in Ihya Ulum al-Din — required reading in traditional Islamic seminaries — wrote explicitly: a husband should engage in play and tenderness with his wife before approaching her for intercourse, so that she is ready and willing. He framed this not as a nicety but as an obligation — part of the Islamic requirement to treat one's wife with ihsan (excellence). The husband who approaches intimacy without this preparation has, in Al-Ghazali's analysis, failed in his Islamic duty to his wife.</p>

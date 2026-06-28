@@ -4,6 +4,8 @@ export default function ArticleWomanDivorce() {
   return (
     <ArticleLayout
       title="Can a Muslim Woman Divorce Her Husband? Her Full Rights in Islamic Law"
+        slug="woman-divorce-islam"
+        excerpt="Yes — and the Islamic basis for this is clearer and stronger than most Muslim women are ever told. Here is the complete picture."
       tag="Rights & Fiqh"
       readTime="7 min"
       date="June 2026"

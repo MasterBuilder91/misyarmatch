@@ -4,6 +4,8 @@ export default function ArticleTattoos() {
   return (
     <ArticleLayout
       title="Are Tattoos Haram in Islam? The Evidence and the Nuance"
+        slug="tattoos-in-islam"
+        excerpt="The majority position, the evidence behind it, and what it means for converts who had tattoos before Islam."
       tag="Halal & Haram"
       readTime="5 min"
       date="June 2026"

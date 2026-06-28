@@ -4,6 +4,8 @@ export default function ArticleMuslimWomanDesire() {
   return (
     <ArticleLayout
       title="The Muslim Woman's Desire That Nobody Is Allowed to Name"
+        slug="muslim-woman-desire"
+        excerpt="We are going to name it. Because the silence has consequences, and the consequences are real, and they are happening to real women right now."
       tag="Marriage & Intimacy"
       readTime="9 min"
       date="June 2026"

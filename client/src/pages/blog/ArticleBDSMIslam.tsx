@@ -4,6 +4,8 @@ export default function ArticleBDSMIslam() {
   return (
     <ArticleLayout
       title="BDSM and Islam: What the Fiqh Actually Says About Power, Consent, and Intimacy in Marriage"
+        slug="bdsm-and-islam"
+        excerpt="If you found this through a search about BDSM, welcome. You are not going to be lectured. You are going to get an honest engagement with what Islamic scholarship says — and you might be surprised."
       tag="Marriage & Intimacy"
       readTime="10 min"
       date="June 2026"

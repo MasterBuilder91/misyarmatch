@@ -4,6 +4,8 @@ export default function ArticleDuaForSpouse() {
   return (
     <ArticleLayout
       title="Dua for Finding a Righteous Spouse — And What Islam Says You Must Do Alongside It"
+        slug="dua-for-spouse"
+        excerpt="The authentic supplications from Quran and Sunnah, plus what the scholars say about the obligation to take action alongside your du'a."
       tag="Worship & Du'a"
       readTime="5 min"
       date="June 2026"

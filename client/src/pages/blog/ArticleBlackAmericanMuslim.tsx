@@ -4,6 +4,8 @@ export default function ArticleBlackAmericanMuslim() {
   return (
     <ArticleLayout
       title="Black American Muslim Marriage and the Specific Loneliness Nobody Names"
+        slug="black-american-muslim-marriage-loneliness"
+        excerpt="He converted at 24. He found Islam and became genuinely Muslim. Then he walked into the community and discovered it was not always sure what to do with him."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

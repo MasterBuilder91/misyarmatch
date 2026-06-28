@@ -6,6 +6,8 @@ export default function ArticleWhyStaySingle() {
     <>
       <SEOHead
         title="Why So Many Muslims Stay Single — And What Nobody Is Saying"
+        slug="why-muslims-stay-single"
+        excerpt="It is not a lack of faith. It is not a lack of desire. It is a broken system that was never built for the realities of modern Muslim life."
         description="The Muslim marriage crisis is real. Tens of millions of Muslims want to marry but cannot. This is why — and what the community needs to do about it."
         keywords="why Muslims stay single, Muslim marriage crisis, Muslim singles problem, Muslim marriage difficult, halal marriage hard, Muslim loneliness, single Muslim professional, Muslim marriage barriers"
         canonical="/blog/why-muslims-stay-single"

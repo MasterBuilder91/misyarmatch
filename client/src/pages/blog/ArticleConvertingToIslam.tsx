@@ -4,6 +4,8 @@ export default function ArticleConvertingToIslam() {
   return (
     <ArticleLayout
       title="How to Convert to Islam — And What Actually Changes After the Shahada"
+        slug="how-to-convert-to-islam"
+        excerpt="The process is simple. The life after is rich, challenging, and transformative. Here is what you need to know."
       tag="New Muslims"
       readTime="8 min"
       date="June 2026"

@@ -4,6 +4,8 @@ export default function ArticleMisyarAlreadyMarried() {
   return (
     <ArticleLayout
       title="Misyar When You Are Already Married: The Fiqh, the Conditions, and the Honesty Required"
+        slug="misyar-already-married"
+        excerpt="Yes, a married man can enter a misyar arrangement. Here are the conditions that are serious, non-negotiable, and often ignored."
       tag="Fiqh & Rights"
       readTime="9 min"
       date="June 2026"

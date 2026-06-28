@@ -4,6 +4,8 @@ export default function ArticleWaliRights() {
   return (
     <ArticleLayout
       title="Can a Muslim Woman Marry Without a Wali? The Thayyib and Her Rights Across All Four Madhabs"
+        slug="wali-rights-thayyib"
+        excerpt="The answer depends on one distinction the scholars have always made: is she a bikr or a thayyib? Here is the complete fiqh picture."
       tag="Fiqh & Rights"
       readTime="9 min"
       date="June 2026"

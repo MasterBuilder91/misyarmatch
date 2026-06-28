@@ -4,6 +4,8 @@ export default function ArticleMisyarEid() {
   return (
     <ArticleLayout
       title="Can Misyar Spouses Celebrate Eid Together? And Other Practical Holiday Questions"
+        slug="misyar-spouses-celebrate-eid"
+        excerpt="Yes — and there is no Islamic reason they cannot. Here is the complete practical picture for Eid al-Fitr and Eid al-Adha in a misyar marriage."
       tag="Worship & Fiqh"
       readTime="6 min"
       date="June 2026"

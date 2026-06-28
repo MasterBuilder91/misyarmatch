@@ -4,6 +4,8 @@ export default function ArticleVictorianism() {
   return (
     <ArticleLayout
       title="How Victorian Prudishness Colonised Muslim Sexuality — And Why Europeans Abandoned It Before We Did"
+        slug="victorianism-colonised-muslim-sexuality"
+        excerpt="The shame, the silence, the treatment of the body as spiritually suspect — Muslims who hold these attitudes believe they are being Islamic. They are being Victorian. And the Victorians abandoned Victorianism decades ago."
       tag="Marriage & Relationships"
       readTime="12 min"
       date="June 2026"

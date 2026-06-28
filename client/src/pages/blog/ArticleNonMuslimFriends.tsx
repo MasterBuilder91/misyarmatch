@@ -4,6 +4,8 @@ export default function ArticleNonMuslimFriends() {
   return (
     <ArticleLayout
       title="Can Muslims Have Non-Muslim Friends? The Complete Ruling With Context"
+        slug="can-muslims-have-non-muslim-friends"
+        excerpt="Misunderstood in both directions. The actual ruling is more contextual and more human than either extreme suggests."
       tag="Muslim Life"
       readTime="7 min"
       date="June 2026"

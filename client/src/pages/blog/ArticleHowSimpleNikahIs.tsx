@@ -6,6 +6,8 @@ export default function ArticleHowSimpleNikahIs() {
   return (
     <ArticleLayout
       title="How to Make Two People Halal for Each Other: It Is Embarrassingly Simple"
+        slug="how-simple-nikah-is"
+        excerpt="A sheikh, a masjid, a hall, a feast, forty people with opinions. They convinced you all of it is required. Every single part of that list — except one — is cultural addition with no basis in Islamic law."
       tag="Marriage & Fiqh"
       readTime="10 min"
       date="June 2026"

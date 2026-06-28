@@ -4,6 +4,8 @@ export default function ArticleSecondWife() {
   return (
     <ArticleLayout
       title="Being the Second Wife: What Nobody Tells You — And What Islam Actually Guarantees You"
+        slug="being-the-second-wife"
+        excerpt="The most misunderstood, most stigmatised, and most legally protected position in Islamic marriage law."
       tag="Marriage & Fiqh"
       readTime="10 min"
       date="June 2026"

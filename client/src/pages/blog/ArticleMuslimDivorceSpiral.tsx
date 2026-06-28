@@ -4,6 +4,8 @@ export default function ArticleMuslimDivorceSpiral() {
   return (
     <ArticleLayout
       title="What Nobody Tells You About Muslim Divorce: The Spiral Is Real and It Is Coming"
+        slug="muslim-divorce-spiral"
+        excerpt="Everyone prepares you for the marriage. Nobody prepares you for what comes after the divorce. This is that preparation."
       tag="Marriage & Relationships"
       readTime="10 min"
       date="June 2026"

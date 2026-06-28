@@ -4,6 +4,8 @@ export default function ArticleMisyarHajjMahram() {
   return (
     <ArticleLayout
       title="Can a Misyar Husband Serve as Mahram for His Wife's Hajj?"
+        slug="misyar-husband-mahram-hajj"
+        excerpt="Yes — he is her husband, and therefore her mahram. The misyar structure affects the arrangement, not the identity."
       tag="Worship & Fiqh"
       readTime="6 min"
       date="June 2026"

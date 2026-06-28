@@ -4,6 +4,8 @@ export default function ArticleGhusl() {
   return (
     <ArticleLayout
       title="How to Perform Ghusl Correctly — The Complete Islamic Guide"
+        slug="how-to-perform-ghusl"
+        excerpt="Step-by-step ghusl from the Sunnah of the Prophet ﷺ, with notes on where the four madhabs differ."
       tag="Worship & Purification"
       readTime="6 min"
       date="June 2026"
