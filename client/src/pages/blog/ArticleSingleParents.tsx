@@ -1,18 +1,8 @@
-import { SEOHead } from "@/components/SEOHead";
 import { ArticleLayout } from "./ArticleLayout";
 
 export default function ArticleSingleParents() {
   return (
-    <>
-      <SEOHead
-        title="Marriage for Muslim Single Parents: A Realistic Guide (2025)"
-        slug="muslim-single-parents-marriage"
-        excerpt="You have children. You have a life. You have real needs. Here is how Muslim single parents approach remarriage without pretending the complications don't exist."
-        description="You have children. You have a life. You have real needs. Here is a practical, Islamic guide to remarriage for Muslim single parents — without pretending the complications don't exist."
-        keywords="Muslim single parents marriage, Muslim single mother marriage, Muslim single father remarriage, Islamic marriage with children, misyar single parents, Muslim remarriage children, halal marriage single parent"
-        canonical="/blog/muslim-single-parents-marriage"
-      />
-      <ArticleLayout
+    <ArticleLayout
         title="Marriage for Muslim Single Parents: A Realistic Guide"
         tag="Single Parents"
         readTime="8 min"
@@ -78,6 +68,5 @@ export default function ArticleSingleParents() {
         <p>A Muslim single parent who has raised children through hardship, who has maintained their faith through difficulty, who has shown up day after day for small people who depend on them — this person has demonstrated exactly the qualities that make a good partner. Reliability. Sacrifice. Love that is not contingent on ease.</p>
         <p>You are not less. You are more. Find someone capable of seeing it.</p>
       </ArticleLayout>
-    </>
   );
 }

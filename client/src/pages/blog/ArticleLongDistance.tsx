@@ -1,18 +1,8 @@
-import { SEOHead } from "@/components/SEOHead";
 import { ArticleLayout } from "./ArticleLayout";
 
 export default function ArticleLongDistance() {
   return (
-    <>
-      <SEOHead
-        title="Long-Distance Islamic Marriage: How It Works and Why Muslims Choose It"
-        slug="long-distance-islamic-marriage"
-        excerpt="A husband in Houston, a wife in Casablanca. Children raised between two worlds. This is not unusual — it is misyar in practice, and it works."
-        description="A husband in Houston, a wife in Casablanca. A man in London, a woman in Lagos. Long-distance Islamic marriages are real, documented, and growing. Here is how they work and why misyar makes them possible."
-        keywords="long distance Islamic marriage, long distance nikah, international Muslim marriage, misyar long distance, Muslim marriage different countries, cross cultural Muslim marriage, visiting husband Islam"
-        canonical="/blog/long-distance-islamic-marriage"
-      />
-      <ArticleLayout
+    <ArticleLayout
         title="Long-Distance Islamic Marriage: How It Works and Why More Muslims Are Choosing It"
         tag="Long Distance"
         readTime="7 min"
@@ -62,6 +52,5 @@ export default function ArticleLongDistance() {
         <p>A marriage is a contract between two adults who commit to each other within an Islamic framework. That commitment does not require sharing a postcode. It requires honesty, care, communication, and mutual responsibility.</p>
         <p>Millions of Muslims already know this. MisyarMatch was built for them.</p>
       </ArticleLayout>
-    </>
   );
 }

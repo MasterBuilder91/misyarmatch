@@ -1,18 +1,8 @@
-import { SEOHead } from "@/components/SEOHead";
 import { ArticleLayout } from "./ArticleLayout";
 
 export default function ArticleWidows() {
   return (
-    <>
-      <SEOHead
-        title="Muslim Widows and Remarriage: Breaking the Silence (2025)"
-        slug="muslim-widows-remarriage"
-        excerpt="The Prophet ﷺ married widows. The companions married widows. Yet Muslim widows today face more stigma than any other group seeking remarriage. It has to stop."
-        description="Muslim widows face unique stigma around remarriage that has no basis in Islam. This article addresses the religious reality, the emotional journey, and practical pathways to halal companionship after loss."
-        keywords="Muslim widow remarriage, Muslim widow marriage, Islamic remarriage after death spouse, widow nikah, halal remarriage widow, Muslim widower marriage, widow misyar, Muslim widow matchmaking"
-        canonical="/blog/muslim-widows-remarriage"
-      />
-      <ArticleLayout
+    <ArticleLayout
         title="Muslim Widows and Remarriage: Breaking the Silence"
         tag="Widowhood"
         readTime="8 min"
@@ -56,6 +46,5 @@ export default function ArticleWidows() {
         <p>That is what a widow can be. Not a second choice. Not damaged goods. A partner formed by experience, made stronger by loss, capable of a depth of love that only comes from having already given it — and lost it — once before.</p>
         <p>You deserve to find that again.</p>
       </ArticleLayout>
-    </>
   );
 }

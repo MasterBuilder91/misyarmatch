@@ -1,18 +1,8 @@
-import { SEOHead } from "@/components/SEOHead";
 import { ArticleLayout } from "./ArticleLayout";
 
 export default function ArticleWhyStaySingle() {
   return (
-    <>
-      <SEOHead
-        title="Why So Many Muslims Stay Single — And What Nobody Is Saying"
-        slug="why-muslims-stay-single"
-        excerpt="It is not a lack of faith. It is not a lack of desire. It is a broken system that was never built for the realities of modern Muslim life."
-        description="The Muslim marriage crisis is real. Tens of millions of Muslims want to marry but cannot. This is why — and what the community needs to do about it."
-        keywords="why Muslims stay single, Muslim marriage crisis, Muslim singles problem, Muslim marriage difficult, halal marriage hard, Muslim loneliness, single Muslim professional, Muslim marriage barriers"
-        canonical="/blog/why-muslims-stay-single"
-      />
-      <ArticleLayout
+    <ArticleLayout
         title="Why So Many Muslims Stay Single — And What Nobody Is Saying About It"
         tag="Singles"
         readTime="9 min"
@@ -70,6 +60,5 @@ export default function ArticleWhyStaySingle() {
         <p>What you can do is use the tools that exist now — imperfect as they are — to find the right person. Be honest about who you are and what you want. Be willing to consider arrangements that are not traditional but are fully halal. Be patient with the process without being passive in it.</p>
         <p>The person you are looking for is also looking for you. The gap between you is infrastructure — not destiny.</p>
       </ArticleLayout>
-    </>
   );
 }
