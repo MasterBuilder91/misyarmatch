@@ -6,6 +6,28 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 export const ARTICLES = [
   {
+    slug: "misyar-marriage-uk",
+    title: "Misyar Marriage in the UK: What You Need to Know — Legally, Islamically, Practically",
+    excerpt: "Over 3.9 million Muslims in the UK are navigating Islamic practice inside a secular legal framework. Here is the complete picture on misyar in Britain.",
+    tag: "Marriage & Fiqh",
+    readTime: "10 min",
+  },
+  {
+    slug: "misyar-marriage-online",
+    title: "Misyar Marriage Online: How to Find a Misyar Arrangement in 2026",
+    excerpt: "You are looking for a real, halal, contractual misyar arrangement. Here is exactly where to look, what to expect, and how to approach it honestly.",
+    tag: "Marriage & Fiqh",
+    readTime: "8 min",
+  },
+  {
+    slug: "misyar-marriage-app",
+    title: "The Best Misyar Marriage App in 2026 — And Why Most Muslim Apps Miss the Point",
+    excerpt: "Most Muslim marriage apps were built for conventional marriage. They carry biraderi assumptions and family gatekeeping. Misyar needs something different.",
+    tag: "Marriage & Fiqh",
+    readTime: "7 min",
+  },
+
+  {
     slug: "islam-wealth-poverty",
     title: "What Islam Says About Wealth, Poverty, and Why Being Poor Is Not a Sin",
     excerpt: "Muslim communities have a complicated relationship with money. The honest Islamic position is more nuanced than either 'money is spiritual poison' or 'wealth is Allah's blessing.'",

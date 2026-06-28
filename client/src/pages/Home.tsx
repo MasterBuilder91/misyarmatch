@@ -67,8 +67,9 @@ export default function Home() {
   return (
     <Layout>
       <SEOHead
-        title="MisyarMatch — Just Launched. Join Free While It Lasts."
-        description="The world's first halal misyar marriage platform just launched. Be one of the first members. Free to join right now — this will not last forever. Cleric-founded. US, UK, Canada, Australia."
+        title="MisyarMatch — The Free Misyar Marriage App & Platform"
+        description="The first free misyar marriage platform online. Find a halal misyar arrangement — real nikah, real witnesses, real honesty. No cultural gatekeeping. Join free. UK, US, Canada, Australia."
+        keywords="misyar marriage online, misyar marriage app, misyar online, misyar marriage website, misyar marriage free, halal matchmaking, misyar nikah, Islamic marriage app"
         canonical="/"
       />
 

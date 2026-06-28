@@ -128,6 +128,9 @@ import ArticleIslamicDivorceRights from "@/pages/blog/ArticleIslamicDivorceRight
 import ArticleForeplay from "@/pages/blog/ArticleForeplaying";
 import ArticleTalkingStage from "@/pages/blog/ArticleTalkingStage";
 import ArticleMisyarNafaqah from "@/pages/blog/ArticleMisyarNafaqah";
+import ArticleMisyarUK from "@/pages/blog/ArticleMisyarUK";
+import ArticleMisyarMarriageOnline from "@/pages/blog/ArticleMisyarMarriageOnline";
+import ArticleMisyarApp from "@/pages/blog/ArticleMisyarApp";
 import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
 import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
 import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
@@ -246,6 +249,9 @@ function Router() {
       <Route path="/blog/foreplay-is-sunnah" component={ArticleForeplay} />
       <Route path="/blog/muslim-talking-stage" component={ArticleTalkingStage} />
       <Route path="/blog/misyar-nafaqah-financial-support" component={ArticleMisyarNafaqah} />
+      <Route path="/blog/misyar-marriage-uk" component={ArticleMisyarUK} />
+      <Route path="/blog/misyar-marriage-online" component={ArticleMisyarMarriageOnline} />
+      <Route path="/blog/misyar-marriage-app" component={ArticleMisyarApp} />
       <Route path="/blog/muslim-men-marry-christian-jewish-women" component={ArticleMarryingKitabiyya} />
       <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
       <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />
