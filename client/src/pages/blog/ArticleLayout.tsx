@@ -88,7 +88,7 @@ export function ArticleLayout({ children, title, tag, readTime, date = "June 202
           <div className="flex flex-wrap items-center gap-5 text-sm text-rose-200/70">
             <span className="flex items-center gap-1.5">
               <User className="w-3.5 h-3.5" />
-              Muhammed Abdullah
+              Abu Salman
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5" />
@@ -165,7 +165,7 @@ export function ArticleLayout({ children, title, tag, readTime, date = "June 202
               M
             </div>
             <div>
-              <p className="font-semibold text-gray-900">Muhammed Abdullah</p>
+              <p className="font-semibold text-gray-900">Abu Salman</p>
               <p className="text-sm text-gray-500">Founder, MisyarMatch · Islamic Studies Diploma (Zad Academy) · Friday Khutbah Preacher</p>
             </div>
           </div>

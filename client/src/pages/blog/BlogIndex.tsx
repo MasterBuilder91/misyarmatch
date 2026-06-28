@@ -793,7 +793,7 @@ export default function BlogIndex() {
             Honest writing on Muslim marriage, misyar nikah, Islamic fiqh, and building halal relationships in the modern world.
           </p>
           <div className="mt-8 text-sm text-rose-300/60">
-            {ARTICLES.length} articles · Written by Muhammed Abdullah
+            {ARTICLES.length} articles · Written by Abu Salman
           </div>
         </div>
       </section>
