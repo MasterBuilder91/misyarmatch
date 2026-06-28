@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Can the nikah be done over video call?",
-    a: "Scholars differ significantly on this. The majority traditional position requires all parties — including witnesses — to be physically present in the same space. Some contemporary scholars have permitted video nikah under specific circumstances, particularly where travel is genuinely impossible. For maximum validity and certainty, in-person is always recommended.",
+    a: "Yes — and a growing number of contemporary scholars have validated this, particularly for Muslims in the West where distance is a real practical reality. The principle is that the requirement of 'one sitting' (majlis wahid) means all parties must be present and aware of what is happening simultaneously — and a Zoom call fulfills this. The offer is heard, the acceptance is given, the witnesses see and hear both. The Islamic Fiqh Council and numerous contemporary scholars including those at major Western Islamic institutions have ruled video nikah valid when conducted properly: everyone present on screen simultaneously, the contract clearly spoken and heard, witnesses able to see and attest. If anything, a recorded video call provides better evidence of the nikah than a private in-person gathering with two witnesses. Remove the barrier. The fiqh accommodates the technology.",
   },
   {
     q: "Does anyone need to be told afterward?",
