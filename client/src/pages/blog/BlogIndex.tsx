@@ -6,6 +6,14 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
+    slug: "how-simple-nikah-is",
+    title: "How to Make Two People Halal for Each Other: It Is Embarrassingly Simple",
+    excerpt: "A sheikh, a masjid, a hall, a feast, forty people with opinions. They convinced you all of it is required. Every single part of that list — except one — is cultural addition with no basis in Islamic law.",
+    tag: "Marriage & Fiqh",
+    readTime: "10 min",
+  },
+
+  {
     slug: "turkish-muslim-man-emotional-unavailability",
     title: "The Turkish Muslim Man Who Cannot Cry in Front of His Wife",
     excerpt: "He built the business. He provides generously. He is respected by everyone. His wife has never seen him afraid. She is married to a performance of a man rather than a man.",
