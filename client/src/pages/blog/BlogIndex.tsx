@@ -6,6 +6,14 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
+    slug: "stop-worshipping-virginity",
+    title: "Stop Worshipping Virginity: What Islam Actually Says About Human Needs and Growing Up",
+    excerpt: "Islam is a religion of needs. When you need to eat, you eat. When you need intimacy, you marry. The deen was never designed to produce people who pretend they have no body.",
+    tag: "Marriage & Relationships",
+    readTime: "10 min",
+  },
+
+  {
     slug: "how-simple-nikah-is",
     title: "How to Make Two People Halal for Each Other: It Is Embarrassingly Simple",
     excerpt: "A sheikh, a masjid, a hall, a feast, forty people with opinions. They convinced you all of it is required. Every single part of that list — except one — is cultural addition with no basis in Islamic law.",
