@@ -6,6 +6,63 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
+    slug: "islam-wealth-poverty",
+    title: "What Islam Says About Wealth, Poverty, and Why Being Poor Is Not a Sin",
+    excerpt: "Muslim communities have a complicated relationship with money. The honest Islamic position is more nuanced than either 'money is spiritual poison' or 'wealth is Allah's blessing.'",
+    tag: "Muslim Life",
+    readTime: "7 min",
+  },
+  {
+    slug: "islamic-parenting",
+    title: "What Islam Actually Says About Raising Children — Beyond the Rules",
+    excerpt: "The Prophet ﷺ got on the ground to let his grandsons ride on his back during prayer. The Islamic parenting model was never primarily about enforcement.",
+    tag: "Muslim Life",
+    readTime: "8 min",
+  },
+  {
+    slug: "student-nikah-university",
+    title: "The Student Nikah: How Muslim University Students Can Get Married Before They Graduate",
+    excerpt: "You are 20, at university, surrounded by people, and told marriage is for after graduation. The Prophet ﷺ said whoever is able should marry. He did not say whoever has graduated.",
+    tag: "Marriage & Relationships",
+    readTime: "8 min",
+  },
+  {
+    slug: "misyar-long-distance",
+    title: "Long Distance Misyar: Can a Nikah Work Across Cities or Countries?",
+    excerpt: "The Muslim world is mobile. The misyar structure already assumes non-cohabitation. Long distance is a degree of difference, not a different category.",
+    tag: "Marriage & Fiqh",
+    readTime: "7 min",
+  },
+  {
+    slug: "muslim-women-divorce-rights",
+    title: "Islamic Divorce Rights: What Every Muslim Woman Needs to Know and Is Never Told",
+    excerpt: "What the fiqh guarantees and what women actually receive are often entirely different things — not because the fiqh is unclear, but because the knowledge is withheld.",
+    tag: "Fiqh & Rights",
+    readTime: "9 min",
+  },
+  {
+    slug: "foreplay-is-sunnah",
+    title: "Foreplay Is Sunnah: What the Prophet ﷺ Actually Taught About Intimacy in Marriage",
+    excerpt: "The Prophet ﷺ said let there be a messenger between you and your wife. When asked what the messenger was, he said: kisses and words. This is not a Western import. It is prophetic.",
+    tag: "Marriage & Intimacy",
+    readTime: "7 min",
+  },
+  {
+    slug: "muslim-talking-stage",
+    title: "The Muslim 'Talking Stage' Is Not Islamic — And It Is Costing You Everything",
+    excerpt: "Months of WhatsApp, growing emotional intimacy, no commitment. It is called halal because it stops short of physical contact. It is not halal. And the damage it does is real.",
+    tag: "Marriage & Relationships",
+    readTime: "8 min",
+  },
+  {
+    slug: "misyar-nafaqah-financial-support",
+    title: "What Happens to Nafaqah (Financial Support) in a Misyar Marriage?",
+    excerpt: "The wife typically waives ongoing maintenance in misyar. But what cannot be waived, what happens if she changes her mind, and what remains obligatory regardless.",
+    tag: "Fiqh & Rights",
+    readTime: "7 min",
+  },
+
+  {
     slug: "victorianism-colonised-muslim-sexuality",
     title: "How Victorian Prudishness Colonised Muslim Sexuality — And Why Europeans Abandoned It Before We Did",
     excerpt: "The shame, the silence, the treatment of the body as spiritually suspect — Muslims who hold these attitudes believe they are being Islamic. They are being Victorian. And the Victorians abandoned Victorianism decades ago.",

@@ -120,6 +120,14 @@ import ArticleHowSimpleNikahIs from "@/pages/blog/ArticleHowSimpleNikahIs";
 import NikahGuide from "@/pages/NikahGuide";
 import ArticleVirginityWorship from "@/pages/blog/ArticleVirginityWorship";
 import ArticleVictorianism from "@/pages/blog/ArticleVictorianism";
+import ArticleMuslimWealthPoverty from "@/pages/blog/ArticleMuslimWealthPoverty";
+import ArticleIslamicParenting from "@/pages/blog/ArticleIslamicParenting";
+import ArticleMisyarStudentNikah from "@/pages/blog/ArticleMisyarStudentNikah";
+import ArticleMisyarLongDistance from "@/pages/blog/ArticleMisyarLongDistance";
+import ArticleIslamicDivorceRights from "@/pages/blog/ArticleIslamicDivorceRights";
+import ArticleForeplay from "@/pages/blog/ArticleForeplaying";
+import ArticleTalkingStage from "@/pages/blog/ArticleTalkingStage";
+import ArticleMisyarNafaqah from "@/pages/blog/ArticleMisyarNafaqah";
 import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
 import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
 import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
@@ -230,6 +238,14 @@ function Router() {
       <Route path="/nikah-guide" component={NikahGuide} />
       <Route path="/blog/stop-worshipping-virginity" component={ArticleVirginityWorship} />
       <Route path="/blog/victorianism-colonised-muslim-sexuality" component={ArticleVictorianism} />
+      <Route path="/blog/islam-wealth-poverty" component={ArticleMuslimWealthPoverty} />
+      <Route path="/blog/islamic-parenting" component={ArticleIslamicParenting} />
+      <Route path="/blog/student-nikah-university" component={ArticleMisyarStudentNikah} />
+      <Route path="/blog/misyar-long-distance" component={ArticleMisyarLongDistance} />
+      <Route path="/blog/muslim-women-divorce-rights" component={ArticleIslamicDivorceRights} />
+      <Route path="/blog/foreplay-is-sunnah" component={ArticleForeplay} />
+      <Route path="/blog/muslim-talking-stage" component={ArticleTalkingStage} />
+      <Route path="/blog/misyar-nafaqah-financial-support" component={ArticleMisyarNafaqah} />
       <Route path="/blog/muslim-men-marry-christian-jewish-women" component={ArticleMarryingKitabiyya} />
       <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
       <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />
