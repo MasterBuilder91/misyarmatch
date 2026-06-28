@@ -811,7 +811,7 @@ export default function BlogIndex() {
                 </span>
               </div>
             </div>
-          </Link>
+          </Link>)}
 
           {/* Category filters */}
           <div className="flex flex-wrap gap-2 mb-8">
