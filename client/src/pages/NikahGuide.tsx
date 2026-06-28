@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What if the wali refuses?",
-    a: "If a wali refuses without a legitimate Islamic reason — called adhl (unjust refusal) — his guardianship transfers to the next person in the chain, and ultimately to a judge or imam. In Western countries, any local imam can serve as wali for a woman whose family will not. In the Hanafi school, she can simply proceed without a wali as an adult woman.",
+    a: "If a wali refuses without a legitimate Islamic reason — called adhl (unjust refusal) — his guardianship transfers down the chain. But here is what MSA students, college Muslims, and young people in the West need to hear clearly: the chain does not end at 'imam.' It ends at any righteous Muslim man. A trusted friend. A brother in the deen she respects. A classmate. Someone who fears Allah and is willing to stand in that role for her. The fiqh does not require an official title. It requires a Muslim man of sound character who she trusts and explicitly appoints as her wakeel. If Zainab is in college and her father said no, and her uncle said no, and she knows she is going to do something haram otherwise — any Muslim man she trusts can stand for her. That man is not doing something wrong. He is doing something brave. He is saving her from zina by making her halal. That is an act of worship.",
   },
   {
     q: "What is the minimum number of people needed?",
