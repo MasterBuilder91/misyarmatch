@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Layout } from "@/components/Layout";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { EmailCapture } from "@/components/EmailCapture";
+import { Comments } from "@/components/Comments";
 import { ARTICLES } from "@/pages/blog/BlogIndex";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
@@ -182,6 +183,9 @@ export function ArticleLayout({ children, title, excerpt, slug, tag, readTime, d
                 }
               `}</style>
               {children}
+              {slug && (
+                <Comments slug={slug} />
+              )}
               {slug && (
                 <RelatedArticles
                   currentSlug={slug}

@@ -51,6 +51,86 @@ async function startServer() {
   registerStorageProxy(app);
   registerOAuthRoutes(app);
 
+
+  // Comments - GET
+  app.get("/api/comments/:slug", async (req: any, res: any) => {
+    try {
+      const { db } = await import("../db");
+      const { slug } = req.params;
+      await db.execute(`
+        CREATE TABLE IF NOT EXISTS comments (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          slug VARCHAR(255) NOT NULL,
+          name VARCHAR(100),
+          email VARCHAR(255),
+          user_id INT,
+          content TEXT NOT NULL,
+          is_member TINYINT(1) DEFAULT 0,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+          INDEX idx_slug (slug)
+        )
+      `);
+      const [rows] = await db.execute(
+        "SELECT id, name, content, is_member, created_at FROM comments WHERE slug = ? ORDER BY created_at ASC",
+        [slug]
+      );
+      return res.json({ comments: rows });
+    } catch (err) {
+      console.error("[Comments GET] Error:", err);
+      return res.status(500).json({ error: "Server error" });
+    }
+  });
+
+  // Comments - POST
+  app.post("/api/comments", async (req: any, res: any) => {
+    try {
+      const { db } = await import("../db");
+      const { slug, content, name, email } = req.body;
+      if (!slug || !content || content.trim().length < 3) {
+        return res.status(400).json({ error: "Invalid comment" });
+      }
+      if (content.length > 1000) {
+        return res.status(400).json({ error: "Comment too long" });
+      }
+
+      // Check if logged in via session cookie
+      let userId = null;
+      let memberName = name || null;
+      let isMember = 0;
+      try {
+        const { verifySession } = await import("../auth");
+        const session = await verifySession(req);
+        if (session?.userId) {
+          userId = session.userId;
+          isMember = 1;
+          const [users]: any = await db.execute(
+            "SELECT name FROM users WHERE id = ? LIMIT 1", [userId]
+          );
+          if (users?.[0]?.name) memberName = users[0].name;
+        }
+      } catch {}
+
+      const [result]: any = await db.execute(
+        "INSERT INTO comments (slug, name, email, user_id, content, is_member) VALUES (?, ?, ?, ?, ?, ?)",
+        [slug, memberName, email || null, userId, content.trim(), isMember]
+      );
+
+      const comment = {
+        id: result.insertId,
+        name: memberName,
+        content: content.trim(),
+        is_member: isMember,
+        created_at: new Date().toISOString(),
+      };
+
+      console.log(\`[Comments] New comment on \${slug} by \${memberName || "Anonymous"}\`);
+      return res.json({ comment });
+    } catch (err) {
+      console.error("[Comments POST] Error:", err);
+      return res.status(500).json({ error: "Server error" });
+    }
+  });
+
   // Email subscription
   app.post("/api/subscribe", async (req: any, res: any) => {
     try {
