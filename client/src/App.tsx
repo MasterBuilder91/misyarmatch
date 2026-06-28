@@ -119,6 +119,7 @@ import ArticleWudu from "@/pages/blog/ArticleWudu";
 import ArticleHowSimpleNikahIs from "@/pages/blog/ArticleHowSimpleNikahIs";
 import NikahGuide from "@/pages/NikahGuide";
 import ArticleVirginityWorship from "@/pages/blog/ArticleVirginityWorship";
+import ArticleVictorianism from "@/pages/blog/ArticleVictorianism";
 import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
 import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
 import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
@@ -228,6 +229,7 @@ function Router() {
       <Route path="/blog/how-simple-nikah-is" component={ArticleHowSimpleNikahIs} />
       <Route path="/nikah-guide" component={NikahGuide} />
       <Route path="/blog/stop-worshipping-virginity" component={ArticleVirginityWorship} />
+      <Route path="/blog/victorianism-colonised-muslim-sexuality" component={ArticleVictorianism} />
       <Route path="/blog/muslim-men-marry-christian-jewish-women" component={ArticleMarryingKitabiyya} />
       <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
       <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />

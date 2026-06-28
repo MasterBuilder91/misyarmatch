@@ -6,6 +6,14 @@ import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
 const ARTICLES = [
   {
+    slug: "victorianism-colonised-muslim-sexuality",
+    title: "How Victorian Prudishness Colonised Muslim Sexuality — And Why Europeans Abandoned It Before We Did",
+    excerpt: "The shame, the silence, the treatment of the body as spiritually suspect — Muslims who hold these attitudes believe they are being Islamic. They are being Victorian. And the Victorians abandoned Victorianism decades ago.",
+    tag: "Marriage & Relationships",
+    readTime: "12 min",
+  },
+
+  {
     slug: "stop-worshipping-virginity",
     title: "Stop Worshipping Virginity: What Islam Actually Says About Human Needs and Growing Up",
     excerpt: "Islam is a religion of needs. When you need to eat, you eat. When you need intimacy, you marry. The deen was never designed to produce people who pretend they have no body.",
