@@ -1,12 +1,4 @@
 User-agent: *
 Allow: /
 
-# Disallow private/auth routes
-Disallow: /profile/create
-Disallow: /profile/edit
-Disallow: /messages
-Disallow: /matches
-Disallow: /notifications
-Disallow: /admin
-
-Sitemap: https://www.misyarmatch.net/sitemap.xml
+Sitemap: https://misyarmatch.net/sitemap.xml
