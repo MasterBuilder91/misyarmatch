@@ -13,7 +13,7 @@ const steps = [
   {
     number: "02",
     title: "She appoints a wali — or acts herself",
-    body: "In three madhabs (Maliki, Shafi'i, Hanbali) she needs a wali — a male guardian — to speak on her behalf. This can be her father, brother, uncle, any male relative, or any Muslim man she trusts and explicitly appoints as her wakeel. If no family is available or willing, the local imam can serve. In the Hanafi madhab — the school of most South Asian and Turkish Muslims — she can speak for herself as an adult woman.",
+    body: "In three madhabs (Maliki, Shafi'i, Hanbali) she needs a wali — a male guardian — to speak on her behalf. This can be her father, brother, uncle, any male relative, or any Muslim man she trusts and explicitly appoints as her wakeel. If no family is available or willing, the local imam can serve. In the Hanafi madhab, the position is more nuanced: a thayyib — a previously married woman, whether divorced or widowed — has near-unanimous scholarly backing to act for herself. The Prophet ﷺ said explicitly: 'The thayyib has more right over herself than her wali.' (Muslim) Beyond the thayyib, Hanafi scholars extend this to situations where a woman has no accessible wali — including a convert whose family is non-Muslim, or a woman whose past includes zina and who is now making sincere tawbah and seeking to be halal. In these cases, the scholars understood that leaving such women without a path to valid nikah was worse than the alternatives. The fiqh was designed for real human situations, not ideal ones.",
   },
   {
     number: "03",
