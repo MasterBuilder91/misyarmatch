@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowRight, BookOpen, Clock } from "lucide-react";
 
-const ARTICLES = [
+export const ARTICLES = [
   {
     slug: "islam-wealth-poverty",
     title: "What Islam Says About Wealth, Poverty, and Why Being Poor Is Not a Sin",

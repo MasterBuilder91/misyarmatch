@@ -1,4 +1,5 @@
 import { ArticleLayout } from "./ArticleLayout";
+import { FAQ } from "@/components/FAQ";
 
 export default function ArticleGhusl() {
   return (
@@ -55,6 +56,14 @@ export default function ArticleGhusl() {
 
       <h2>Does Ghusl Replace Wudu?</h2>
       <p>Yes — a complete ghusl that includes the elements of wudu (washing the face, rinsing mouth and nose, wiping the head) removes the need for separate wudu before prayer. If ghusl was performed without these elements, wudu must be performed separately. (This is the majority position; the Maliki school holds that ghusl automatically suffices for wudu regardless.)</p>
+
+      <FAQ items={[
+        { q: "Does ghusl replace wudu?", a: "Yes — a complete ghusl that includes the elements of wudu (rinsing mouth, rinsing nose, wiping head) removes the need for separate wudu before prayer. If ghusl was performed without these elements, wudu must be performed separately." },
+        { q: "Does a woman need to undo her braids for ghusl?", a: "Scholars differ. The majority say braids do not need to be unbraided for ghusl from janabah if water reaches the roots, but should be unbraided for ghusl from hayd (menstruation)." },
+        { q: "What breaks ghusl and requires it again?", a: "The same things that break wudu break the purification — but ghusl itself only needs to be repeated if another cause of major impurity occurs (sexual intercourse, ejaculation, end of menstruation, etc.)." },
+        { q: "Is it valid to perform ghusl in a shower?", a: "Yes — all scholars agree that ghusl under a shower is valid, as long as water reaches every part of the body including the scalp roots, inside the navel, between the toes, and under the arms." },
+        { q: "Can ghusl be performed in the same bathroom as a toilet?", a: "Yes — this is permissible. The classical prohibition was against making dhikr (remembrance of Allah) in the toilet, not against performing ghusl there." },
+      ]} />
     </ArticleLayout>
   );
 }

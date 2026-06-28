@@ -1,4 +1,5 @@
 import { ArticleLayout } from "./ArticleLayout";
+import { FAQ } from "@/components/FAQ";
 
 export default function ArticleWudu() {
   return (
@@ -52,6 +53,14 @@ export default function ArticleWudu() {
 
       <h2>Wiping Over Socks (Khuff)</h2>
       <p>The Prophet ﷺ permitted wiping over leather socks (khuff) instead of washing the feet — for a resident: 24 hours; for a traveller: 72 hours. Contemporary scholars extend this to thick cotton socks that cover the foot completely. This is one of the practical easements of Islamic law for those on the move.</p>
+
+      <FAQ items={[
+        { q: "Does wudu break if I touch my spouse?", a: "This depends on your madhab. In the Shafi\'i school, skin contact between a man and woman breaks wudu. In the Hanafi school, it does not. Follow the ruling of your madhab." },
+        { q: "Does laughing break wudu?", a: "Laughing does not break wudu. However, audible laughter during prayer invalidates the prayer in the Hanafi school. Smiling and silent laughter do not affect either wudu or prayer." },
+        { q: "Does bleeding break wudu?", a: "In the Hanafi school, flowing blood breaks wudu. In the Shafi\'i and Maliki schools, it does not. This is a significant difference between madhabs." },
+        { q: "How long does wudu last?", a: "Wudu remains valid until something breaks it. There is no time limit. You can make wudu in the morning and it remains valid for all prayers as long as nothing breaks it." },
+        { q: "Can I pray multiple prayers with one wudu?", a: "Yes — absolutely. One wudu is valid for as many prayers as you wish until something breaks it. The Prophet ﷺ sometimes performed multiple prayers with one wudu." },
+      ]} />
     </ArticleLayout>
   );
 }

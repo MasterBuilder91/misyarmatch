@@ -1,4 +1,5 @@
 import { ArticleLayout } from "./ArticleLayout";
+import { FAQ } from "@/components/FAQ";
 
 export default function ArticleHowManyRakats() {
   return (
@@ -64,6 +65,14 @@ export default function ArticleHowManyRakats() {
 
       <h2>For the Traveller</h2>
       <p>The four-rakat prayers (Dhuhr, Asr, Isha) are shortened to 2 rakats when travelling (qasr). The distance threshold for travel varies by madhab — Hanafi: approximately 77km; Maliki and Shafi'i: approximately 80km. The sunnah prayers may be omitted while travelling, though the sunnah of Fajr and witr are recommended to maintain even on the road.</p>
+
+      <FAQ items={[
+        { q: "Can I pray all the sunnah prayers every day?", a: "Yes, and it is strongly encouraged. The Prophet ﷺ said the most beloved deeds to Allah are the most consistent ones. Praying the regular sunnah prayers daily builds a powerful spiritual foundation." },
+        { q: "What is the difference between sunnah muakkadah and ghair muakkadah?", a: "Sunnah muakkadah (emphasized sunnah) are those the Prophet ﷺ prayed consistently and only abandoned rarely. Missing them repeatedly is discouraged. Sunnah ghair muakkadah are those he prayed sometimes — missing them occasionally is acceptable." },
+        { q: "How many rakats is Witr?", a: "Witr can be prayed as 1, 3, 5, 7, 9, or 11 rakats. The minimum is 1 rakat. The most common practice is 3 rakats. It should be the last prayer of the night." },
+        { q: "Can I pray Fajr sunnah after the fard if I missed it?", a: "Yes — the sunnah of Fajr can be made up after the fard prayer if it was missed. The Prophet ﷺ made up the Fajr sunnah when he slept through Fajr on one occasion." },
+        { q: "Do I have to pray all the sunnah prayers to have my fard accepted?", a: "No — the fard prayers are valid without the sunnah prayers. The sunnah prayers supplement the fard. The Prophet ﷺ said they make up for any deficiencies in the obligatory prayers on the Day of Judgment." },
+      ]} />
     </ArticleLayout>
   );
 }

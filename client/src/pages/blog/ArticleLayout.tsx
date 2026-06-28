@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Layout } from "@/components/Layout";
+import { RelatedArticles } from "@/components/RelatedArticles";
+import { ARTICLES } from "@/pages/blog/BlogIndex";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
@@ -179,6 +181,13 @@ export function ArticleLayout({ children, title, excerpt, slug, tag, readTime, d
                 }
               `}</style>
               {children}
+              {slug && (
+                <RelatedArticles
+                  currentSlug={slug}
+                  currentTag={tag}
+                  articles={ARTICLES}
+                />
+              )}
             </div>
           </div>
 
