@@ -117,6 +117,7 @@ import ArticleMisyarFourWives from "@/pages/blog/ArticleMisyarFourWives";
 import ArticleAbortionIslam from "@/pages/blog/ArticleAbortionIslam";
 import ArticleWudu from "@/pages/blog/ArticleWudu";
 import ArticleHowSimpleNikahIs from "@/pages/blog/ArticleHowSimpleNikahIs";
+import NikahGuide from "@/pages/NikahGuide";
 import ArticleMarryingKitabiyya from "@/pages/blog/ArticleMarryingKitabiyya";
 import ArticleMuslimMenPornMarriage from "@/pages/blog/ArticleMuslimMenPornMarriage";
 import ArticleSomaliMarriage from "@/pages/blog/ArticleSomaliMarriage";
@@ -224,6 +225,7 @@ function Router() {
       <Route path="/blog/abortion-ruling-in-islam" component={ArticleAbortionIslam} />
       <Route path="/blog/how-to-perform-wudu" component={ArticleWudu} />
       <Route path="/blog/how-simple-nikah-is" component={ArticleHowSimpleNikahIs} />
+      <Route path="/nikah-guide" component={NikahGuide} />
       <Route path="/blog/muslim-men-marry-christian-jewish-women" component={ArticleMarryingKitabiyya} />
       <Route path="/blog/pornography-destroys-muslim-marriages" component={ArticleMuslimMenPornMarriage} />
       <Route path="/blog/somali-muslim-marriage-culture" component={ArticleSomaliMarriage} />

@@ -44,6 +44,7 @@ export function Footer() {
               <li><Link href="/you-do-misyar-already" className="hover:text-[#B8965A] transition-colors">You Already Practice Misyar</Link></li>
               <li><Link href="/misyar-for-her" className="hover:text-[#B8965A] transition-colors">Is Misyar Right For You? (Her)</Link></li>
               <li><Link href="/misyar-for-him" className="hover:text-[#B8965A] transition-colors">Is Misyar Right For You? (Him)</Link></li>
+              <li><Link href="/nikah-guide" className="hover:text-[#B8965A] transition-colors">How to Do a Nikah</Link></li>
               <li><Link href="/no-fake-profiles" className="hover:text-[#B8965A] transition-colors">No Fake Profiles</Link></li>
               <li><Link href="/faq" className="hover:text-[#B8965A] transition-colors">FAQ</Link></li>
             </ul>

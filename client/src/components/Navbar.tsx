@@ -34,6 +34,7 @@ export function Navbar() {
   const navLinks = [
     { href: "/browse", label: t("nav.browse") },
     { href: "/what-is-misyar", label: t("nav.whatIsMisyar") },
+    { href: "/nikah-guide", label: "Nikah Guide" },
   ];
 
   const authLinks = isAuthenticated
